@@ -1,0 +1,1602 @@
+[
+  {
+    "id": 1,
+    "text": "开通会员送什么",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "membership",
+    "correct": true
+  },
+  {
+    "id": 2,
+    "text": "怎么退出登录",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "account_issue",
+    "correct": true
+  },
+  {
+    "id": 3,
+    "text": "你们一般几天能到",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 4,
+    "text": "拜拜",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 5,
+    "text": "凑单满减怎么算",
+    "true": "price_promotion",
+    "pred": "campaign_rules",
+    "raw_output": "campaign_rules",
+    "correct": false
+  },
+  {
+    "id": 6,
+    "text": "我非常不满意你们的服务",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "complaint",
+    "correct": true
+  },
+  {
+    "id": 7,
+    "text": "有人在异地登录我的账号",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "account_issue",
+    "correct": true
+  },
+  {
+    "id": 8,
+    "text": "电池容量多大",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 9,
+    "text": "要减少一件数量",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "order_modification",
+    "correct": true
+  },
+  {
+    "id": 10,
+    "text": "支付宝余额不足怎么混合付",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "payment_issue",
+    "correct": true
+  },
+  {
+    "id": 11,
+    "text": "微信支付扫码没反应",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "payment_issue",
+    "correct": true
+  },
+  {
+    "id": 12,
+    "text": "这个要怎么安装",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 13,
+    "text": "乡镇地区送不送",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "delivery_service",
+    "correct": true
+  },
+  {
+    "id": 14,
+    "text": "电梯上不去怎么送",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "delivery_service",
+    "correct": true
+  },
+  {
+    "id": 15,
+    "text": "付款限额是多少",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "payment_issue",
+    "correct": true
+  },
+  {
+    "id": 16,
+    "text": "怎么选自提点",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "delivery_service",
+    "correct": true
+  },
+  {
+    "id": 17,
+    "text": "能退钱吗",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 18,
+    "text": "快递丢了怎么办",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 19,
+    "text": "退款退不了什么原因",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 20,
+    "text": "618活动力度大吗",
+    "true": "campaign_rules",
+    "pred": "campaign_rules",
+    "raw_output": "campaign_rules",
+    "correct": true
+  },
+  {
+    "id": 21,
+    "text": "修改地址后什么时候生效",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "order_modification",
+    "correct": true
+  },
+  {
+    "id": 22,
+    "text": "预售价和现价哪个低",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": true
+  },
+  {
+    "id": 23,
+    "text": "开发票要加税点吗",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "invoice",
+    "correct": true
+  },
+  {
+    "id": 24,
+    "text": "定金可以退吗",
+    "true": "campaign_rules",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": false
+  },
+  {
+    "id": 25,
+    "text": "退换货的期限是多久",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  },
+  {
+    "id": 26,
+    "text": "你们太让人失望了",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "complaint",
+    "correct": true
+  },
+  {
+    "id": 27,
+    "text": "银行卡限额了付不了",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "payment_issue",
+    "correct": true
+  },
+  {
+    "id": 28,
+    "text": "苹果支付可以用吗",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "payment_issue",
+    "correct": true
+  },
+  {
+    "id": 29,
+    "text": "发票信息能改吗",
+    "true": "order_modification",
+    "pred": "invoice",
+    "raw_output": "invoice",
+    "correct": false
+  },
+  {
+    "id": 30,
+    "text": "有没有冷链配送",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "delivery_service",
+    "correct": true
+  },
+  {
+    "id": 31,
+    "text": "发票邮箱怎么设置",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "invoice",
+    "correct": true
+  },
+  {
+    "id": 32,
+    "text": "维修费用多少",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 33,
+    "text": "含酒精吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 34,
+    "text": "买错了可以换吗",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  },
+  {
+    "id": 35,
+    "text": "别家同款才XX元",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": true
+  },
+  {
+    "id": 36,
+    "text": "这个订单发货了没",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 37,
+    "text": "拼团成功后多久发货",
+    "true": "campaign_rules",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": false
+  },
+  {
+    "id": 38,
+    "text": "能开定额发票吗",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "invoice",
+    "correct": true
+  },
+  {
+    "id": 39,
+    "text": "这个机器声音大不大",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 40,
+    "text": "这个可以退货吗",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  },
+  {
+    "id": 41,
+    "text": "漏水你们管不管",
+    "true": "complaint",
+    "pred": "after_sales_repair",
+    "raw_output": "after_sales_repair",
+    "correct": false
+  },
+  {
+    "id": 42,
+    "text": "你这回复是机器人吧",
+    "true": "complaint",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": false
+  },
+  {
+    "id": 43,
+    "text": "配送到什么阶段了",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 44,
+    "text": "电子发票在哪下载",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "invoice",
+    "correct": true
+  },
+  {
+    "id": 45,
+    "text": "可以货到付款吗",
+    "true": "payment_issue",
+    "pred": "delivery_service",
+    "raw_output": "delivery_service",
+    "correct": false
+  },
+  {
+    "id": 46,
+    "text": "这个零件能单独买吗",
+    "true": "after_sales_repair",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": false
+  },
+  {
+    "id": 47,
+    "text": "按键失灵了",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 48,
+    "text": "预售和现货哪个便宜",
+    "true": "campaign_rules",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": false
+  },
+  {
+    "id": 49,
+    "text": "能改一下用户名吗",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "account_issue",
+    "correct": true
+  },
+  {
+    "id": 50,
+    "text": "你们支持送货上门安装吗",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "delivery_service",
+    "correct": true
+  },
+  {
+    "id": 51,
+    "text": "能送个赠品吗",
+    "true": "price_promotion",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": false
+  },
+  {
+    "id": 52,
+    "text": "你们有维修网点吗",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 53,
+    "text": "维修要先付钱吗",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 54,
+    "text": "付款之后订单多久确认",
+    "true": "payment_issue",
+    "pred": "order_modification",
+    "raw_output": "order_modification",
+    "correct": false
+  },
+  {
+    "id": 55,
+    "text": "退款要几个工作日",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 56,
+    "text": "把钱退回来谢谢",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 57,
+    "text": "包裹在路上了吗",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 58,
+    "text": "配送途中可以改地址吗",
+    "true": "delivery_service",
+    "pred": "order_modification",
+    "raw_output": "order_modification",
+    "correct": false
+  },
+  {
+    "id": 59,
+    "text": "我填好退货信息了下一步怎么做",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  },
+  {
+    "id": 60,
+    "text": "怎么用微信支付",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "payment_issue",
+    "correct": true
+  },
+  {
+    "id": 61,
+    "text": "把数量从2改成1",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "order_modification",
+    "correct": true
+  },
+  {
+    "id": 62,
+    "text": "会员积分有效期多久",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "membership",
+    "correct": true
+  },
+  {
+    "id": 63,
+    "text": "这个含糖量高吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 64,
+    "text": "商品还没发我先退款",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 65,
+    "text": "发票打印出来不清楚",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "invoice",
+    "correct": true
+  },
+  {
+    "id": 66,
+    "text": "快递被退回了是怎么回事",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 67,
+    "text": "怎么修改密码",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "account_issue",
+    "correct": true
+  },
+  {
+    "id": 68,
+    "text": "质保卡怎么激活",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 69,
+    "text": "你们有夜间配送吗",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "delivery_service",
+    "correct": true
+  },
+  {
+    "id": 70,
+    "text": "有人工客服吗",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 71,
+    "text": "这个组合装比单买便宜多少",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": true
+  },
+  {
+    "id": 72,
+    "text": "订单显示已签收但我没收到",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 73,
+    "text": "这个手机支持5G吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 74,
+    "text": "你们的态度让我很生气",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "complaint",
+    "correct": true
+  },
+  {
+    "id": 75,
+    "text": "凑单可以退一件吗",
+    "true": "campaign_rules",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": false
+  },
+  {
+    "id": 76,
+    "text": "这个有没有折扣价",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": true
+  },
+  {
+    "id": 77,
+    "text": "我等了好久快递还没来",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 78,
+    "text": "退货怎么寄回去",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  },
+  {
+    "id": 79,
+    "text": "麻烦帮忙查一下我订单的快递到哪里了好吗",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 80,
+    "text": "你好我想查物流",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 81,
+    "text": "晚上还有人值班吗",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 82,
+    "text": "有没有团购价",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": true
+  },
+  {
+    "id": 83,
+    "text": "快递几天了还没到",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 84,
+    "text": "怎么联系售后",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 85,
+    "text": "有没有配件单卖",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 86,
+    "text": "想把自提改成送货上门",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "order_modification",
+    "correct": true
+  },
+  {
+    "id": 87,
+    "text": "嗯嗯",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 88,
+    "text": "你们配送范围有多大",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "delivery_service",
+    "correct": true
+  },
+  {
+    "id": 89,
+    "text": "太好了",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 90,
+    "text": "帮我看下退款什么时候到",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 91,
+    "text": "优惠券怎么不能用了",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": true
+  },
+  {
+    "id": 92,
+    "text": "会员可以退吗",
+    "true": "membership",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": false
+  },
+  {
+    "id": 93,
+    "text": "退款退到哪个账户",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 94,
+    "text": "预计明天能收到吗",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 95,
+    "text": "上门取件方便吗",
+    "true": "delivery_service",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": false
+  },
+  {
+    "id": 96,
+    "text": "我改主意了想退款",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 97,
+    "text": "请问一下",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 98,
+    "text": "你怎么这么聪明",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 99,
+    "text": "谢谢你",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 100,
+    "text": "密码长度有要求吗",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "account_issue",
+    "correct": true
+  },
+  {
+    "id": 101,
+    "text": "有没有礼盒装",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 102,
+    "text": "注册需要什么信息",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "account_issue",
+    "correct": true
+  },
+  {
+    "id": 103,
+    "text": "有没有备用机可以借",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 104,
+    "text": "有没有其他口味",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 105,
+    "text": "折扣叠加吗",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": true
+  },
+  {
+    "id": 106,
+    "text": "容易褪色吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 107,
+    "text": "已经五天了还没收到货",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 108,
+    "text": "今天下单有什么优惠",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": true
+  },
+  {
+    "id": 109,
+    "text": "怎么成为会员",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "membership",
+    "correct": true
+  },
+  {
+    "id": 110,
+    "text": "退货单号怎么填",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  },
+  {
+    "id": 111,
+    "text": "衣服太大了能换小一号吗",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  },
+  {
+    "id": 112,
+    "text": "客服态度很差",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "complaint",
+    "correct": true
+  },
+  {
+    "id": 113,
+    "text": "跨境支付手续费多少",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "payment_issue",
+    "correct": true
+  },
+  {
+    "id": 114,
+    "text": "我已经退货了什么时候退钱",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 115,
+    "text": "想把两个颜色换一下",
+    "true": "order_modification",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": false
+  },
+  {
+    "id": 116,
+    "text": "不太确定",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 117,
+    "text": "邮编填错了影响发货吗",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "order_modification",
+    "correct": true
+  },
+  {
+    "id": 118,
+    "text": "跟描述不符我要退",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  },
+  {
+    "id": 119,
+    "text": "活动什么时候结束",
+    "true": "campaign_rules",
+    "pred": "campaign_rules",
+    "raw_output": "campaign_rules",
+    "correct": true
+  },
+  {
+    "id": 120,
+    "text": "赶紧给我退钱",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 121,
+    "text": "怎么办理退货",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  },
+  {
+    "id": 122,
+    "text": "怎么关闭推送通知",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "account_issue",
+    "correct": true
+  },
+  {
+    "id": 123,
+    "text": "积分清零前会提醒吗",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "membership",
+    "correct": true
+  },
+  {
+    "id": 124,
+    "text": "广告和实物差距太大了",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "complaint",
+    "correct": true
+  },
+  {
+    "id": 125,
+    "text": "有什么限制吗",
+    "true": "product_inquiry",
+    "pred": "campaign_rules",
+    "raw_output": "campaign_rules",
+    "correct": false
+  },
+  {
+    "id": 126,
+    "text": "会员生日有双倍积分吗",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "membership",
+    "correct": true
+  },
+  {
+    "id": 127,
+    "text": "有没有安装服务",
+    "true": "product_inquiry",
+    "pred": "delivery_service",
+    "raw_output": "delivery_service",
+    "correct": false
+  },
+  {
+    "id": 128,
+    "text": "换零件原装的吗",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 129,
+    "text": "我退款好几天了还没处理",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 130,
+    "text": "无聊来逛逛",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 131,
+    "text": "几天了都没有物流更新",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 132,
+    "text": "忘记账号了怎么找回",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "account_issue",
+    "correct": true
+  },
+  {
+    "id": 133,
+    "text": "这个牌子靠谱吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 134,
+    "text": "你们几点下班",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 135,
+    "text": "集卡活动怎么玩",
+    "true": "campaign_rules",
+    "pred": "campaign_rules",
+    "raw_output": "campaign_rules",
+    "correct": true
+  },
+  {
+    "id": 136,
+    "text": "分期怎么操作",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "payment_issue",
+    "correct": true
+  },
+  {
+    "id": 137,
+    "text": "降价了可以补差价吗",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": true
+  },
+  {
+    "id": 138,
+    "text": "开的什么类型的发票",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "invoice",
+    "correct": true
+  },
+  {
+    "id": 139,
+    "text": "改下尺码谢谢",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "order_modification",
+    "correct": true
+  },
+  {
+    "id": 140,
+    "text": "你们这是什么服务水平",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "complaint",
+    "correct": true
+  },
+  {
+    "id": 141,
+    "text": "验证码老是发不到我手机",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "account_issue",
+    "correct": true
+  },
+  {
+    "id": 142,
+    "text": "物流卡在一个地方好几天了",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 143,
+    "text": "hi",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 144,
+    "text": "这个能带上飞机吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 145,
+    "text": "我快递签收了但是没有收到东西",
+    "true": "logistics_query",
+    "pred": "complaint",
+    "raw_output": "complaint",
+    "correct": false
+  },
+  {
+    "id": 146,
+    "text": "积分能兑换什么",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "membership",
+    "correct": true
+  },
+  {
+    "id": 147,
+    "text": "优惠券过期了能延期吗",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": true
+  },
+  {
+    "id": 148,
+    "text": "发票开了还能退吗",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "invoice",
+    "correct": true
+  },
+  {
+    "id": 149,
+    "text": "军营能送到吗",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "delivery_service",
+    "correct": true
+  },
+  {
+    "id": 150,
+    "text": "是正品吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 151,
+    "text": "积分能抵扣多少钱",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": true
+  },
+  {
+    "id": 152,
+    "text": "为什么显示已送达我没收到",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 153,
+    "text": "支付不了什么原因",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "payment_issue",
+    "correct": true
+  },
+  {
+    "id": 154,
+    "text": "活动价格保护几天",
+    "true": "campaign_rules",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": false
+  },
+  {
+    "id": 155,
+    "text": "假一赔十你们赔不赔",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "complaint",
+    "correct": true
+  },
+  {
+    "id": 156,
+    "text": "怎么只退了一部分钱",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 157,
+    "text": "提示密码错误次数过多怎么解锁",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "account_issue",
+    "correct": true
+  },
+  {
+    "id": 158,
+    "text": "有没有加急配送",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "delivery_service",
+    "correct": true
+  },
+  {
+    "id": 159,
+    "text": "请问订单还能修改吗",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "order_modification",
+    "correct": true
+  },
+  {
+    "id": 160,
+    "text": "快递小哥什么时候来送",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 161,
+    "text": "满199减20怎么凑",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": true
+  },
+  {
+    "id": 162,
+    "text": "你们有没有监管的",
+    "true": "complaint",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": false
+  },
+  {
+    "id": 163,
+    "text": "退货需要保持包装完好吗",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  },
+  {
+    "id": 164,
+    "text": "买了三个月屏幕就坏了怎么保修",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 165,
+    "text": "订单改了地址物流会变吗",
+    "true": "order_modification",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": false
+  },
+  {
+    "id": 166,
+    "text": "怎么这么久还没发货",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 167,
+    "text": "能不能把尺码改成L",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "order_modification",
+    "correct": true
+  },
+  {
+    "id": 168,
+    "text": "怎么获取更多积分",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "membership",
+    "correct": true
+  },
+  {
+    "id": 169,
+    "text": "能用多久啊",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 170,
+    "text": "商家不给退款怎么办",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 171,
+    "text": "材质环保吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 172,
+    "text": "噪音大不大",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 173,
+    "text": "还没发货赶紧帮我改地址",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "order_modification",
+    "correct": true
+  },
+  {
+    "id": 174,
+    "text": "这个是国行还是海外版",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 175,
+    "text": "纸质发票还是电子发票",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "invoice",
+    "correct": true
+  },
+  {
+    "id": 176,
+    "text": "有没有组装视频",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 177,
+    "text": "能开发票吗",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "invoice",
+    "correct": true
+  },
+  {
+    "id": 178,
+    "text": "商品跟描述完全不一样骗人",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "complaint",
+    "correct": true
+  },
+  {
+    "id": 179,
+    "text": "实名认证怎么操作",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "account_issue",
+    "correct": true
+  },
+  {
+    "id": 180,
+    "text": "钱退到哪里去了我没收到",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 181,
+    "text": "洗过了还能退吗",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  },
+  {
+    "id": 182,
+    "text": "摔了一下不开机了",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 183,
+    "text": "优惠券在哪领",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "price_promotion",
+    "correct": true
+  },
+  {
+    "id": 184,
+    "text": "寄回去了帮我看一下",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  },
+  {
+    "id": 185,
+    "text": "支付成功了但是订单没生成",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "payment_issue",
+    "correct": true
+  },
+  {
+    "id": 186,
+    "text": "运费多少",
+    "true": "price_promotion",
+    "pred": "delivery_service",
+    "raw_output": "delivery_service",
+    "correct": false
+  },
+  {
+    "id": 187,
+    "text": "回复速度太慢了",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "complaint",
+    "correct": true
+  },
+  {
+    "id": 188,
+    "text": "预售什么时候开始",
+    "true": "campaign_rules",
+    "pred": "campaign_rules",
+    "raw_output": "campaign_rules",
+    "correct": true
+  },
+  {
+    "id": 189,
+    "text": "过了7天还能退货吗",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  },
+  {
+    "id": 190,
+    "text": "马达不转了怎么修",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 191,
+    "text": "退了货物流显示已签收了怎么还没退款",
+    "true": "return_exchange",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": false
+  },
+  {
+    "id": 192,
+    "text": "会员能享受几折优惠",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "membership",
+    "correct": true
+  },
+  {
+    "id": 193,
+    "text": "这钱怎么退回来",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 194,
+    "text": "能换个支付方式吗",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "payment_issue",
+    "correct": true
+  },
+  {
+    "id": 195,
+    "text": "我搬家了地址要改",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "order_modification",
+    "correct": true
+  },
+  {
+    "id": 196,
+    "text": "可以直接退款吗不退货",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "refund_request",
+    "correct": true
+  },
+  {
+    "id": 197,
+    "text": "满赠活动的赠品是什么",
+    "true": "campaign_rules",
+    "pred": "campaign_rules",
+    "raw_output": "campaign_rules",
+    "correct": true
+  },
+  {
+    "id": 198,
+    "text": "帮我查一下物流",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "logistics_query",
+    "correct": true
+  },
+  {
+    "id": 199,
+    "text": "在吗",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 200,
+    "text": "换小一码帮我下单",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "return_exchange",
+    "correct": true
+  }
+]

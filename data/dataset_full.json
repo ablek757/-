@@ -1,0 +1,7089 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "total_samples": 1000,
+    "num_intents": 15,
+    "scene": "e-commerce_customer_service",
+    "language": "zh-CN",
+    "split_ratio": "80:20 (stratified)"
+  },
+  "intent_schema": [
+    {
+      "intent_id": 1,
+      "intent": "logistics_query",
+      "intent_cn": "物流查询"
+    },
+    {
+      "intent_id": 2,
+      "intent": "refund_request",
+      "intent_cn": "退款申请"
+    },
+    {
+      "intent_id": 3,
+      "intent": "return_exchange",
+      "intent_cn": "退换货"
+    },
+    {
+      "intent_id": 4,
+      "intent": "product_inquiry",
+      "intent_cn": "商品咨询"
+    },
+    {
+      "intent_id": 5,
+      "intent": "price_promotion",
+      "intent_cn": "价格优惠"
+    },
+    {
+      "intent_id": 6,
+      "intent": "order_modification",
+      "intent_cn": "订单修改"
+    },
+    {
+      "intent_id": 7,
+      "intent": "payment_issue",
+      "intent_cn": "支付问题"
+    },
+    {
+      "intent_id": 8,
+      "intent": "account_issue",
+      "intent_cn": "账户问题"
+    },
+    {
+      "intent_id": 9,
+      "intent": "complaint",
+      "intent_cn": "投诉建议"
+    },
+    {
+      "intent_id": 10,
+      "intent": "after_sales_repair",
+      "intent_cn": "售后维修"
+    },
+    {
+      "intent_id": 11,
+      "intent": "invoice",
+      "intent_cn": "发票相关"
+    },
+    {
+      "intent_id": 12,
+      "intent": "membership",
+      "intent_cn": "会员权益"
+    },
+    {
+      "intent_id": 13,
+      "intent": "delivery_service",
+      "intent_cn": "配送服务"
+    },
+    {
+      "intent_id": 14,
+      "intent": "campaign_rules",
+      "intent_cn": "活动规则"
+    },
+    {
+      "intent_id": 15,
+      "intent": "chitchat_other",
+      "intent_cn": "闲聊其他"
+    }
+  ],
+  "data": [
+    {
+      "id": 1,
+      "text": "我是金牌会员有什么优惠",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 2,
+      "text": "退货原因选什么好",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 3,
+      "text": "积分兑换活动什么时候开",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 4,
+      "text": "我选错尺码了帮我换",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 5,
+      "text": "帮我处理一下退款",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 6,
+      "text": "这已经是最低价了吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 7,
+      "text": "发货前帮我修改一下可以吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 8,
+      "text": "你们有专人配送吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 9,
+      "text": "第三方登录怎么设置",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 10,
+      "text": "换手机了怎么转移账号",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 11,
+      "text": "附近有自提点吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 12,
+      "text": "能开办公用品发票吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 13,
+      "text": "你们严重侵犯了我的权益",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 14,
+      "text": "功率多大",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 15,
+      "text": "活动价和日常价差多少",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 16,
+      "text": "你们做不做直播优惠",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 17,
+      "text": "服务效率太低了",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 18,
+      "text": "收货地址管理在哪",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 19,
+      "text": "有没有黑色的",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 20,
+      "text": "不含税价格是多少",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 21,
+      "text": "快递是用什么快递公司寄的",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 22,
+      "text": "退款能快一点吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 23,
+      "text": "支付密码忘了怎么付",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 24,
+      "text": "包装里都有什么",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 25,
+      "text": "可以放在门口不用签收吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 26,
+      "text": "跑步穿合适吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 27,
+      "text": "什么时候到货呢",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 28,
+      "text": "退款按钮在哪里",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 29,
+      "text": "物流怎么这么慢啊",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 30,
+      "text": "我要申请全额退款",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 31,
+      "text": "有没有试穿的建议",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 32,
+      "text": "客服说的和实际不一样",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 33,
+      "text": "返厂维修怎么操作",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 34,
+      "text": "快递到哪了怎么看",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 35,
+      "text": "换货大概多久能到",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 36,
+      "text": "发票丢了能补开吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 37,
+      "text": "有视频介绍吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 38,
+      "text": "支持什么支付方式",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 39,
+      "text": "还没发货我想改一下规格",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 40,
+      "text": "次日达覆盖哪些城市",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 41,
+      "text": "可以用花呗分期免息吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 42,
+      "text": "配送过程中损坏谁负责",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 43,
+      "text": "我要求公开道歉",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 44,
+      "text": "七天无理由退货怎么操作",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 45,
+      "text": "返厂维修要多少天",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 46,
+      "text": "退货流程是什么",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 47,
+      "text": "快递到我们城市了吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 48,
+      "text": "可以上门取件退货吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 49,
+      "text": "怎么注销账号",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 50,
+      "text": "我的快递到哪了",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 51,
+      "text": "中奖了怎么领取",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 52,
+      "text": "想退钱不知道怎么弄",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 53,
+      "text": "辛苦了",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 54,
+      "text": "二维码登录扫不上",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 55,
+      "text": "嗯好的",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 56,
+      "text": "快递是中通的吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 57,
+      "text": "先不买了",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 58,
+      "text": "怎么买最划算",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 59,
+      "text": "帮忙退一下钱吧",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 60,
+      "text": "屏幕分辨率多少",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 61,
+      "text": "发票信息填错了能改吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 62,
+      "text": "怎么寄修",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 63,
+      "text": "几个订单能合在一起开吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 64,
+      "text": "付定金立减多少",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 65,
+      "text": "就这样吧",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 66,
+      "text": "能用信用卡付吗",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 67,
+      "text": "之前维修的又坏了",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 68,
+      "text": "为什么不能用支付宝",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 69,
+      "text": "预售定金膨胀什么意思",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 70,
+      "text": "想退货但是外包装扔了",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 71,
+      "text": "可以指定配送时间吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 72,
+      "text": "现在买划算吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 73,
+      "text": "这样啊",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 74,
+      "text": "好吧",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 75,
+      "text": "发票开好了在哪看",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 76,
+      "text": "二维码过期了怎么刷新",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 77,
+      "text": "为什么不能申请退款了",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 78,
+      "text": "备注加上轻拿轻放",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 79,
+      "text": "这个有什么颜色可选",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 80,
+      "text": "我昨天的订单还能改地址不",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 81,
+      "text": "每人限购几件",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 82,
+      "text": "我想换一件",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 83,
+      "text": "退款申请通过了吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 84,
+      "text": "你们跟哪些快递合作",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 85,
+      "text": "虚假宣传我要举报",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 86,
+      "text": "怎么查看付款记录",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 87,
+      "text": "请问这件是什么面料",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 88,
+      "text": "麻烦查一下我的物流状态",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 89,
+      "text": "赠品开不开发票",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 90,
+      "text": "延保服务怎么买",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 91,
+      "text": "直接放菜鸟驿站行吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 92,
+      "text": "退货必须要退款吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 93,
+      "text": "挺好的",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 94,
+      "text": "帮我看看退款进度",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 95,
+      "text": "不喜欢想退货",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 96,
+      "text": "退款申请被拒了怎么回事",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 97,
+      "text": "货到哪了帮看一下",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 98,
+      "text": "等一下",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 99,
+      "text": "我买的东西什么时候发货啊",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 100,
+      "text": "请问我的包裹到哪里了",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 101,
+      "text": "修改订单在哪里操作",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 102,
+      "text": "送到写字楼前台行吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 103,
+      "text": "可以抹个零吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 104,
+      "text": "维修进度怎么查",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 105,
+      "text": "历史最低价多少",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 106,
+      "text": "帮改一下门牌号",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 107,
+      "text": "你们卖的这个跟实体店一样吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 108,
+      "text": "订单地址少写了几个字",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 109,
+      "text": "你们服务态度太差了我要投诉",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 110,
+      "text": "等好久了帮催催",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 111,
+      "text": "物流显示到了中转站要多久能到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 112,
+      "text": "你们用的哪家快递公司",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 113,
+      "text": "你是AI吗",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 114,
+      "text": "微信登录密码是多少",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 115,
+      "text": "我想看下我的快递进度",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 116,
+      "text": "送货上楼要加钱吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 117,
+      "text": "昨天说派送怎么今天还没到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 118,
+      "text": "信用卡有优惠吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 119,
+      "text": "你们有物流保价吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 120,
+      "text": "买的多积分多吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 121,
+      "text": "甜度怎么样",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 122,
+      "text": "发票邮寄到哪里",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 123,
+      "text": "不解决我就差评+投诉",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 124,
+      "text": "怎么向平台投诉",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 125,
+      "text": "可以退货吗这个商品",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 126,
+      "text": "你们这是欺诈消费者",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 127,
+      "text": "黑五会降价吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 128,
+      "text": "物流一直没有变化",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 129,
+      "text": "好的我知道了麻烦你了",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 130,
+      "text": "感谢帮忙",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 131,
+      "text": "系统怎么自动取消我退款了",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 132,
+      "text": "怎么切换账号",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 133,
+      "text": "电池鼓包了能免费换吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 134,
+      "text": "有没有什么优惠券可以用",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 135,
+      "text": "一点诚意都没有",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 136,
+      "text": "物流状态怎么看不到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 137,
+      "text": "我的积分要过期了吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 138,
+      "text": "分享有奖怎么操作",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 139,
+      "text": "进水了还能修吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 140,
+      "text": "普票和专票有什么区别",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 141,
+      "text": "一部分退一部分换行不行",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 142,
+      "text": "你们客服效率挺高的",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 143,
+      "text": "电子发票有法律效力吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 144,
+      "text": "头像怎么改",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 145,
+      "text": "这个能接受定做吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 146,
+      "text": "有没有更便宜的套餐",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 147,
+      "text": "优惠码是什么",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 148,
+      "text": "我要退三件里面的一件可以吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 149,
+      "text": "对你们很失望",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 150,
+      "text": "有没有中号的",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 151,
+      "text": "注册的时候选什么身份",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 152,
+      "text": "快递咋还没到呢",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 153,
+      "text": "帮我看看有没有好东西",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 154,
+      "text": "这个颜色跟网上差太多了退吧",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 155,
+      "text": "快递被拦截了怎么处理",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 156,
+      "text": "付款时候网络超时了",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 157,
+      "text": "账号有两个怎么合并",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 158,
+      "text": "退货的发票怎么处理",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 159,
+      "text": "你们怎么做生意的",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 160,
+      "text": "能用云闪付吗",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 161,
+      "text": "我的订单什么时候能到货",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 162,
+      "text": "寄回去的运费能报销吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 163,
+      "text": "充值会员有优惠吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 164,
+      "text": "二手买的能退吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 165,
+      "text": "配件齐全吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 166,
+      "text": "预售发货时间是什么时候",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 167,
+      "text": "限量款怎么抢",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 168,
+      "text": "拖了一个月了还没解决",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 169,
+      "text": "换一个大一号的",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 170,
+      "text": "这个订单我要退款",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 171,
+      "text": "你们的售后服务怎么样",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 172,
+      "text": "发票限额是多少",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 173,
+      "text": "你好我要退钱",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 174,
+      "text": "下单之后多久发货",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 175,
+      "text": "哈哈哈",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 176,
+      "text": "运费能减免吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 177,
+      "text": "发票需要盖章吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 178,
+      "text": "怎么开启两步验证",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 179,
+      "text": "送达之前会电话通知吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 180,
+      "text": "一年消费多少才能升级",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 181,
+      "text": "包裹现在在哪个城市了",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 182,
+      "text": "怎么设置支付密码",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 183,
+      "text": "可以送到公司前台吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 184,
+      "text": "新年活动什么时候开始",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 185,
+      "text": "充电器是type-c的吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 186,
+      "text": "拼团价多少",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 187,
+      "text": "你能帮我做什么",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 188,
+      "text": "你这个是最新批次的吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 189,
+      "text": "发错货了帮我换一下",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 190,
+      "text": "我考虑一下",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 191,
+      "text": "我想增加一件同款的",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 192,
+      "text": "原来如此",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 193,
+      "text": "退款怎么还在审核中",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 194,
+      "text": "双十一的满减规则是怎样的",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 195,
+      "text": "电话号码填错了",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 196,
+      "text": "快递大概什么时候送到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 197,
+      "text": "你好呀",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 198,
+      "text": "我的登录记录在哪看",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 199,
+      "text": "会员价比普通价便宜多少",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 200,
+      "text": "隐私设置在哪里",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 201,
+      "text": "验证码收不到",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 202,
+      "text": "你好请问",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 203,
+      "text": "年货节有什么优惠",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 204,
+      "text": "会员等级怎么算的",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 205,
+      "text": "这个故障是通病吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 206,
+      "text": "全场包邮吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 207,
+      "text": "这个有色差吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 208,
+      "text": "我要求书面道歉",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 209,
+      "text": "钱什么时候退回来啊",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 210,
+      "text": "有异味你们知道吗",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 211,
+      "text": "退款金额不对啊",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 212,
+      "text": "会员日是哪天",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 213,
+      "text": "两件九折是吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 214,
+      "text": "我的账户异常了",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 215,
+      "text": "这款经常打折吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 216,
+      "text": "物流太慢了吧",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 217,
+      "text": "家具配送含安装吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 218,
+      "text": "你们的售后太烂了",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 219,
+      "text": "未成年能注册吗",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 220,
+      "text": "怎么修改发票信息",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 221,
+      "text": "什么时候可以申请开票",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 222,
+      "text": "怎么绑定银行卡",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 223,
+      "text": "有没有满减活动",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 224,
+      "text": "可以帮我拆分订单吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 225,
+      "text": "保修期内维修免费吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 226,
+      "text": "运费险退款多少",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 227,
+      "text": "你们支持验货吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 228,
+      "text": "拼团人不够怎么办",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 229,
+      "text": "能不能包邮",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 230,
+      "text": "会员年费多少",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 231,
+      "text": "港澳台配送多久",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 232,
+      "text": "维修大概要多久",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 233,
+      "text": "换货可以换不同款吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 234,
+      "text": "麻烦催一下仓库发货",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 235,
+      "text": "踢皮球踢来踢去没人管",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 236,
+      "text": "你是机器人吗",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 237,
+      "text": "库存还有吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 238,
+      "text": "能删除我的所有数据吗",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 239,
+      "text": "用了半年就出问题了",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 240,
+      "text": "为什么物流一直在一个地方不动了",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 241,
+      "text": "你是真人吗",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 242,
+      "text": "退货要多久才能处理完",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 243,
+      "text": "显示运输中还要多久",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 244,
+      "text": "卖假货我要投诉",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 245,
+      "text": "支付安全吗你们",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 246,
+      "text": "账号登录显示有安全风险",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 247,
+      "text": "支付后多久到账",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 248,
+      "text": "我忘记密码了怎么办",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 249,
+      "text": "能不能对公转账",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 250,
+      "text": "周末能配送吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 251,
+      "text": "噪音越来越大了",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 252,
+      "text": "积分能当钱用吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 253,
+      "text": "生日会员有特殊权益吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 254,
+      "text": "合并两个订单发货可以吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 255,
+      "text": "我想申请退款",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 256,
+      "text": "有没有免息分期",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 257,
+      "text": "积分商城在哪",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 258,
+      "text": "什么时候上班",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 259,
+      "text": "申请退货审核要多久",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 260,
+      "text": "可以自己修吗会不会影响保修",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 261,
+      "text": "货什么时候可以收到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 262,
+      "text": "秒杀没抢到怎么办",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 263,
+      "text": "给我转接投诉部门",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 264,
+      "text": "能试用吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 265,
+      "text": "为什么物流三天都没动",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 266,
+      "text": "之前的订单能补开发票吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 267,
+      "text": "退款需要什么条件",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 268,
+      "text": "最低多少钱",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 269,
+      "text": "能送到村里吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 270,
+      "text": "这个还在保修期内吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 271,
+      "text": "OK",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 272,
+      "text": "可以水洗吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 273,
+      "text": "清仓活动是真的便宜吗",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 274,
+      "text": "半天就能到吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 275,
+      "text": "退货审核怎么这么慢",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 276,
+      "text": "被扣了双倍的钱",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 277,
+      "text": "麻烦把钱退给我",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 278,
+      "text": "可以送到酒店吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 279,
+      "text": "这个最低能卖多少",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 280,
+      "text": "发票的税率不对",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 281,
+      "text": "购物返多少积分",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 282,
+      "text": "发热严重是正常的吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 283,
+      "text": "没问题",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 284,
+      "text": "充电口松了怎么办",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 285,
+      "text": "个人资料怎么完善",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 286,
+      "text": "信用卡分期利息多少",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 287,
+      "text": "付了钱但下单失败钱退哪",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 288,
+      "text": "有人在吗",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 289,
+      "text": "超级品牌日有什么优惠",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 290,
+      "text": "反馈了好多次没用",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 291,
+      "text": "这也叫客服吗",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 292,
+      "text": "黑五和双十二哪个力度大",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 293,
+      "text": "发了还能不能改地址啊",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 294,
+      "text": "申请退款了什么时候能处理",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 295,
+      "text": "首单有折扣吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 296,
+      "text": "外壳裂了能修吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 297,
+      "text": "这质量也太差了吧",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 298,
+      "text": "大促的时候会降价吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 299,
+      "text": "用花呗付不了",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 300,
+      "text": "地址可以改成公司地址吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 301,
+      "text": "退货退到付还是到付",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 302,
+      "text": "帮我建一个维修工单",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 303,
+      "text": "活动商品可以退换吗",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 304,
+      "text": "换一个同款新的行吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 305,
+      "text": "可以开机验货吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 306,
+      "text": "我想问一下",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 307,
+      "text": "推荐好友有奖励吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 308,
+      "text": "订单已经完成了能退款吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 309,
+      "text": "续费会员有折扣吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 310,
+      "text": "开封了还能退吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 311,
+      "text": "转人工",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 312,
+      "text": "我的东西发货了吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 313,
+      "text": "好的谢谢",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 314,
+      "text": "可以换新不修了吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 315,
+      "text": "有什么推荐吗",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 316,
+      "text": "单号是多少啊我要查快递",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 317,
+      "text": "售后电话是多少",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 318,
+      "text": "我想把配送方式改一下",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 319,
+      "text": "收到了不满意想退",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 320,
+      "text": "会员有什么权益",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 321,
+      "text": "续航怎么样",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 322,
+      "text": "快递什么时候能送到啊急用",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 323,
+      "text": "这个在保修范围内吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 324,
+      "text": "付了两笔只想买一笔怎么办",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 325,
+      "text": "赠品活动还有效吗",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 326,
+      "text": "我的退款进度到哪了",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 327,
+      "text": "减完之后多少钱",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 328,
+      "text": "会员等级会降吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 329,
+      "text": "新用户有优惠吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 330,
+      "text": "为啥还不发货",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 331,
+      "text": "能开培训费发票吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 332,
+      "text": "我逛逛",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 333,
+      "text": "多买几件能打折吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 334,
+      "text": "账号和密码都忘了",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 335,
+      "text": "第二件半价怎么算",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 336,
+      "text": "有没有大码的",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 337,
+      "text": "随便看看",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 338,
+      "text": "材质是不是纯棉的",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 339,
+      "text": "这个快递太慢了催一下",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 340,
+      "text": "同城当天能到吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 341,
+      "text": "物流有异常怎么办",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 342,
+      "text": "红包雨什么时候下",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 343,
+      "text": "注册一直失败",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 344,
+      "text": "优惠力度大不大",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 345,
+      "text": "物流不更新正常吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 346,
+      "text": "下次再来",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 347,
+      "text": "删掉一件把钱退我",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 348,
+      "text": "今天天气不错",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 349,
+      "text": "快递是顺丰还是中通",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 350,
+      "text": "能不能催快递快一点",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 351,
+      "text": "为什么退款金额少了",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 352,
+      "text": "有无新人专享价",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 353,
+      "text": "你们有定时达服务吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 354,
+      "text": "帮我把两件改成三件",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 355,
+      "text": "产地是哪里",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 356,
+      "text": "偏远地区运费多少",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 357,
+      "text": "已经申请退款了为什么还没退",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 358,
+      "text": "以旧换新怎么参加",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 359,
+      "text": "质保期多长",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 360,
+      "text": "仅退款可以吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 361,
+      "text": "我那个订单物流看一下",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 362,
+      "text": "拆了吊牌还能退吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 363,
+      "text": "你们的质检是摆设吗",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 364,
+      "text": "东西有质量问题我要退",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 365,
+      "text": "订单超时了钱退了吗",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 366,
+      "text": "抽奖概率是多少",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 367,
+      "text": "透气性好不好",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 368,
+      "text": "我要找你们经理",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 369,
+      "text": "帮忙催一下退款",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 370,
+      "text": "尾款什么时候付",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 371,
+      "text": "抽奖活动怎么参加",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 372,
+      "text": "回头再说",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 373,
+      "text": "这款鞋底硬不硬",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 374,
+      "text": "一张订单能分开开发票吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 375,
+      "text": "这种问题出现了好几次了",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 376,
+      "text": "能多送点东西吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 377,
+      "text": "我要人工客服不要机器人",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 378,
+      "text": "账号被限制了什么意思",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 379,
+      "text": "这次活动最大优惠多少",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 380,
+      "text": "快递今天能到吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 381,
+      "text": "我要退款怎么操作",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 382,
+      "text": "退款退到哪张卡上",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 383,
+      "text": "今天有秒杀吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 384,
+      "text": "连续签到送积分吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 385,
+      "text": "增值税率是多少",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 386,
+      "text": "二维码扫不出来",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 387,
+      "text": "能接受预定吗现在没货",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 388,
+      "text": "怎么查我的会员等级",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 389,
+      "text": "退款要扣多少手续费",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 390,
+      "text": "帮改一下规格从A改到B",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 391,
+      "text": "配送时效怎么算",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 392,
+      "text": "手机号改一下可以吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 393,
+      "text": "积分可以转让吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 394,
+      "text": "跨店满减怎么算",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 395,
+      "text": "有没有更大尺寸的",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 396,
+      "text": "你们价格比别家贵啊",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 397,
+      "text": "会员权益页面在哪里",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 398,
+      "text": "我的包裹今天应该到了吧",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 399,
+      "text": "这个热量高吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 400,
+      "text": "这款跟那款有什么区别",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 401,
+      "text": "怎么切换银行卡付款",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 402,
+      "text": "配件坏了怎么换",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 403,
+      "text": "等了一个小时都没人理我",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 404,
+      "text": "把S码改成M码",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 405,
+      "text": "退货快递单号我给你",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 406,
+      "text": "请帮我追踪一下包裹",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 407,
+      "text": "客服工作时间是几点到几点",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 408,
+      "text": "这个活动怎么参加",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 409,
+      "text": "你们的投诉电话是多少",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 410,
+      "text": "支持自提吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 411,
+      "text": "退款审核要多久",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 412,
+      "text": "上次就出过问题这次又来",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 413,
+      "text": "赔偿方案不接受",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 414,
+      "text": "我的会员什么时候到期",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 415,
+      "text": "退差价可以吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 416,
+      "text": "支付完没有订单号",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 417,
+      "text": "这个退换货政策怎么样",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 418,
+      "text": "为什么我的快递不动了",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 419,
+      "text": "保修范围包括什么",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 420,
+      "text": "怎么升级会员等级",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 421,
+      "text": "显示已发货但是没有物流信息",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 422,
+      "text": "免运费需要满多少",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 423,
+      "text": "退到银行卡要几天",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 424,
+      "text": "我想跟真人说话",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 425,
+      "text": "付款页面打不开",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 426,
+      "text": "可以价格保护吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 427,
+      "text": "这个适合油性皮肤用吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 428,
+      "text": "我等了十天了还没到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 429,
+      "text": "帮我退款吧",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 430,
+      "text": "适合什么肤质",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 431,
+      "text": "银行卡支付提示错误",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 432,
+      "text": "能改配送方式吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 433,
+      "text": "收到破损商品要换新的",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 434,
+      "text": "能配什么配件",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 435,
+      "text": "退货有次数限制吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 436,
+      "text": "大件怎么配送",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 437,
+      "text": "这个防水吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 438,
+      "text": "开机后黑屏了",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 439,
+      "text": "付完款页面报错了",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 440,
+      "text": "尾款什么时候可以付",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 441,
+      "text": "拼团付款失败了怎么重新付",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 442,
+      "text": "收货地址变了能改吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 443,
+      "text": "物流信息怎么一直没更新",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 444,
+      "text": "怎么查支付状态",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 445,
+      "text": "活动可以叠加优惠券吗",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 446,
+      "text": "能不能指定快递公司",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 447,
+      "text": "地址写错了怎么改",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 448,
+      "text": "你们严重影响了我的生活",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 449,
+      "text": "帮我转接人工客服",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 450,
+      "text": "我刚才说的你听懂了吗",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 451,
+      "text": "密码不对但我没改过",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 452,
+      "text": "做工太粗糙了",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 453,
+      "text": "怎么查看授权的应用",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 454,
+      "text": "实付多少钱啊",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 455,
+      "text": "算了不要了",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 456,
+      "text": "适合冬天穿吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 457,
+      "text": "我还有个问题",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 458,
+      "text": "能帮我把备注改成放门口吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 459,
+      "text": "岛屿能配送吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 460,
+      "text": "保修卡丢了还能保修吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 461,
+      "text": "退款理由怎么写",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 462,
+      "text": "我想追加一个商品",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 463,
+      "text": "帮忙催一下发货好吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 464,
+      "text": "发票金额能开大一点吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 465,
+      "text": "保修多久",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 466,
+      "text": "快递被退回了怎么办",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 467,
+      "text": "可以开公司抬头的发票吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 468,
+      "text": "试用会员和正式会员区别",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 469,
+      "text": "有没有内部价",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 470,
+      "text": "有学生优惠吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 471,
+      "text": "无人机配送有吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 472,
+      "text": "帮忙修改下这个订单吧",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 473,
+      "text": "屏幕碎了换个屏多少钱",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 474,
+      "text": "我想换个颜色可以吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 475,
+      "text": "是不是过两天会降价",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 476,
+      "text": "买完之后降价怎么办",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 477,
+      "text": "发货都一周了还没到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 478,
+      "text": "都三天了退款还没到账",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 479,
+      "text": "你们有会员折扣吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 480,
+      "text": "版型是修身还是宽松的",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 481,
+      "text": "快递显示签收了不是我签的",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 482,
+      "text": "一个手机号能注册几个账号",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 483,
+      "text": "包裹有物流轨迹了吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 484,
+      "text": "送错地方了怎么办",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 485,
+      "text": "我要退货",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 486,
+      "text": "连个道歉都没有吗",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 487,
+      "text": "发票抬头怎么写",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 488,
+      "text": "退货商品寄到哪",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 489,
+      "text": "这个是新款吗什么时候出的",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 490,
+      "text": "能不能直接换个新的给我",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 491,
+      "text": "可以放到快递柜吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 492,
+      "text": "请问保质期到什么时候",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 493,
+      "text": "退款打到原来的账户吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 494,
+      "text": "账号被盗了怎么办",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 495,
+      "text": "已经注册了但提示没有注册",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 496,
+      "text": "耐磨吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 497,
+      "text": "修了还是有问题怎么办",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 498,
+      "text": "帮我改一下手机号",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 499,
+      "text": "这个月底之前能收到吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 500,
+      "text": "我要查一个订单的物流",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 501,
+      "text": "是全新的还是翻新的",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 502,
+      "text": "有没有什么活动可以参加",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 503,
+      "text": "生产日期是什么时候",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 504,
+      "text": "买三件打几折",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 505,
+      "text": "帮我催一下快递可以吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 506,
+      "text": "怎么申请发票",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 507,
+      "text": "退货商品已经寄出了",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 508,
+      "text": "颜色实物跟图片一样吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 509,
+      "text": "可以去线下维修点吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 510,
+      "text": "能改一下备注信息吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 511,
+      "text": "用了一天坏了能退吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 512,
+      "text": "有没有使用说明书",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 513,
+      "text": "发票什么时候寄",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 514,
+      "text": "缝线都开了这叫质量好？",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 515,
+      "text": "膨胀金是什么意思",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 516,
+      "text": "处理速度太慢了忍无可忍",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 517,
+      "text": "我选错规格了能改吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 518,
+      "text": "这个支持什么系统",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 519,
+      "text": "你们发的什么快递",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 520,
+      "text": "砍价活动是真的吗",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 521,
+      "text": "支付渠道有哪些",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 522,
+      "text": "屏幕有亮点算质量问题吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 523,
+      "text": "积分不够兑换怎么办",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 524,
+      "text": "余额付款怎么操作",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 525,
+      "text": "想改成另一个颜色",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 526,
+      "text": "这个跟XX品牌比怎么样",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 527,
+      "text": "生鲜配送用什么包装",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 528,
+      "text": "发票报销单位不认怎么办",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 529,
+      "text": "有没有限时特价",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 530,
+      "text": "账号被冻结了",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 531,
+      "text": "包裹怎么还没到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 532,
+      "text": "VIP价多少",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 533,
+      "text": "白条可以用吗",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 534,
+      "text": "帮我取消掉其中一件",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 535,
+      "text": "地址的楼栋号写错了",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 536,
+      "text": "手机丢了怎么保护账号",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 537,
+      "text": "这东西耐用吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 538,
+      "text": "快递运到哪里了",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 539,
+      "text": "有没有寄出去啊",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 540,
+      "text": "明白了",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 541,
+      "text": "能帮我把地址改成XX吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 542,
+      "text": "付了两次款帮我退一次",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 543,
+      "text": "定金可以退吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 544,
+      "text": "我订单的快递单号多少",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 545,
+      "text": "你能听懂中文吗",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 546,
+      "text": "怎么绑定邮箱",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 547,
+      "text": "积分兑换比例是多少",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 548,
+      "text": "怎么取消会员自动续费",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 549,
+      "text": "东西还在路上吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 550,
+      "text": "款什么时候退给我",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 551,
+      "text": "VIP会员有什么特权",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 552,
+      "text": "夏天怕化有冰袋吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 553,
+      "text": "订单取消了但是钱没退",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 554,
+      "text": "有没有赠品",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 555,
+      "text": "帮我看看这个订单发货没",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 556,
+      "text": "你好帮我看看快递信息",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 557,
+      "text": "盲盒活动规则是什么",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 558,
+      "text": "个人发票和公司发票有区别吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 559,
+      "text": "快递有没有在派送",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 560,
+      "text": "什么时候打折",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 561,
+      "text": "红包怎么用",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 562,
+      "text": "不错不错",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 563,
+      "text": "再这样我就去消协了",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 564,
+      "text": "积分在哪查",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 565,
+      "text": "我要换绑手机号",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 566,
+      "text": "这件衣服尺码不合适能换一件吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 567,
+      "text": "分期手续费多少",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 568,
+      "text": "平台介入退款要多久",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 569,
+      "text": "怎么修改绑定的手机号",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 570,
+      "text": "退货快递费我先垫的吧",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 571,
+      "text": "大件搬上楼要额外费用吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 572,
+      "text": "以换代修可以吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 573,
+      "text": "还能加东西到这个订单里吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 574,
+      "text": "收件人名字写错了能改吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 575,
+      "text": "物流信息更新好慢",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 576,
+      "text": "能退全款吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 577,
+      "text": "可以定制吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 578,
+      "text": "兼容苹果设备吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 579,
+      "text": "外币支付可以吗",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 580,
+      "text": "你们产品有安全隐患",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 581,
+      "text": "客服不专业什么都不懂",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 582,
+      "text": "消费券可以抵扣吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 583,
+      "text": "退运费吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 584,
+      "text": "我想加一件可以吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 585,
+      "text": "退回去用什么快递",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 586,
+      "text": "送到付可以吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 587,
+      "text": "再见",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 588,
+      "text": "请问这个有认证吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 589,
+      "text": "承诺了不兑现算什么",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 590,
+      "text": "企业会员有吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 591,
+      "text": "你们送到海外吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 592,
+      "text": "付款卡住了怎么回事",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 593,
+      "text": "预付款怎么付",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 594,
+      "text": "退款成功了但是钱没到",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 595,
+      "text": "我的快递还要几天到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 596,
+      "text": "同样东西为啥价格不一样",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 597,
+      "text": "保修期是多久",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 598,
+      "text": "维修完了还保修吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 599,
+      "text": "活动名额满了怎么办",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 600,
+      "text": "这个活动还剩几天",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 601,
+      "text": "包裹什么时候能到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 602,
+      "text": "怎么提供开票资料",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 603,
+      "text": "退货积分退不退",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 604,
+      "text": "试试看",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 605,
+      "text": "换货有运费吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 606,
+      "text": "登录需要人脸识别过不了",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 607,
+      "text": "这款适合新手用吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 608,
+      "text": "退了货钱什么时候到账",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 609,
+      "text": "同样的问题修了两次了",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 610,
+      "text": "你好",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 611,
+      "text": "帮查下快递到了没",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 612,
+      "text": "为什么扣了两次钱",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 613,
+      "text": "能开增值税专用发票吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 614,
+      "text": "商品外包装压坏了能退不",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 615,
+      "text": "银牌升金牌还差多少",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 616,
+      "text": "可以用邮箱登录吗",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 617,
+      "text": "下一次大促什么时候",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 618,
+      "text": "快递已经发了还能改地址吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 619,
+      "text": "行",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 620,
+      "text": "刚过保修期能通融吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 621,
+      "text": "退款可以退到微信吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 622,
+      "text": "限时秒杀是什么时间",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 623,
+      "text": "直播间的优惠怎么领",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 624,
+      "text": "过了7天还能退款吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 625,
+      "text": "自动关机是什么问题",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 626,
+      "text": "能便宜点吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 627,
+      "text": "没发货前能改东西吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 628,
+      "text": "帮我把这个订单改到另一个地址",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 629,
+      "text": "帮我修改一下收件信息",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 630,
+      "text": "请问能开通自动扣费吗",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 631,
+      "text": "我选错了退款原因怎么改",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 632,
+      "text": "改个地址客服帮忙弄一下",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 633,
+      "text": "红冲发票怎么操作",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 634,
+      "text": "发票能开明细吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 635,
+      "text": "耗电量大吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 636,
+      "text": "手机号换了怎么登录",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 637,
+      "text": "你们送到新疆吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 638,
+      "text": "请问退款多久到账",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 639,
+      "text": "退货商家拒收了咋办",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 640,
+      "text": "赠品能换成折扣吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 641,
+      "text": "退款原因选什么",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 642,
+      "text": "怎么查我的快递单号",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 643,
+      "text": "配送上门需要预约吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 644,
+      "text": "没事了",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 645,
+      "text": "显示器闪屏怎么处理",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 646,
+      "text": "东西寄出来了吗亲",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 647,
+      "text": "有没有上门维修服务",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 648,
+      "text": "怎么领优惠券",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 649,
+      "text": "为什么一直显示揽收",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 650,
+      "text": "这个故障保不保修",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 651,
+      "text": "再不处理我就打12315了",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 652,
+      "text": "我明明付了钱为什么还显示待付款",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 653,
+      "text": "怎么确认支付成功",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 654,
+      "text": "存储空间够不够用",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 655,
+      "text": "付款的时候闪退了",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 656,
+      "text": "这个需要自己组装吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 657,
+      "text": "我想改一下收货地址",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 658,
+      "text": "怎么申请延长保修",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 659,
+      "text": "会员可以免运费吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 660,
+      "text": "双十一会打折吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 661,
+      "text": "我要修改订单收货人",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 662,
+      "text": "这个有几种规格",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 663,
+      "text": "公司账户能付吗",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 664,
+      "text": "东西发出来了没有",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 665,
+      "text": "评价好多差评是真的吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 666,
+      "text": "大促期间配送会慢吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 667,
+      "text": "订单发出几天了",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 668,
+      "text": "买两件有优惠吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 669,
+      "text": "尺码表有吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 670,
+      "text": "这个型号是最新的吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 671,
+      "text": "到底能不能解决",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 672,
+      "text": "密保问题忘了怎么办",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 673,
+      "text": "能再给打个折吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 674,
+      "text": "能退到支付宝吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 675,
+      "text": "成分表麻烦发一下",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 676,
+      "text": "卖家不同意退款咋办",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 677,
+      "text": "说明书是中文的吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 678,
+      "text": "怎么解绑微信登录",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 679,
+      "text": "跨店满减算进去吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 680,
+      "text": "你们这个跟官网的一样吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 681,
+      "text": "账单不对啊",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 682,
+      "text": "不用了谢谢",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 683,
+      "text": "适合多大的小孩用",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 684,
+      "text": "我会在网上曝光这件事",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 685,
+      "text": "能改成送到单位吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 686,
+      "text": "不想要了退款给我",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 687,
+      "text": "物流显示正在派送了吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 688,
+      "text": "大批量采购有折扣吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 689,
+      "text": "有包邮吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 690,
+      "text": "能约晚上送吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 691,
+      "text": "买一送一还有吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 692,
+      "text": "把收件人改成我妈的名字",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 693,
+      "text": "运费能开发票吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 694,
+      "text": "我想增加一个备注",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 695,
+      "text": "退货运费险怎么用",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 696,
+      "text": "配送员态度很差投诉",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 697,
+      "text": "这个保质期多久",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 698,
+      "text": "怎么退款退的这么慢",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 699,
+      "text": "尺寸多大",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 700,
+      "text": "申请退款流程是什么",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 701,
+      "text": "麻烦帮我看看快递走到哪了",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 702,
+      "text": "换货需要补差价吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 703,
+      "text": "我要写差评让大家都知道",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 704,
+      "text": "冷藏商品怎么配送",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 705,
+      "text": "能帮我修改订单吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 706,
+      "text": "适合送礼吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 707,
+      "text": "开票要提供哪些信息",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 708,
+      "text": "这个体验太糟糕了",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 709,
+      "text": "登录不了怎么回事",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 710,
+      "text": "可以改成另一个自提点吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 711,
+      "text": "手机号不用了怎么改绑",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 712,
+      "text": "这批货走的什么物流",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 713,
+      "text": "活动期间退货影响满减吗",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 714,
+      "text": "人为损坏保修吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 715,
+      "text": "税号填哪一个",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 716,
+      "text": "维修需要带什么凭证",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 717,
+      "text": "可以只换不退吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 718,
+      "text": "支付环节出错了怎么重新付",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 719,
+      "text": "我想要退款不要代金券",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 720,
+      "text": "这个有味道吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 721,
+      "text": "知道了",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 722,
+      "text": "支付提示风险是什么意思",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 723,
+      "text": "质量怎么样",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 724,
+      "text": "充值返现有吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 725,
+      "text": "老客户有优惠不",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 726,
+      "text": "退货物流信息怎么填",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 727,
+      "text": "售后维修地址在哪",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 728,
+      "text": "手机上付不了电脑可以吗",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 729,
+      "text": "退货需要带上赠品吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 730,
+      "text": "稍等我想想",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 731,
+      "text": "鞋子小了一码能换吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 732,
+      "text": "我觉得不值这个价想退款",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 733,
+      "text": "签到领券在哪签",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 734,
+      "text": "寄回维修运费谁承担",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 735,
+      "text": "维修周期太长了",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 736,
+      "text": "预付定金能退不",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 737,
+      "text": "我确认收货了还能退款吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 738,
+      "text": "查下物流到哪了谢谢",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 739,
+      "text": "使用痕迹明显还能退吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 740,
+      "text": "要求商家赔偿",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 741,
+      "text": "退货要寄回去吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 742,
+      "text": "运行内存多大",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 743,
+      "text": "付错金额了怎么办",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 744,
+      "text": "我不要了直接退钱行不行",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 745,
+      "text": "这个能用几年",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 746,
+      "text": "你叫什么名字",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 747,
+      "text": "商家不同意退货怎么办",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 748,
+      "text": "退货要提供什么凭证",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 749,
+      "text": "订金和尾款分开付吗",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 750,
+      "text": "容量够一家人用吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 751,
+      "text": "支付时需要验证码收不到",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 752,
+      "text": "订单改不了怎么办",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 753,
+      "text": "积分怎么兑换",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 754,
+      "text": "我想改送货时间",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 755,
+      "text": "黄金会员和铂金会员差距大吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 756,
+      "text": "过期产品也敢卖",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 757,
+      "text": "发票要多久才能收到",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 758,
+      "text": "退货地址发我一下",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 759,
+      "text": "配件少了能换个完整的吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 760,
+      "text": "改一下送达时间可以吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 761,
+      "text": "发票上能不能写具体商品名",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 762,
+      "text": "170cm穿什么码合适",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 763,
+      "text": "到手价多少",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 764,
+      "text": "退货运费谁出",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 765,
+      "text": "花呗额度不够怎么办",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 766,
+      "text": "别人能看到我的信息吗",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 767,
+      "text": "修好了会通知我吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 768,
+      "text": "怎么查看我的个人信息",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 769,
+      "text": "我的东西今天能送到不",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 770,
+      "text": "退款需要多长时间",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 771,
+      "text": "我的钱扣了但你们没收到",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 772,
+      "text": "保修要提供购买凭证吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 773,
+      "text": "可以先付一半吗",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 774,
+      "text": "已经第七天了还没收到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 775,
+      "text": "工作日白天没人能改时间吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 776,
+      "text": "我想取消订单退款",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 777,
+      "text": "面料会不会起球",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 778,
+      "text": "价格能给个最大折扣吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 779,
+      "text": "就这样吧谢谢",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 780,
+      "text": "重量是多少",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 781,
+      "text": "付款的时候一直失败怎么办",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 782,
+      "text": "还有别的优惠吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 783,
+      "text": "涨价了吧之前不是这个价",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 784,
+      "text": "价格还能再低吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 785,
+      "text": "是真皮的吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 786,
+      "text": "退换货地址是哪里",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 787,
+      "text": "发了几天了怎么还在揽收",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 788,
+      "text": "我的退款怎么这么慢",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 789,
+      "text": "收到的东西跟图片不一样要退货",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 790,
+      "text": "退货快递上门取件怎么约",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 791,
+      "text": "有没有检测报告",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 792,
+      "text": "我想换个颜色下单",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 793,
+      "text": "有没有极速达服务",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 794,
+      "text": "商品有瑕疵我想退",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 795,
+      "text": "订单里有一件不要了能删掉吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 796,
+      "text": "信息能改成别的名字吗",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 797,
+      "text": "我要一个合理的解释",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 798,
+      "text": "收货人电话打不通要换个号",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 799,
+      "text": "你们有付费会员吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 800,
+      "text": "扣款了但是显示未支付",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 801,
+      "text": "开通会员送什么",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 802,
+      "text": "怎么退出登录",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 803,
+      "text": "你们一般几天能到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 804,
+      "text": "拜拜",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 805,
+      "text": "凑单满减怎么算",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 806,
+      "text": "我非常不满意你们的服务",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 807,
+      "text": "有人在异地登录我的账号",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 808,
+      "text": "电池容量多大",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 809,
+      "text": "要减少一件数量",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 810,
+      "text": "支付宝余额不足怎么混合付",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 811,
+      "text": "微信支付扫码没反应",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 812,
+      "text": "这个要怎么安装",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 813,
+      "text": "乡镇地区送不送",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 814,
+      "text": "电梯上不去怎么送",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 815,
+      "text": "付款限额是多少",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 816,
+      "text": "怎么选自提点",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 817,
+      "text": "能退钱吗",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 818,
+      "text": "快递丢了怎么办",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 819,
+      "text": "退款退不了什么原因",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 820,
+      "text": "618活动力度大吗",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 821,
+      "text": "修改地址后什么时候生效",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 822,
+      "text": "预售价和现价哪个低",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 823,
+      "text": "开发票要加税点吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 824,
+      "text": "定金可以退吗",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 825,
+      "text": "退换货的期限是多久",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 826,
+      "text": "你们太让人失望了",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 827,
+      "text": "银行卡限额了付不了",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 828,
+      "text": "苹果支付可以用吗",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 829,
+      "text": "发票信息能改吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 830,
+      "text": "有没有冷链配送",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 831,
+      "text": "发票邮箱怎么设置",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 832,
+      "text": "维修费用多少",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 833,
+      "text": "含酒精吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 834,
+      "text": "买错了可以换吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 835,
+      "text": "别家同款才XX元",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 836,
+      "text": "这个订单发货了没",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 837,
+      "text": "拼团成功后多久发货",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 838,
+      "text": "能开定额发票吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 839,
+      "text": "这个机器声音大不大",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 840,
+      "text": "这个可以退货吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 841,
+      "text": "漏水你们管不管",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 842,
+      "text": "你这回复是机器人吧",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 843,
+      "text": "配送到什么阶段了",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 844,
+      "text": "电子发票在哪下载",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 845,
+      "text": "可以货到付款吗",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 846,
+      "text": "这个零件能单独买吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 847,
+      "text": "按键失灵了",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 848,
+      "text": "预售和现货哪个便宜",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 849,
+      "text": "能改一下用户名吗",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 850,
+      "text": "你们支持送货上门安装吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 851,
+      "text": "能送个赠品吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 852,
+      "text": "你们有维修网点吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 853,
+      "text": "维修要先付钱吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 854,
+      "text": "付款之后订单多久确认",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 855,
+      "text": "退款要几个工作日",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 856,
+      "text": "把钱退回来谢谢",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 857,
+      "text": "包裹在路上了吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 858,
+      "text": "配送途中可以改地址吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 859,
+      "text": "我填好退货信息了下一步怎么做",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 860,
+      "text": "怎么用微信支付",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 861,
+      "text": "把数量从2改成1",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 862,
+      "text": "会员积分有效期多久",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 863,
+      "text": "这个含糖量高吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 864,
+      "text": "商品还没发我先退款",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 865,
+      "text": "发票打印出来不清楚",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 866,
+      "text": "快递被退回了是怎么回事",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 867,
+      "text": "怎么修改密码",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 868,
+      "text": "质保卡怎么激活",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 869,
+      "text": "你们有夜间配送吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 870,
+      "text": "有人工客服吗",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 871,
+      "text": "这个组合装比单买便宜多少",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 872,
+      "text": "订单显示已签收但我没收到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 873,
+      "text": "这个手机支持5G吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 874,
+      "text": "你们的态度让我很生气",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 875,
+      "text": "凑单可以退一件吗",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 876,
+      "text": "这个有没有折扣价",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 877,
+      "text": "我等了好久快递还没来",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 878,
+      "text": "退货怎么寄回去",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 879,
+      "text": "麻烦帮忙查一下我订单的快递到哪里了好吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 880,
+      "text": "你好我想查物流",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 881,
+      "text": "晚上还有人值班吗",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 882,
+      "text": "有没有团购价",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 883,
+      "text": "快递几天了还没到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 884,
+      "text": "怎么联系售后",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 885,
+      "text": "有没有配件单卖",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 886,
+      "text": "想把自提改成送货上门",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 887,
+      "text": "嗯嗯",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 888,
+      "text": "你们配送范围有多大",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 889,
+      "text": "太好了",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 890,
+      "text": "帮我看下退款什么时候到",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 891,
+      "text": "优惠券怎么不能用了",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 892,
+      "text": "会员可以退吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 893,
+      "text": "退款退到哪个账户",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 894,
+      "text": "预计明天能收到吗",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 895,
+      "text": "上门取件方便吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 896,
+      "text": "我改主意了想退款",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 897,
+      "text": "请问一下",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 898,
+      "text": "你怎么这么聪明",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 899,
+      "text": "谢谢你",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 900,
+      "text": "密码长度有要求吗",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 901,
+      "text": "有没有礼盒装",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 902,
+      "text": "注册需要什么信息",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 903,
+      "text": "有没有备用机可以借",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 904,
+      "text": "有没有其他口味",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 905,
+      "text": "折扣叠加吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 906,
+      "text": "容易褪色吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 907,
+      "text": "已经五天了还没收到货",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 908,
+      "text": "今天下单有什么优惠",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 909,
+      "text": "怎么成为会员",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 910,
+      "text": "退货单号怎么填",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 911,
+      "text": "衣服太大了能换小一号吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 912,
+      "text": "客服态度很差",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 913,
+      "text": "跨境支付手续费多少",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 914,
+      "text": "我已经退货了什么时候退钱",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 915,
+      "text": "想把两个颜色换一下",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 916,
+      "text": "不太确定",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 917,
+      "text": "邮编填错了影响发货吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 918,
+      "text": "跟描述不符我要退",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 919,
+      "text": "活动什么时候结束",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 920,
+      "text": "赶紧给我退钱",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 921,
+      "text": "怎么办理退货",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 922,
+      "text": "怎么关闭推送通知",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 923,
+      "text": "积分清零前会提醒吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 924,
+      "text": "广告和实物差距太大了",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 925,
+      "text": "有什么限制吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 926,
+      "text": "会员生日有双倍积分吗",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 927,
+      "text": "有没有安装服务",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 928,
+      "text": "换零件原装的吗",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 929,
+      "text": "我退款好几天了还没处理",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 930,
+      "text": "无聊来逛逛",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 931,
+      "text": "几天了都没有物流更新",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 932,
+      "text": "忘记账号了怎么找回",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 933,
+      "text": "这个牌子靠谱吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 934,
+      "text": "你们几点下班",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 935,
+      "text": "集卡活动怎么玩",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 936,
+      "text": "分期怎么操作",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 937,
+      "text": "降价了可以补差价吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 938,
+      "text": "开的什么类型的发票",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 939,
+      "text": "改下尺码谢谢",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 940,
+      "text": "你们这是什么服务水平",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 941,
+      "text": "验证码老是发不到我手机",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 942,
+      "text": "物流卡在一个地方好几天了",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 943,
+      "text": "hi",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 944,
+      "text": "这个能带上飞机吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 945,
+      "text": "我快递签收了但是没有收到东西",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 946,
+      "text": "积分能兑换什么",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 947,
+      "text": "优惠券过期了能延期吗",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 948,
+      "text": "发票开了还能退吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 949,
+      "text": "军营能送到吗",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 950,
+      "text": "是正品吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 951,
+      "text": "积分能抵扣多少钱",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 952,
+      "text": "为什么显示已送达我没收到",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 953,
+      "text": "支付不了什么原因",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 954,
+      "text": "活动价格保护几天",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 955,
+      "text": "假一赔十你们赔不赔",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 956,
+      "text": "怎么只退了一部分钱",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 957,
+      "text": "提示密码错误次数过多怎么解锁",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 958,
+      "text": "有没有加急配送",
+      "intent": "delivery_service",
+      "intent_id": 13,
+      "intent_cn": "配送服务"
+    },
+    {
+      "id": 959,
+      "text": "请问订单还能修改吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 960,
+      "text": "快递小哥什么时候来送",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 961,
+      "text": "满199减20怎么凑",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 962,
+      "text": "你们有没有监管的",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 963,
+      "text": "退货需要保持包装完好吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 964,
+      "text": "买了三个月屏幕就坏了怎么保修",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 965,
+      "text": "订单改了地址物流会变吗",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 966,
+      "text": "怎么这么久还没发货",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 967,
+      "text": "能不能把尺码改成L",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 968,
+      "text": "怎么获取更多积分",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 969,
+      "text": "能用多久啊",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 970,
+      "text": "商家不给退款怎么办",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 971,
+      "text": "材质环保吗",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 972,
+      "text": "噪音大不大",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 973,
+      "text": "还没发货赶紧帮我改地址",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 974,
+      "text": "这个是国行还是海外版",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 975,
+      "text": "纸质发票还是电子发票",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 976,
+      "text": "有没有组装视频",
+      "intent": "product_inquiry",
+      "intent_id": 4,
+      "intent_cn": "商品咨询"
+    },
+    {
+      "id": 977,
+      "text": "能开发票吗",
+      "intent": "invoice",
+      "intent_id": 11,
+      "intent_cn": "发票相关"
+    },
+    {
+      "id": 978,
+      "text": "商品跟描述完全不一样骗人",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 979,
+      "text": "实名认证怎么操作",
+      "intent": "account_issue",
+      "intent_id": 8,
+      "intent_cn": "账户问题"
+    },
+    {
+      "id": 980,
+      "text": "钱退到哪里去了我没收到",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 981,
+      "text": "洗过了还能退吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 982,
+      "text": "摔了一下不开机了",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 983,
+      "text": "优惠券在哪领",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 984,
+      "text": "寄回去了帮我看一下",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 985,
+      "text": "支付成功了但是订单没生成",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 986,
+      "text": "运费多少",
+      "intent": "price_promotion",
+      "intent_id": 5,
+      "intent_cn": "价格优惠"
+    },
+    {
+      "id": 987,
+      "text": "回复速度太慢了",
+      "intent": "complaint",
+      "intent_id": 9,
+      "intent_cn": "投诉建议"
+    },
+    {
+      "id": 988,
+      "text": "预售什么时候开始",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 989,
+      "text": "过了7天还能退货吗",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 990,
+      "text": "马达不转了怎么修",
+      "intent": "after_sales_repair",
+      "intent_id": 10,
+      "intent_cn": "售后维修"
+    },
+    {
+      "id": 991,
+      "text": "退了货物流显示已签收了怎么还没退款",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    },
+    {
+      "id": 992,
+      "text": "会员能享受几折优惠",
+      "intent": "membership",
+      "intent_id": 12,
+      "intent_cn": "会员权益"
+    },
+    {
+      "id": 993,
+      "text": "这钱怎么退回来",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 994,
+      "text": "能换个支付方式吗",
+      "intent": "payment_issue",
+      "intent_id": 7,
+      "intent_cn": "支付问题"
+    },
+    {
+      "id": 995,
+      "text": "我搬家了地址要改",
+      "intent": "order_modification",
+      "intent_id": 6,
+      "intent_cn": "订单修改"
+    },
+    {
+      "id": 996,
+      "text": "可以直接退款吗不退货",
+      "intent": "refund_request",
+      "intent_id": 2,
+      "intent_cn": "退款申请"
+    },
+    {
+      "id": 997,
+      "text": "满赠活动的赠品是什么",
+      "intent": "campaign_rules",
+      "intent_id": 14,
+      "intent_cn": "活动规则"
+    },
+    {
+      "id": 998,
+      "text": "帮我查一下物流",
+      "intent": "logistics_query",
+      "intent_id": 1,
+      "intent_cn": "物流查询"
+    },
+    {
+      "id": 999,
+      "text": "在吗",
+      "intent": "chitchat_other",
+      "intent_id": 15,
+      "intent_cn": "闲聊其他"
+    },
+    {
+      "id": 1000,
+      "text": "换小一码帮我下单",
+      "intent": "return_exchange",
+      "intent_id": 3,
+      "intent_cn": "退换货"
+    }
+  ]
+}

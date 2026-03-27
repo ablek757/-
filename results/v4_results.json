@@ -1,0 +1,1602 @@
+[
+  {
+    "id": 1,
+    "text": "开通会员送什么",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "分析：用户消息“开通会员送什么”聚焦于成为会员后获得的权益或赠品，关键词是“开通会员”和“送什么”，这属于对会员制度相关权益的咨询，对应的是会员等级、福利、赠品等会员专属权益问题，符合“membership”意图定义。\n结论：membership",
+    "correct": true
+  },
+  {
+    "id": 2,
+    "text": "怎么退出登录",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "分析：用户消息“怎么退出登录”聚焦于账户操作中的登录状态管理，关键词是“退出登录”，属于账户安全与会话控制范畴，对应用户对账户功能的使用疑问，符合“account_issue”定义中的登录、账户安全等问题。\n结论：account_issue",
+    "correct": true
+  },
+  {
+    "id": 3,
+    "text": "你们一般几天能到",
+    "true": "logistics_query",
+    "pred": "delivery_service",
+    "raw_output": "分析：用户消息“你们一般几天能到”中的关键词是“几天”“能到”，表达的是对商品从下单到收货所需时间的询问，关注的是配送时效。这属于对配送服务整体时效性的咨询，而非针对某一个具体订单的物流轨迹查询（如“我的订单现在到哪了”），因此不属于logistics_query；而是对配送服务的普遍性咨询，对应意图定义中的delivery_service（咨询配送方式、配送范围、预约送达等，非物流跟踪）。\n\n结论：delivery_service",
+    "correct": false
+  },
+  {
+    "id": 4,
+    "text": "拜拜",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“拜拜”是常见的告别用语，属于日常社交寒暄，不涉及任何具体的业务需求或问题咨询，无法归入物流、售后、支付等任何功能性意图类别，符合“无明确意图”或“打招呼/告别”的特征，应归类为闲聊类。\n结论：chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 5,
+    "text": "凑单满减怎么算",
+    "true": "price_promotion",
+    "pred": "campaign_rules",
+    "raw_output": "分析：用户消息“凑单满减怎么算”中的关键词是“凑单”“满减”“怎么算”，表明用户关注的是通过组合多个商品达到满减门槛的计算方式，属于对促销活动具体规则的询问，而非一般性价格或优惠咨询（如“这个商品有优惠吗”），而是聚焦于活动机制和计算逻辑，符合“campaign_rules”的定义。\n结论：campaign_rules",
+    "correct": false
+  },
+  {
+    "id": 6,
+    "text": "我非常不满意你们的服务",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "分析：用户消息“我非常不满意你们的服务”中，关键词是“非常不满意”和“服务”，表达了强烈的情绪和对服务的负面评价，属于对服务质量的不满表达，符合“complaint”（投诉）的定义。该消息没有涉及物流、退款、退货、商品咨询等其他具体业务场景，而是直接表达不满情绪，因此应归类为投诉。\n结论：complaint",
+    "correct": true
+  },
+  {
+    "id": 7,
+    "text": "有人在异地登录我的账号",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "分析：用户消息“有人在异地登录我的账号”明确表达了对账户安全的担忧，关键词是“异地登录”和“我的账号”，指向账户被异常访问，属于账户安全异常情况，符合“account_issue”类别中的典型场景（如异常登录、账号被盗疑虑等）。\n结论：account_issue",
+    "correct": true
+  },
+  {
+    "id": 8,
+    "text": "电池容量多大",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“电池容量多大”聚焦于商品的物理参数，属于对商品本身技术规格的询问，关键词“电池容量”明确指向产品性能指标，不涉及物流、价格、售后、账户等其他维度，符合product_inquiry定义中“对商品的规格、功能、材质等进行询问”的描述。\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 9,
+    "text": "要减少一件数量",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "分析：用户消息“要减少一件数量”明确表达了对已下单订单中商品数量的调整需求，关键词是“减少”和“数量”，属于对已提交订单内容的修改操作，符合“order_modification”的定义——即要求修改已下单的信息（如数量、地址、规格等）。\n结论：order_modification",
+    "correct": true
+  },
+  {
+    "id": 10,
+    "text": "支付宝余额不足怎么混合付",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "分析：用户消息中的关键词是“支付宝余额不足”和“怎么混合付”，表明用户在支付过程中遇到支付宝余额不够的问题，想了解如何使用其他支付方式（如银行卡、花呗等）与支付宝余额组合完成支付。这属于支付过程中的异常情况及解决方案咨询，核心问题是支付失败后的替代支付方案，符合“payment_issue”（支付问题）的定义，特别是“支付失败”和“支付方式”相关的问题。\n\n结论：payment_issue",
+    "correct": true
+  },
+  {
+    "id": 11,
+    "text": "微信支付扫码没反应",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "分析：用户提到“微信支付扫码没反应”，关键词是“微信支付”和“没反应”，表明在支付过程中遇到了技术性障碍，属于支付操作失败的情形，与支付方式相关且未成功完成支付，符合payment_issue的定义（支付失败、扣款异常、支付方式等问题）。\n结论：payment_issue",
+    "correct": true
+  },
+  {
+    "id": 12,
+    "text": "这个要怎么安装",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“这个要怎么安装”中的关键词是“安装”，表明用户在询问某个商品的安装方法或步骤。这属于对商品使用方式的疑问，通常与商品的功能、使用说明相关，可能涉及商品的规格、配件、操作流程等。由于用户没有明确指向物流、退款、价格、账户等问题，而是聚焦于商品本身的使用操作，因此最符合“product_inquiry”（商品咨询）——即对商品的功能、使用方法、安装方式等进行询问。注意：安装问题不属于售后维修（after_sales_repair），除非明确提及“坏了”“无法启动”“保修”“维修服务”等；此处仅为初始使用指导类问题。\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 13,
+    "text": "乡镇地区送不送",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "分析：用户消息“乡镇地区送不送”聚焦于配送的地理覆盖范围，关键词是“乡镇地区”和“送不送”，即询问是否提供配送服务到乡镇区域。这属于对配送服务范围的咨询，而非查询已有订单的物流状态（logistics_query），也不涉及具体订单修改、价格优惠或售后问题，符合delivery_service的定义——咨询配送方式、配送范围、预约送达等（非物流跟踪）。\n\n结论：delivery_service",
+    "correct": true
+  },
+  {
+    "id": 14,
+    "text": "电梯上不去怎么送",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "分析：用户消息“电梯上不去怎么送”聚焦于配送执行过程中的具体障碍（电梯无法使用），隐含对“如何完成末端配送”的疑问，属于对配送可行性、配送方式或特殊场景下配送服务的咨询。关键词“怎么送”表明用户关注的是配送动作本身能否实现，而非已发货订单的实时物流轨迹（非logistics_query），也非对快递公司/进度的查询；也不涉及退换货、退款、商品属性、价格优惠等其他意图。该问题本质是咨询在特殊条件（无电梯/电梯故障）下，平台或配送方提供何种配送服务或解决方案，符合“delivery_service”定义——即咨询配送方式、配送范围、预约送达、特殊场景配送支持等。\n结论：delivery_service",
+    "correct": true
+  },
+  {
+    "id": 15,
+    "text": "付款限额是多少",
+    "true": "payment_issue",
+    "pred": "price_promotion",
+    "raw_output": "分析：用户消息“付款限额是多少”关注的是支付过程中金额的限制问题，属于支付环节的规则或限制性信息咨询。关键词“付款限额”直接指向支付功能的额度限制，可能涉及单笔支付上限、日累计限额、银行卡/支付工具限制等，这与支付过程中的异常或失败无直接关系（不属于payment_issue），而是对支付能力边界的询问。在给定意图定义中，没有专门针对“支付限额”的类别，但最接近的是payment_issue（支付问题），因为限额问题通常影响支付能否成功，属于支付系统设置的一部分；其他类别如price_promotion（价格优惠）、account_issue（账户问题）等均不匹配。需注意：payment_issue定义为“用户遇到支付失败、扣款异常、支付方式等问题”，而“限额”虽未明列，但属于导致支付失败的常见前置原因，且平台侧常将其归入支付问题范畴进行解答（如",
+    "correct": false
+  },
+  {
+    "id": 16,
+    "text": "怎么选自提点",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "分析：用户消息“怎么选自提点”中的关键词是“自提点”，这属于订单交付方式的选择问题，涉及用户在下单或配送过程中如何选择线下自提的地点。该问题不涉及已有订单的物流状态追踪（非logistics_query），也不涉及退货、退款、商品参数、价格优惠等其他意图。它聚焦于配送服务中的具体交付选项（自提点选择），属于对配送方式的咨询，符合delivery_service的定义——即咨询配送方式、配送范围、预约送达等（非物流跟踪）。\n\n结论：delivery_service",
+    "correct": true
+  },
+  {
+    "id": 17,
+    "text": "能退钱吗",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“能退钱吗”直接表达了对退还已支付款项的询问，关键词是“退钱”，对应的是资金返还诉求，不涉及退货实物或换货动作，也不涉及物流、商品属性、价格优惠等其他方面。根据边界说明，“退款申请”指纯退钱，与“退换货”区分明确，因此该消息属于典型的退款请求意图。\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 18,
+    "text": "快递丢了怎么办",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“快递丢了怎么办”聚焦于已发出但未收到的快递，核心是物流环节中包裹丢失的问题，属于对当前订单配送状态异常的询问，目的是了解如何处理、是否可补发或赔偿等，本质是追踪物流结果及后续解决方案，符合物流状态异常查询场景，应归类为物流查询（logistics_query）。注意这不是投诉（complaint）——因未体现对服务/商家的主观不满情绪，也非售后维修或退换货，更不涉及支付、账户等问题。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 19,
+    "text": "退款退不了什么原因",
+    "true": "refund_request",
+    "pred": "payment_issue",
+    "raw_output": "分析：用户消息“退款退不了什么原因”中的关键词是“退款”和“退不了”，表明用户已经尝试发起退款操作但未成功，核心诉求是查明退款失败的具体原因。这属于支付或售后流程中的异常情况，而非单纯要求退款（refund_request），也不是退货/换货（return_exchange），更不是物流、商品咨询等其他意图。由于退款失败通常涉及支付通道、系统校验、账户状态、风控拦截等与资金处理相关的技术或流程问题，最贴近的意图是 payment_issue（支付问题），因为退款失败本质上是资金返还环节的支付类异常，而非商家侧的退款政策拒绝（后者可能归为refund_request）。此外，“退不了”强调的是操作失败的技术性障碍，而非主观申请意愿。\n\n结论：payment_issue",
+    "correct": false
+  },
+  {
+    "id": 20,
+    "text": "618活动力度大吗",
+    "true": "campaign_rules",
+    "pred": "campaign_rules",
+    "raw_output": "分析：用户消息“618活动力度大吗”中的关键词是“618活动”和“力度”，明显指向平台或商家在618促销期间的优惠幅度（如折扣、满减、赠品等），属于对特定促销活动的优惠程度进行咨询。该问题不涉及具体订单操作（如退款、退换货）、物流跟踪、商品参数或账户问题，也非一般性价格/优惠券咨询（如“有无优惠券”），而是聚焦于**618这一特定促销活动的规则与优惠强度**，符合campaign_rules的定义——即咨询促销活动的规则、参与方式、活动时间及优惠力度等。\n结论：campaign_rules",
+    "correct": true
+  },
+  {
+    "id": 21,
+    "text": "修改地址后什么时候生效",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "分析：用户消息中的关键词是“修改地址”和“什么时候生效”，表明用户已提出或计划修改订单地址，现在关心该修改操作的时间效力问题。这属于对已下单信息（收货地址）的变更及其生效时间的询问，符合“order_modification”（订单修改）意图的定义——即要求修改已下单的信息（如地址、数量、规格等），且此处聚焦于修改行为本身的时效性，而非物流跟踪（logistics_query）、配送服务范围（delivery_service）或支付/账户等问题。\n结论：order_modification",
+    "correct": true
+  },
+  {
+    "id": 22,
+    "text": "预售价和现价哪个低",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "分析：用户消息“预售价和现价哪个低”聚焦于比较两种价格（预售价 vs 现价），核心诉求是判断哪一种更优惠，属于对商品当前价格构成或优惠幅度的咨询。未提及具体促销活动规则（如“618怎么参与”“满300减50的条件”），也未涉及物流、售后、账户等其他维度；关键词“预售价”“现价”“哪个低”明确指向价格对比，本质是价格敏感型咨询，符合 price_promotion 意图——即咨询价格、折扣、优惠力度等一般性价格信息。\n结论：price_promotion",
+    "correct": true
+  },
+  {
+    "id": 23,
+    "text": "开发票要加税点吗",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "分析：用户消息“开发票要加税点吗”聚焦于发票开具过程中的税务相关问题，关键词是“开发票”和“税点”，表明用户关心的是发票是否含税、是否需要额外加收税费，这属于发票类型、税务信息或开票要求的咨询，对应意图定义中的“invoice”（用户咨询开发票、发票类型、发票信息修改）。\n结论：invoice",
+    "correct": true
+  },
+  {
+    "id": 24,
+    "text": "定金可以退吗",
+    "true": "campaign_rules",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“定金可以退吗”聚焦于“定金”这一支付性质的款项是否可退还。定金通常属于预付款性质，其退还规则与普通订单退款不同，常涉及促销活动（如大促预售）、合同约定或平台政策。用户并未提及具体订单号、物流、商品问题或维修等，也未明确要求执行退款操作（如“我要申请退款”），而是询问“是否可以退”，属于对款项退还可能性及政策的咨询。该问题本质是围绕**定金这一特殊价款形式的退还规则**，而定金多出现在特定营销场景（如618/双11预售活动）中，其退还条件（如是否付尾款、是否违约）由**活动规则**决定。因此，该问题应归入对促销活动相关资金处理规则的咨询，而非一般性价格优惠（price_promotion）或直接退款申请（refund_request",
+    "correct": false
+  },
+  {
+    "id": 25,
+    "text": "退换货的期限是多久",
+    "true": "return_exchange",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息关键词为“退换货的期限”，核心关注点是退换货政策的时间限制（如多少天内可申请），属于对售后服务中退换货流程规则的咨询。该问题不涉及具体订单的物流状态（非logistics_query），不涉及已发起退款操作（非refund_request），也不涉及商品本身属性（非product_inquiry）或价格优惠（非price_promotion）。根据意图定义，“return_exchange”指用户要求退货或换货（不含纯退款），而此处虽未明确表示“要退换”，但询问“退换货的期限”是退换货流程的前提性政策咨询，属于return_exchange范畴下的常见前置问题，且边界说明中未将政策咨询单独列为独立意图；对比其他选项，campaign_rules针对促销活动规则，invoice、membership等明显不符；after_sales_repair聚焦维修保修，而退换货期限属于退换货政策，应归属return",
+    "correct": false
+  },
+  {
+    "id": 26,
+    "text": "你们太让人失望了",
+    "true": "complaint",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“你们太让人失望了”是一种情绪化表达，没有提及具体问题（如物流、退款、商品质量、服务态度等），也没有明确指向某个可操作的业务场景。该语句属于对整体服务或体验的负面评价，但缺乏具体投诉对象或诉求，不符合complaint（需有明确不满对象和事由）的严格定义；更接近无明确意图的情绪宣泄，归类为寒暄或其他无法归入已有类别的表达。\n\n结论：chitchat_other",
+    "correct": false
+  },
+  {
+    "id": 27,
+    "text": "银行卡限额了付不了",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "分析：用户提到“银行卡限额了付不了”，核心问题是支付过程中因银行卡额度限制导致无法完成付款，属于支付环节出现的异常情况，与支付方式、扣款失败直接相关，符合“payment_issue”的定义（支付失败、扣款异常、支付方式等问题）。\n结论：payment_issue",
+    "correct": true
+  },
+  {
+    "id": 28,
+    "text": "苹果支付可以用吗",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "分析：用户消息“苹果支付可以用吗”中的关键词是“苹果支付”，指Apple Pay这一支付方式。用户在询问该支付方式是否被支持，属于支付过程中对支付方式可行性的确认，与支付流程直接相关，而非咨询价格、优惠、物流等其他方面。这符合“payment_issue”类别中关于支付方式是否可用的典型场景（如用户遇到支付失败时想确认是否支持某支付方式）。\n结论：payment_issue",
+    "correct": true
+  },
+  {
+    "id": 29,
+    "text": "发票信息能改吗",
+    "true": "order_modification",
+    "pred": "invoice",
+    "raw_output": "分析：用户消息“发票信息能改吗”聚焦于发票相关信息的修改可能性，关键词是“发票信息”和“改”，表明用户希望变更已提交或待开具的发票内容（如抬头、税号、邮箱等），属于对发票相关操作的咨询，对应意图定义中的“invoice”类别。\n结论：invoice",
+    "correct": false
+  },
+  {
+    "id": 30,
+    "text": "有没有冷链配送",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "分析：用户询问“有没有冷链配送”，关键词是“冷链配送”，这属于对配送方式的咨询，关注的是物流服务中的一种特殊配送类型（温度控制运输），而非查询某笔具体订单的物流状态。因此不属于logistics_query（物流跟踪），而属于对配送服务类型、能力或范围的咨询，对应意图定义中的delivery_service（咨询配送方式、配送范围、预约送达等）。\n\n结论：delivery_service",
+    "correct": true
+  },
+  {
+    "id": 31,
+    "text": "发票邮箱怎么设置",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "分析：用户消息“发票邮箱怎么设置”聚焦于发票相关操作，具体是询问如何配置或修改接收发票的邮箱地址。这属于发票信息管理范畴，与开票、发票类型、发票信息修改等直接相关，符合“invoice”意图定义中的“咨询开发票、发票类型、发票信息修改”。\n\n结论：invoice",
+    "correct": true
+  },
+  {
+    "id": 32,
+    "text": "维修费用多少",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "分析：用户消息“维修费用多少”聚焦于维修服务所需支付的费用，关键词是“维修费用”，表明用户关心的是售后维修环节中可能产生的成本问题。这属于对售后服务中具体处理方式（维修）及其相关费用的咨询，与商品质量问题、保修期内外的费用承担等密切相关，符合“after_sales_repair”意图定义中“咨询保修、维修、质量问题处理”的范畴。注意：该消息未表达不满（非complaint），未要求退换货或退款（非return_exchange/refund_request），也非一般价格优惠咨询（非price_promotion），而是明确指向维修场景下的费用问题。\n\n结论：after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 33,
+    "text": "含酒精吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“含酒精吗”是在询问商品的成分信息，具体关注是否含有酒精这一属性。这属于对商品本身特性（如成分、材质、规格等）的咨询，不涉及物流、价格、售后、账户等其他方面，符合product_inquiry的定义，即用户对商品的规格、功能、材质等进行询问。\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 34,
+    "text": "买错了可以换吗",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“买错了可以换吗”中的关键词是“买错了”和“换”，表明用户已下单并收到（或即将收到）商品，但因选购错误希望更换商品。这属于已购商品的处理需求，核心诉求是“换货”，不涉及仅退款（未提“退钱”“退款”），也不涉及物流状态查询、商品参数咨询等其他意图。根据边界说明，“退换货”指退货或换货行为，此处明确为“换”，因此属于 return_exchange。\n结论：return_exchange",
+    "correct": true
+  },
+  {
+    "id": 35,
+    "text": "别家同款才XX元",
+    "true": "price_promotion",
+    "pred": "refund_request",
+    "raw_output": "分析：用户提到“别家同款才XX元”，核心是将当前商品与外部平台/商家的同类商品价格进行对比，隐含对当前商品价格偏高的质疑或不满，目的是希望获得更优惠的价格（如降价、补偿、优惠券等）。这属于对价格水平的质疑和比价诉求，而非咨询具体优惠活动规则（campaign_rules），也非单纯询问价格（price_promotion）——因为用户未问“多少钱”“有没有优惠”，而是通过横向比价施加议价压力，意图指向价格合理性及可能的让利，符合price_promotion中“对价格敏感、质疑定价、寻求价格优惠”的典型表现。注意：该句不含投诉情绪词（如“太黑”“欺骗”“投诉”），未表达服务/质量不满，故不归为complaint；也未提及订单、退款、退货等行为，故排除refund_request、return_exchange等。\n结论：",
+    "correct": false
+  },
+  {
+    "id": 36,
+    "text": "这个订单发货了没",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“这个订单发货了没”聚焦于订单当前所处的履约阶段，核心是确认是否已完成发货动作。这属于对订单执行进度的追踪，与物流状态紧密相关（发货是物流流程的起点），且未涉及退款、退货、商品属性、价格优惠等其他意图。虽然未明确提及快递单号或物流详情，但“发货了没”是典型的物流查询前置问题，通常后续会跟进物流轨迹查询，因此归类为logistics_query。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 37,
+    "text": "拼团成功后多久发货",
+    "true": "campaign_rules",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息中的关键词是“拼团成功后”和“多久发货”，关注的是订单（拼团订单）生成后的发货时间，属于对配送节奏的咨询。这既不是查询已有订单的物流轨迹（logistics_query），也不是咨询配送方式或范围（delivery_service），而是聚焦于“下单/成团后到发货之间的时间间隔”，本质上属于商家履约时效问题，与订单履约环节相关。但注意，该问题不涉及物流跟踪（如“我的快递到哪了”），也不涉及配送方式选择（如“能用顺丰吗”），而是询问发货时间点——这在电商场景中通常归类为对订单处理进度的咨询，最接近的意图是 logistics_query，因为发货是物流流程的起点，用户实际关心的是后续物流能否及时启动。虽然严格来说“发货时间”略早于物流跟踪，但行业实践中，发货时间常被纳入广义物流时效咨询范畴，",
+    "correct": false
+  },
+  {
+    "id": 38,
+    "text": "能开定额发票吗",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "分析：用户消息“能开定额发票吗”聚焦于发票类型（定额发票）的可行性，属于对发票开具形式、种类的咨询，不涉及物流、退款、商品参数、价格优惠等其他维度。根据意图定义，“invoice”类别明确涵盖“开发票、发票类型、发票信息修改”等诉求，而“定额发票”正是一种特定发票类型，因此该消息完全匹配invoice意图。\n\n结论：invoice",
+    "correct": true
+  },
+  {
+    "id": 39,
+    "text": "这个机器声音大不大",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“这个机器声音大不大”聚焦于商品（机器）的运行特性，具体询问其工作时的声音大小，属于对商品功能、使用体验或物理特性的咨询，不涉及物流、售后、价格、订单修改等其他方面，符合对商品本身属性的询问。\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 40,
+    "text": "这个可以退货吗",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“这个可以退货吗”中的关键词是“退货”，表明用户希望了解是否能够将已购买的商品退回。该询问聚焦于退货这一行为本身，未提及退款（即不涉及仅退钱）、换货（未提“换”字）、物流状态、商品参数等其他方面。根据边界说明，“退换货”指退货或换货行为，而此处明确为“退货”，属于return_exchange意图（因退货通常伴随后续处理如换货或退款，但意图本质是退/换货流程的发起；且意图定义中明确“return_exchange: 用户要求退货或换货（不含纯退款）”，而“这个可以退货吗”是典型的退货资格/可行性咨询，属于退货请求的前置确认，归入return_exchange）。\n结论：return_exchange",
+    "correct": true
+  },
+  {
+    "id": 41,
+    "text": "漏水你们管不管",
+    "true": "complaint",
+    "pred": "after_sales_repair",
+    "raw_output": "分析：用户消息“漏水你们管不管”表达了对商品（极可能是水壶、净水器、洗衣机等涉水家电或容器类商品）出现漏水问题的反馈，核心诉求是询问商家是否负责处理该质量问题。关键词“漏水”指向商品功能异常或质量缺陷，“管不管”体现对售后责任归属和服务响应的质疑，属于产品质量问题引发的售后服务需求，符合“after_sales_repair”（售后维修）的定义——即咨询保修、维修或质量问题处理；而非单纯表达不满（不满足complaint的“投诉”特征，因未出现情绪化指责或服务态度批评），也非要求退换货或退款，故排除return_exchange、refund_request、complaint等类别。\n\n结论：after_sales_repair",
+    "correct": false
+  },
+  {
+    "id": 42,
+    "text": "你这回复是机器人吧",
+    "true": "complaint",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“你这回复是机器人吧”是对客服响应方式的质疑，带有试探或调侃意味，不涉及订单、商品、支付、账户等具体业务问题，也没有表达不满（如投诉）、请求帮助或咨询信息，属于闲聊性质，且无法归入其他14类明确业务意图中。\n结论：chitchat_other",
+    "correct": false
+  },
+  {
+    "id": 43,
+    "text": "配送到什么阶段了",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“配送到什么阶段了”中的关键词是“配送”和“什么阶段”，表明用户关注的是当前订单的运输进度、所处环节（如已发货、在途中、派送中、已签收等），属于对已有订单物流状态的实时查询，符合logistics_query的定义。注意此处不是咨询配送方式或范围（那属于delivery_service），而是明确询问进度阶段，因此应归类为物流查询。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 44,
+    "text": "电子发票在哪下载",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "分析：用户消息“电子发票在哪下载”聚焦于电子发票的获取方式，关键词是“电子发票”和“下载”，表明用户已知晓发票已开具或可开具，当前诉求是明确操作路径（即在何处、如何下载），属于对发票相关服务的具体操作咨询，符合“invoice”意图定义中“咨询开发票、发票类型、发票信息修改”的范畴（下载是发票服务的延伸操作，且与开票强相关）。\n结论：invoice",
+    "correct": true
+  },
+  {
+    "id": 45,
+    "text": "可以货到付款吗",
+    "true": "payment_issue",
+    "pred": "delivery_service",
+    "raw_output": "分析：用户消息“可以货到付款吗”是在询问订单支付方式是否支持货到付款，属于对配送过程中支付环节的咨询。该问题不涉及已下单后的修改（如order_modification），也不涉及支付失败或异常（payment_issue），而是聚焦于**配送服务中可选的支付方式**，与配送履约方式密切相关。根据边界说明，“delivery_service”定义为“咨询配送方式、配送范围、预约送达等（非物流跟踪）”，而货到付款（COD）是常见的配送服务模式之一，属于配送服务的组成部分，而非支付过程中的技术故障或扣款问题。\n\n结论：delivery_service",
+    "correct": false
+  },
+  {
+    "id": 46,
+    "text": "这个零件能单独买吗",
+    "true": "after_sales_repair",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“这个零件能单独买吗”中的关键词是“零件”和“单独买”，表明用户关注的是某个具体商品（可能是某设备的配件或组成部分）是否可以作为独立商品进行购买。这属于对商品可售性、销售形式的询问，核心意图是了解该零件作为商品的属性（是否单售），而非询问价格、物流、售后等。这符合“product_inquiry”（商品咨询）的定义，即对商品的规格、功能、材质、可售性等进行询问。虽然涉及购买，但未表达退款、退换、修改订单等操作意图，也未提及价格优惠或活动规则，因此不属于refund_request、return_exchange、order_modification、price_promotion或campaign_rules。\n\n结论：product_inquiry",
+    "correct": false
+  },
+  {
+    "id": 47,
+    "text": "按键失灵了",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "分析：用户消息“按键失灵了”描述的是商品（极可能是电子类设备，如遥控器、手机、键盘等）的功能异常，属于产品使用过程中出现的质量或故障问题。该表述未涉及退款、退货、换货、物流、价格、账户等其他意图，而是聚焦于产品功能失效，符合“售后维修”场景——即用户希望解决故障，可能需要保修、检测或维修服务。注意：这不是单纯投诉（无情绪化用语或对服务/商家的指责），也不是产品咨询（非询问功能参数），更非退换货（未提出退/换要求），因此应归入 after_sales_repair。\n结论：after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 48,
+    "text": "预售和现货哪个便宜",
+    "true": "campaign_rules",
+    "pred": "price_promotion",
+    "raw_output": "分析：用户消息“预售和现货哪个便宜”聚焦于比较两种购买方式（预售、现货）的价格高低，核心诉求是了解哪种更优惠，属于对价格差异的咨询。未涉及具体订单物流、退换货、支付问题等，也未提及特定促销活动的规则（如“双11预售规则”），而是泛化的价格对比，因此归类为价格优惠类咨询，对应意图 price_promotion。\n\n结论：price_promotion",
+    "correct": false
+  },
+  {
+    "id": 49,
+    "text": "能改一下用户名吗",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "分析：用户消息“能改一下用户名吗”中的关键词是“改”和“用户名”，指向的是账户信息的修改需求。用户名属于用户账户的基本资料，修改用户名涉及账户的注册信息或个人资料管理，与登录、密码、账户安全等同属账户管理范畴，对应意图定义中的“account_issue”（用户遇到登录、注册、密码、账户安全等问题）。注意，此处并非修改订单信息（非order_modification），也非修改收货地址等履约信息，而是直接针对账户身份标识（用户名）的变更请求。\n结论：account_issue",
+    "correct": true
+  },
+  {
+    "id": 50,
+    "text": "你们支持送货上门安装吗",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "分析：用户消息询问“你们支持送货上门安装吗”，关键词是“送货上门安装”，核心关注点是配送服务的具体内容（是否包含安装），属于对配送方式及附加服务的咨询。这并非查询已有订单的物流状态（排除logistics_query），也不是要求修改订单或退换货，而是对商家提供的配送服务范围、服务能力的询问，符合delivery_service的定义——即咨询配送方式、配送范围、预约送达等（非物流跟踪）。\n\n结论：delivery_service",
+    "correct": true
+  },
+  {
+    "id": 51,
+    "text": "能送个赠品吗",
+    "true": "price_promotion",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“能送个赠品吗”表达的是对额外附赠物品的请求，属于对订单附加权益或促销福利的询问。赠品通常与促销活动、会员权益或客服酌情赠送相关，但该消息未提及具体活动名称、规则或时间，也未涉及会员等级或积分兑换，因此不属于campaign_rules或membership；它也不是对商品本身（product_inquiry）、价格（price_promotion）、物流（logistics_query）等的询问，而更接近一种柔性诉求，常出现在售后或订单服务场景中，但标准意图定义中无专门“赠品”类别。根据边界说明，“无法归入以上类别”且无明确投诉、退款、退换货等意图，属于礼貌性、非事务性、意图模糊的轻量互动，符合chitchat_other的定义（如打招呼、感谢、无明确意图、无法归类）。\n结论：chitchat_other",
+    "correct": false
+  },
+  {
+    "id": 52,
+    "text": "你们有维修网点吗",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "分析：用户消息“你们有维修网点吗”聚焦于售后服务中的物理服务点（维修网点），关键词是“维修网点”，表明用户关心的是商品出现故障后能否获得线下维修支持，属于售后维修服务的范畴，而非投诉、退货、退款或物流查询等。这与“after_sales_repair”定义中“咨询保修、维修、质量问题处理”完全匹配。\n结论：after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 53,
+    "text": "维修要先付钱吗",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "分析：用户消息“维修要先付钱吗”聚焦于维修服务的费用支付流程，关键词是“维修”和“先付钱”，表明用户在咨询售后维修过程中是否需要预先支付费用。这属于对保修、维修等售后服务中费用承担方式的疑问，与商品质量问题处理或保修政策相关，符合“after_sales_repair”（售后维修）意图定义。注意：该问题不涉及投诉（无不满情绪表达）、不涉及退款/退货（未提退换）、也不属于一般产品功能咨询（明确指向维修环节）。\n\n结论：after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 54,
+    "text": "付款之后订单多久确认",
+    "true": "payment_issue",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“付款之后订单多久确认”关注的是付款完成后的订单状态确认时间，属于订单处理流程中的环节，涉及订单是否成功生成、系统是否完成支付验证等。这与支付成功后的订单状态更新有关，但并非支付失败或扣款异常（不属于payment_issue），也不是询问物流配送进度（logistics_query），而是聚焦于“订单确认”这一动作的时间预期。在电商场景中，“订单确认”通常指系统在收到支付成功通知后，将订单状态从“待支付”更新为“已支付/已确认”的过程，该过程一般为即时或极短时间内完成，属于订单生命周期管理。此问题最接近对订单状态变更时效的咨询，但现有意图定义中没有直接对应“订单确认时间”的类别。需比对各意图：\n- logistics_query：针对已有物流单号的运输跟踪，不适用；\n- order_modification：要求修改订单信息，不适用；",
+    "correct": false
+  },
+  {
+    "id": 55,
+    "text": "退款要几个工作日",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“退款要几个工作日”聚焦于退款处理所需的时间周期，关键词是“退款”和“几个工作日”，表明用户关注的是款项退回的时效性，属于对已支付款项退还进度的询问。该诉求不涉及退货或换货操作（排除return_exchange），也不涉及物流跟踪（排除logistics_query），而是明确指向资金返还的时间预期，符合“refund_request”意图中关于退款流程与时效的常见子问题。注意：虽然问题未显式说“我要申请退款”，但“退款要几个工作日”是典型在已发起或即将发起退款前提下的时效咨询，属于refund_request意图的合理延伸；若为纯信息咨询且无申请意向，仍归入refund_request，因平台语境下此类问法默认关联退款操作。\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 56,
+    "text": "把钱退回来谢谢",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“把钱退回来谢谢”中，“把钱退回来”是明确的退款要求，核心诉求是返还已支付的款项，不涉及退货、换货、物流跟踪、商品咨询等其他行为；“谢谢”为礼貌用语，不影响意图判断。该表述属于典型的退款申请，符合“refund_request”定义（用户要求退还已支付的款项），且未提及商品退回或更换，故不属于return_exchange；也无物流、支付失败、账户等问题关键词。\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 57,
+    "text": "包裹在路上了吗",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“包裹在路上了吗”中的关键词是“包裹”和“在路上”，这是典型的对已下单商品当前运输状态的询问，关注的是物流进度和是否已发出、是否在派送中，属于对订单物流状态的实时查询，符合logistics_query的定义。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 58,
+    "text": "配送途中可以改地址吗",
+    "true": "delivery_service",
+    "pred": "order_modification",
+    "raw_output": "分析：用户消息“配送途中可以改地址吗”中的关键词是“配送途中”和“改地址”。用户关注的是在订单已发出、处于物流运输过程中，是否还能修改收货地址。这涉及对已有订单的配送信息进行变更，属于对订单履约环节的修改请求。虽然与物流状态相关，但核心诉求不是查询当前物流进度（logistics_query），而是希望干预配送过程中的地址信息，因此更符合“order_modification”（订单修改）的定义——即修改已下单的信息（如地址、数量、规格等）。注意：此处“地址”是订单收货地址，且修改发生在配送途中，仍属订单履约阶段的修改范畴；若用户问“我的快递到哪了”，才属logistics_query。\n结论：order_modification",
+    "correct": false
+  },
+  {
+    "id": 59,
+    "text": "我填好退货信息了下一步怎么做",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户提到“填好退货信息了”，表明已进入退货流程的前期操作，当前关注的是后续步骤，即退货流程的下一步操作指引。这属于对退货流程的咨询，核心意图是完成退货（可能包含退货后是否换货或退款），而非单纯要求退款（refund_request），也非询问物流状态（logistics_query）。根据定义，“return_exchange”指用户要求退货或换货（不含纯退款），而用户主动填写退货信息并询问下一步，明确指向退货/换货流程的推进，符合 return_exchange 的典型场景。\n结论：return_exchange",
+    "correct": true
+  },
+  {
+    "id": 60,
+    "text": "怎么用微信支付",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "分析：用户消息“怎么用微信支付”聚焦于支付方式的操作方法，关键词是“微信支付”，表明用户在支付环节遇到疑问，想了解如何使用该支付方式完成付款。这属于支付过程中出现的障碍或操作咨询，对应“payment_issue”类别（支付失败、扣款异常、支付方式等问题）。注意，这不是咨询优惠（price_promotion）、不是订单修改（order_modification），也不是一般性闲聊（chitchat_other）；而是明确指向支付工具的使用问题，符合payment_issue中“支付方式问题”的典型表现。\n\n结论：payment_issue",
+    "correct": true
+  },
+  {
+    "id": 61,
+    "text": "把数量从2改成1",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "分析：用户消息“把数量从2改成1”明确表达了对已下单订单中商品数量的修改需求，属于对已提交订单内容的调整，关键词是“改成”，指向修改订单中的数量信息，符合“order_modification”的定义（要求修改已下单的信息，如数量、地址、规格等）。\n结论：order_modification",
+    "correct": true
+  },
+  {
+    "id": 62,
+    "text": "会员积分有效期多久",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "分析：用户消息中关键词为“会员积分”和“有效期多久”，核心是询问会员积分的有效期限，属于对会员权益相关规则的咨询。根据意图定义，“membership”涵盖会员等级、积分、会员专属权益等咨询，而积分有效期正是会员权益的重要组成部分，不属于其他类别（如account_issue侧重登录注册等账户操作问题，campaign_rules侧重促销活动规则）。\n结论：membership",
+    "correct": true
+  },
+  {
+    "id": 63,
+    "text": "这个含糖量高吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“这个含糖量高吗”聚焦于商品（很可能为食品、饮料等）的成分属性——“含糖量”，属于对商品内在特性（营养成分、健康指标）的询问，不涉及物流、价格、售后、账户等其他维度。该问题旨在了解商品规格/参数，符合“product_inquiry”定义中“对商品的规格、功能、材质等进行询问”的范畴。\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 64,
+    "text": "商品还没发我先退款",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“商品还没发我先退款”中，“还没发”表明订单尚未发货，处于待发货状态；“先退款”明确表达了要求退还已支付款项的意愿。该请求聚焦于资金返还，不涉及退货实物（因商品未发出，无退货动作）、不涉及换货、也不涉及物流进度查询（未提物流单号或配送状态）。因此属于在未发货情况下主动申请退回货款，符合“refund_request”定义，即纯退款要求。\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 65,
+    "text": "发票打印出来不清楚",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "分析：用户提到“发票打印出来不清楚”，核心问题是发票的打印质量（字迹模糊、不清晰），这属于发票使用或输出环节的问题，而非申请开票、修改发票信息或咨询发票类型等。该问题通常与发票的生成格式、打印设备或PDF阅读器设置有关，但用户诉求指向的是发票内容可读性异常，属于发票相关服务问题，应归入invoice意图（因invoice意图涵盖发票开具、内容、格式、打印效果等与发票本身直接相关的问题）。\n结论：invoice",
+    "correct": true
+  },
+  {
+    "id": 66,
+    "text": "快递被退回了是怎么回事",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“快递被退回了是怎么回事”聚焦于订单包裹的异常物流状态——“被退回”，属于对当前配送过程中发生的非正常流转结果的疑问，核心诉求是了解退回原因、当前所处环节或后续处理方式，符合对已有订单物流轨迹和状态的查询需求，而非咨询配送方式或范围（排除delivery_service），也非投诉（未体现情绪化表达或指责），亦非退货/换货操作请求（未提出退换动作）。因此应归类为物流状态查询。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 67,
+    "text": "怎么修改密码",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "分析：用户消息“怎么修改密码”中的关键词是“修改密码”，这直接关联到账户的安全设置和基本操作，属于账户管理范畴。根据意图定义，“account_issue”明确涵盖“登录、注册、密码、账户安全等问题”，因此该消息属于账户问题类意图。\n结论：account_issue",
+    "correct": true
+  },
+  {
+    "id": 68,
+    "text": "质保卡怎么激活",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "分析：用户消息“质保卡怎么激活”聚焦于质保卡的激活操作，属于产品购买后的售后保障环节。关键词“质保卡”“激活”指向产品保修权益的启用流程，不涉及物流、退款、退货换货、价格优惠等其他意图；其核心是咨询如何使保修服务生效，属于对保修服务的使用方式提问，符合“after_sales_repair”（售后维修）意图的范畴——该类意图明确包含保修相关咨询（如保修期、保修条件、质保激活、维修申请流程等），而不仅限于已发生故障后的维修动作。\n结论：after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 69,
+    "text": "你们有夜间配送吗",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "分析：用户消息“你们有夜间配送吗”中的关键词是“夜间配送”，这属于对配送服务的时间安排进行咨询，不涉及具体订单的物流跟踪（非logistics_query），也不涉及价格、售后、账户等问题。它关注的是配送服务的可选时间段，属于配送服务范畴，对应意图定义中的“delivery_service”（用户咨询配送方式、配送范围、预约送达等）。\n结论：delivery_service",
+    "correct": true
+  },
+  {
+    "id": 70,
+    "text": "有人工客服吗",
+    "true": "chitchat_other",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“有人工客服吗”是询问是否存在人工客服渠道，属于寻求帮助或服务支持的初步请求，不涉及具体业务问题（如物流、退款、商品等），也没有表达不满或投诉，而是中性的服务接入询问。该消息不符合logistics_query、refund_request等具体业务意图，也不属于chitchat类（如“你好”“谢谢”），而更接近于寻求人工服务支持——但注意，意图列表中并无“customer_service_access”这类独立类别；根据边界说明和现有15类定义，该消息未指向任何具体业务场景（无订单、无商品、无支付、无账户操作等），也非打招呼或闲聊（因有明确功能诉求），但又无法归入已有15类中的任一明确业务意图。因此，它属于无明确业务意图、无法归入前14类的泛化咨询，最符合chitchat_other（定义为",
+    "correct": false
+  },
+  {
+    "id": 71,
+    "text": "这个组合装比单买便宜多少",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "分析：用户消息中的关键词是“组合装”“比单买便宜多少”，核心关注点是价格差异，即组合装相对于单独购买的优惠幅度。这属于对商品购买方式下的价格比较和优惠程度的咨询，不涉及具体促销活动规则（如满减门槛、活动时间等），而是聚焦于价格本身的优势，因此归类为价格优惠类咨询。\n结论：price_promotion",
+    "correct": true
+  },
+  {
+    "id": 72,
+    "text": "订单显示已签收但我没收到",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户提到“订单显示已签收但我没收到”，核心矛盾在于物流状态（系统显示已签收）与实际收货情况不符。这属于对当前订单配送结果的质疑，重点在于确认货物是否真实送达、是否存在误签收或丢件问题，本质是追踪该订单的物流异常情况，而非咨询配送方式或范围（排除delivery_service），也不是表达不满（未出现情绪化措辞如“非常不满”“投诉”等，故不归为complaint），更非要求退换货或退款（未提出退货、换货、退款等动作请求）。因此，该消息属于对已有订单物流状态的核实与疑问，符合logistics_query的定义。\n\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 73,
+    "text": "这个手机支持5G吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“这个手机支持5G吗”聚焦于手机是否具备5G通信功能，属于对商品技术规格（网络制式）的直接询问，不涉及价格、物流、售后、账户等其他维度，符合“product_inquiry”定义中“对商品的规格、功能、材质等进行询问”的核心特征。\n\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 74,
+    "text": "你们的态度让我很生气",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "分析：用户消息“你们的态度让我很生气”中，“态度”指向服务方（商家/客服）的行为表现，“很生气”是强烈负面情绪表达，属于对服务质量或沟通体验的不满，符合“complaint”定义中“对服务、商品质量、商家态度等表达不满或投诉”的核心特征。该消息不涉及物流、退款、退货、商品参数、价格、订单修改等其他具体业务诉求，也无咨询、闲聊或技术性问题成分。\n\n结论：complaint",
+    "correct": true
+  },
+  {
+    "id": 75,
+    "text": "凑单可以退一件吗",
+    "true": "campaign_rules",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“凑单可以退一件吗”中的关键词是“退一件”，结合“凑单”这一电商常见场景（为满足满减、包邮等条件而额外购买商品），用户关注的是在已下单的多件商品中，是否可以单独退还其中某一件。这涉及订单中部分商品的退回操作，属于售后处理范畴。由于用户明确指向“退”（即退货），而非仅要回款项（不退回商品），且未提及其他如换货、维修、物流等意图，因此应归类为退货请求。注意：虽然“退一件”可能伴随退款，但核心行为是退货，不是纯退款（refund_request），故不属于refund_request；也不涉及换货，故非return_exchange的“换”部分，但“退”属于return_exchange的子集。根据边界说明，“退换货”指退货或换货行为（不含纯退款），此处“退一件",
+    "correct": false
+  },
+  {
+    "id": 76,
+    "text": "这个有没有折扣价",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "分析：用户消息“这个有没有折扣价”中的关键词是“折扣价”，表明用户在询问当前商品是否存在价格优惠，属于对价格优惠情况的咨询。该询问不涉及具体促销活动的规则（如参与条件、时间等），也不涉及支付问题或订单修改，而是泛指是否有折扣，符合price_promotion意图定义中“咨询价格、优惠券、满减、打折等”的范畴。\n\n结论：price_promotion",
+    "correct": true
+  },
+  {
+    "id": 77,
+    "text": "我等了好久快递还没来",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“我等了好久快递还没来”表达了对订单配送延迟的关切，关键词是“快递还没来”，核心诉求是了解当前订单的物流状态和预计送达时间，属于对已有订单物流进度的查询，符合logistics_query的定义（询问订单的物流状态、配送进度、快递公司等）。该消息不涉及投诉情绪（无指责、不满用语），也未提出退换货、退款等其他售后要求，因此不属于complaint、return_exchange或refund_request等类别。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 78,
+    "text": "退货怎么寄回去",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“退货怎么寄回去”聚焦于退货流程中的具体操作步骤，即如何将商品寄回给商家。关键词是“退货”和“寄回去”，表明用户已决定进行退货，当前关心的是退货的执行方式（如是否需要自行寄回、使用什么快递、是否提供退货面单等），属于退货流程中的操作咨询，而非单纯退款或物流跟踪。该意图符合“return_exchange”定义中“要求退货或换货”的范畴，且不涉及纯退款（refund_request）或物流状态查询（logistics_query）。\n结论：return_exchange",
+    "correct": true
+  },
+  {
+    "id": 79,
+    "text": "麻烦帮忙查一下我订单的快递到哪里了好吗",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息中的关键词是“查一下我订单的快递到哪里了”，明确指向对已有订单的物流运输状态进行实时追踪，属于典型的物流进度查询需求，符合logistics_query的定义（询问订单的物流状态、配送进度、快递公司等）。\n\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 80,
+    "text": "你好我想查物流",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息中包含“你好”（礼貌性开场）和核心诉求“我想查物流”，关键词“查物流”明确指向对已有订单的配送进度、快递状态等进行查询，符合logistics_query的定义，即询问订单的物流状态、配送进度、快递公司等。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 81,
+    "text": "晚上还有人值班吗",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“晚上还有人值班吗”是在询问客服或相关人员的工作时间，属于对服务可用性的确认。该消息未涉及物流、退款、退货、商品信息、价格优惠、订单修改、支付、账户、投诉、维修、发票、会员、配送服务或活动规则等具体业务意图，也没有明确的业务请求，更偏向于日常交流或试探性问候，属于无明确业务意图的闲聊类问题。\n结论：chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 82,
+    "text": "有没有团购价",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "分析：用户消息“有没有团购价”中的关键词是“团购价”，这属于对特定购买方式（团购）下的价格优惠的询问，核心意图是了解是否存在更优惠的价格形式。该问题不涉及具体订单的物流、售后、账户等，也不属于促销活动的具体规则（如如何参与、活动时间等），而是聚焦于价格本身是否可享受团购优惠，因此应归类为价格或优惠相关的咨询。\n\n结论：price_promotion",
+    "correct": true
+  },
+  {
+    "id": 83,
+    "text": "快递几天了还没到",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“快递几天了还没到”中的关键词是“快递”和“还没到”，表明用户在关注已下单商品的配送进度，属于对当前订单物流状态的询问，核心意图是了解物流是否异常或预计到达时间，符合logistics_query的定义（询问订单的物流状态、配送进度、快递公司等）。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 84,
+    "text": "怎么联系售后",
+    "true": "after_sales_repair",
+    "pred": "complaint",
+    "raw_output": "分析：用户消息“怎么联系售后”关键词为“联系售后”，表达的是希望获取售后服务的联系方式或渠道，属于寻求售后支持的入口。该请求不涉及具体的物流查询、退款、退货换货、维修操作等具体售后行为，而是询问如何触达售后部门。在给定的意图定义中，没有直接对应“咨询售后联系方式”的类别，但最接近的是“after_sales_repair”（咨询保修、维修、质量问题处理）——然而，该定义强调的是“咨询保修、维修、质量问题处理”，核心是问题类型而非联络方式；而“complaint”强调表达不满；“customer_service_contact”未被定义。根据边界说明和现有15类意图，“联系售后”本质是寻求售后服务入口，通常归属于广义售后支持范畴，但需严格匹配定义。注意：所有意图均以用户**具体诉求内容**为准，而非泛泛的“售后”二字。此处用户未提",
+    "correct": false
+  },
+  {
+    "id": 85,
+    "text": "有没有配件单卖",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“有没有配件单卖”中的关键词是“配件”和“单卖”，表明用户在询问商品的配件是否可以单独购买。这属于对商品组成、可售形式（是否支持单独销售）的咨询，核心关注点是商品本身的销售属性和规格选项，而非价格优惠、物流、售后等其他方面。因此，该问题应归类为对商品信息的 inquiry，具体指向商品的可售形式或配套情况，属于 product_inquiry（商品咨询）范畴。\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 86,
+    "text": "想把自提改成送货上门",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "分析：用户消息“想把自提改成送货上门”明确表达了对已下单订单的配送方式变更需求，关键词是“改成”，对象是“自提”→“送货上门”，属于对订单履约环节中配送服务方式的调整，不涉及物流状态查询（logistics_query），也不属于咨询配送范围或方式（delivery_service），而是对**已有订单的配送方式这一订单属性进行修改**，符合“order_modification”的定义——即修改已下单的信息（此处为配送方式/服务类型）。\n结论：order_modification",
+    "correct": true
+  },
+  {
+    "id": 87,
+    "text": "嗯嗯",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“嗯嗯”是语气词，表示应答或确认，无具体业务关键词，不涉及物流、退款、商品、价格、订单修改等任何明确意图，属于无实质信息的寒暄或过渡性表达，符合“chitchat_other”的定义。\n结论：chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 88,
+    "text": "你们配送范围有多大",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "分析：用户消息“你们配送范围有多大”聚焦于商家或平台的配送地理覆盖范围，关键词是“配送范围”，属于对配送服务的基本咨询，不涉及具体订单的物流跟踪（非logistics_query），也不涉及价格、售后、账户等其他维度，符合delivery_service的定义——即咨询配送方式、配送范围、预约送达等（非物流跟踪）。\n结论：delivery_service",
+    "correct": true
+  },
+  {
+    "id": 89,
+    "text": "太好了",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“太好了”是一个表达积极情绪的感叹词，没有包含任何具体业务关键词（如“物流”“退款”“发票”“会员”等），也不指向任何明确的服务请求、问题反馈或信息咨询。它属于无实质意图的礼貌性回应或情绪表达，无法归入15类明确业务意图中。\n结论：chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 90,
+    "text": "帮我看下退款什么时候到",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“帮我看看退款什么时候到”中的关键词是“退款”和“什么时候到”，表明用户关注的是已申请的退款资金到账时间，属于对已发起退款流程的资金返还进度的询问。这不涉及退货或换货操作（排除return_exchange），也不涉及对商品本身或物流状态的询问，而是聚焦于款项退还的时间节点，符合“refund_request”意图中关于退款进度的延伸咨询——即用户已提出退款请求，现进一步追问处理结果和到账时效，仍属于退款请求范畴下的子问题。\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 91,
+    "text": "优惠券怎么不能用了",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "分析：用户消息“优惠券怎么不能用了”聚焦于优惠券的使用异常，关键词是“优惠券”和“不能用了”，表明用户在尝试使用优惠券时遇到问题，意图是咨询优惠券失效的原因或解决方法。这属于对优惠、折扣类权益的使用疑问，不涉及具体促销活动的规则细节（如参与条件、时间限制等），而是泛指优惠券本身的有效性或可用性问题，因此归类为价格/优惠相关咨询，对应意图 price_promotion。\n结论：price_promotion",
+    "correct": true
+  },
+  {
+    "id": 92,
+    "text": "会员可以退吗",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "分析：用户消息“会员可以退吗”中的关键词是“会员”和“退”。结合意图定义，“会员”指向membership类问题，而“退”可能被理解为退出会员、取消会员资格或退还会员费。但该表述模糊，未明确是退会、退费还是其他；不过根据常见电商场景，“会员可以退吗”通常指“能否取消会员资格/退订会员服务”，属于membership范畴下的权益咨询（如是否支持退订、是否有退款等），而非refund_request（因未提及“钱”“款项”“返还”等支付相关词，也未说明已付费）。此外，该问题不涉及物流、订单修改、投诉等其他类别，最接近的是membership（会员相关咨询）。\n结论：membership",
+    "correct": true
+  },
+  {
+    "id": 93,
+    "text": "退款退到哪个账户",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“退款退到哪个账户”聚焦于退款资金的返还路径，关键词是“退款”和“哪个账户”，表明用户已提出退款诉求，当前关心的是退款到账的账户信息（如原支付渠道、银行卡、余额等）。这属于用户要求退还已支付款项后的资金去向确认，核心意图是完成退款流程，而非退货或换货，也不涉及物流、商品咨询等其他范畴。因此应归类为退款请求的延伸问题，仍属于退款申请场景。\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 94,
+    "text": "预计明天能收到吗",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“预计明天能收到吗”聚焦于订单的送达时间，隐含对当前物流进度的询问，目的是确认货物是否能在指定时间（明天）到达。这属于对已有订单物流状态的实时跟踪和预估，关键词“收到”对应物流履约环节，而非咨询配送方式或范围（排除delivery_service），也非对价格、售后、账户等其他维度的提问。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 95,
+    "text": "上门取件方便吗",
+    "true": "delivery_service",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“上门取件方便吗”聚焦于退货/换货流程中的一个具体环节——上门取件服务的便捷性。关键词“上门取件”是退换货（return_exchange）场景下的典型操作方式，用户并非在查询已有订单的物流轨迹（非logistics_query），也不是单纯要求退款（refund_request），而是关心取件服务是否便利，隐含对退换货流程体验的关注。该问题属于退换货服务执行层面的咨询，符合 return_exchange 意图定义中“用户要求退货或换货（不含纯退款）”的延伸服务咨询，且不属于 delivery_service（后者指正向配送方式/范围，而非逆向取件）。\n结论：return_exchange",
+    "correct": false
+  },
+  {
+    "id": 96,
+    "text": "我改主意了想退款",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“我改主意了想退款”中，“退款”是核心关键词，明确表达了退还已支付款项的诉求。“改主意”说明用户尚未进行退货或换货操作，仅希望收回款项，不涉及商品退回或更换，因此属于纯退款申请，符合“refund_request”的定义。该消息不涉及物流、售后维修、账户问题等其他意图。\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 97,
+    "text": "请问一下",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息仅为“请问一下”，无具体关键词，未提及物流、退款、商品、价格、订单、支付、账户、投诉、维修、发票、会员、配送、活动规则等任何明确意图指向，属于无实质内容的开场白或试探性提问，无法归入15类明确意图中。\n结论：chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 98,
+    "text": "你怎么这么聪明",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“你怎么这么聪明”属于对客服能力的夸奖，无实际业务诉求，不涉及物流、售后、订单、支付、账户等任何具体服务场景，也不符合投诉、咨询、请求等明确意图，属于闲聊或情感表达类内容。\n结论：chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 99,
+    "text": "谢谢你",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“谢谢你”是表达感谢的礼貌用语，不含任何关于订单、商品、物流、售后、账户等具体业务诉求，也未涉及咨询、请求、投诉等明确意图，属于无实际业务意图的社交性表达。\n结论：chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 100,
+    "text": "密码长度有要求吗",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "分析：用户消息“密码长度有要求吗”聚焦于账户注册或登录环节中密码设置的具体规则，关键词为“密码”和“长度要求”，属于账户安全与账户功能设置范畴，不涉及支付、订单、商品、物流等其他业务模块，符合account_issue定义中关于密码相关问题的描述。\n结论：account_issue",
+    "correct": true
+  },
+  {
+    "id": 101,
+    "text": "有没有礼盒装",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“有没有礼盒装”是在询问商品是否存在礼盒包装这一规格或形式，关注的是商品的包装选项，属于对商品具体形态、配置或呈现方式的咨询，不涉及价格、物流、售后等其他维度，符合“product_inquiry”中关于商品规格、包装、版本等属性的询问范畴。\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 102,
+    "text": "注册需要什么信息",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "分析：用户消息“注册需要什么信息”聚焦于账户创建过程中所需提供的资料，涉及用户注册流程和账户相关要求，属于账户管理的基础问题，对应“account_issue”类别（涵盖注册、登录、密码、账户安全等问题）。\n结论：account_issue",
+    "correct": true
+  },
+  {
+    "id": 103,
+    "text": "有没有备用机可以借",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "分析：用户询问“有没有备用机可以借”，关键词是“备用机”和“借”，表明用户在当前设备可能故障或维修期间，希望临时获得一台替代设备使用。这通常发生在售后维修场景中，属于保修或维修服务的延伸支持（如厂商提供的备用机服务），与“after_sales_repair”（咨询保修、维修、质量问题处理）高度相关。该诉求并非投诉（无不满情绪表达）、非退货换货（未提退/换）、非物流/支付等其他类别，而是围绕设备故障后的维修配套服务进行咨询。\n\n结论：after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 104,
+    "text": "有没有其他口味",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“有没有其他口味”是在询问商品是否存在除当前所见之外的其他口味选项，关注的是商品的规格、种类或可选变体，属于对商品属性的咨询，不涉及价格、物流、售后等其他方面。\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 105,
+    "text": "折扣叠加吗",
+    "true": "price_promotion",
+    "pred": "campaign_rules",
+    "raw_output": "分析：用户消息“折扣叠加吗”聚焦于多个折扣是否可以同时使用，属于对优惠规则的具体咨询。关键词“折扣叠加”直接关联促销活动中的优惠组合规则，而非单纯询问价格或某项优惠是否存在，因此应归类为对促销活动规则的询问，符合campaign_rules的定义（咨询促销活动的规则、参与方式、活动时间等）。\n结论：campaign_rules",
+    "correct": false
+  },
+  {
+    "id": 106,
+    "text": "容易褪色吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“容易褪色吗”是针对商品（很可能是服装、纺织品、印刷品等）的物理特性进行询问，关注的是商品在使用或存放过程中颜色是否容易消退。这属于对商品质量属性、材质表现或功能特性的疑问，不涉及物流、售后维修、退款退货、价格优惠等其他方面，核心是了解商品本身的性能表现，符合“product_inquiry”的定义——即对商品的规格、功能、材质、耐用性等进行询问。\n\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 107,
+    "text": "已经五天了还没收到货",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户提到“已经五天了还没收到货”，核心关注点是订单交付延迟，隐含对当前配送进度的疑问和不确定性。该表述未涉及修改订单、申请退款、退货换货、价格优惠等其他意图，而是聚焦于“货是否发出、走到哪了、为何未达”——这属于对已有订单物流状态的查询，符合logistics_query的定义（询问物流状态、配送进度）。注意：虽未明确说“查物流”，但“五天没收到货”是典型的物流异常触发的查询意图，而非对配送服务范围或方式的咨询（故不属于delivery_service）。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 108,
+    "text": "今天下单有什么优惠",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "分析：用户消息“今天下单有什么优惠”中的关键词是“优惠”，表明用户关注的是下单时可享受的价格减免、折扣或促销福利。该询问不针对特定活动规则（如活动时间、参与条件等），而是泛指当前下单能获得的优惠，属于对价格优惠的一般性咨询，符合price_promotion定义。注意其未提及具体活动名称或规则细节，因此不属于campaign_rules；也未涉及支付失败、账户问题等其他范畴。\n结论：price_promotion",
+    "correct": true
+  },
+  {
+    "id": 109,
+    "text": "怎么成为会员",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "分析：用户消息“怎么成为会员”聚焦于会员身份的获取方式，涉及会员资格、加入流程等，属于对会员体系的咨询，对应意图定义中的“membership”（用户咨询会员等级、积分、会员专属权益等），此处虽未提积分或权益，但“如何成为”明确指向会员准入机制，属于会员相关咨询。\n结论：membership",
+    "correct": true
+  },
+  {
+    "id": 110,
+    "text": "退货单号怎么填",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“退货单号怎么填”聚焦于退货流程中的具体操作步骤，关键词是“退货单号”和“怎么填”，表明用户正在办理退货（而非仅退款），且对退货单的填写方式存在疑问。这属于退货流程中的操作咨询，核心意图是完成退货动作，符合“return_exchange”定义（用户要求退货或换货，含退货相关操作指导）。注意：该消息未涉及物流跟踪（非logistics_query），未要求退钱（非refund_request），也非咨询商品本身或价格等其他维度。\n\n结论：return_exchange",
+    "correct": true
+  },
+  {
+    "id": 111,
+    "text": "衣服太大了能换小一号吗",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“衣服太大了能换小一号吗”中，“衣服太大了”表明商品尺寸不合适，“换小一号”明确表达了更换不同规格商品的意愿，属于对已购商品进行规格调整的需求，符合“return_exchange”（退货或换货）的定义。注意此处未提及退款，而是聚焦于“换货”，因此不属于refund_request；也不涉及物流状态、价格优惠等其他意图。\n结论：return_exchange",
+    "correct": true
+  },
+  {
+    "id": 112,
+    "text": "客服态度很差",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "分析：用户消息“客服态度很差”明确表达了对客服人员服务态度的不满，属于对服务质量的负面评价，符合“complaint”意图定义中的“对服务、商品质量、商家态度等表达不满或投诉”。该消息不涉及物流、退款、退货、商品咨询等其他具体业务操作，而是纯粹的情绪宣泄和投诉。\n结论：complaint",
+    "correct": true
+  },
+  {
+    "id": 113,
+    "text": "跨境支付手续费多少",
+    "true": "payment_issue",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“跨境支付手续费多少”聚焦于支付过程中产生的费用，关键词是“跨境支付”和“手续费”，属于支付环节的费用咨询。这与支付失败、扣款异常等payment_issue不同，而是询问支付成本结构，但根据现有意图定义，payment_issue涵盖“支付失败、扣款异常、支付方式等问题”，而手续费属于支付过程中的费用规则，更贴近支付环节的属性问题。然而，当前15类意图中并无专门针对“支付费用/手续费”的独立类别；需判断最邻近类别：  \n- 不属于logistics_query（无关物流）、refund_request（未提退款）、return_exchange（无关退换）、product_inquiry（非商品属性）、price_promotion（非商品价格或优惠券）、order_modification（未要求修改订单）、account_issue（非账户问题）、complaint（无不满表达）、after_sales_repair（非维修）、invoice（非发票）、membership（",
+    "correct": false
+  },
+  {
+    "id": 114,
+    "text": "我已经退货了什么时候退钱",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“我已经退货了什么时候退钱”中，“已经退货了”表明退货流程已完成或已发起，“什么时候退钱”明确表达了对退款到账时间的询问。核心诉求是确认退款进度和时间，属于要求退还已支付款项的后续跟进，而非退货或换货操作本身（不涉及商品寄回或更换），也不属于物流跟踪（与快递状态无关）。因此，该意图属于用户主动提出的退款请求及进度追问，归类为 refund_request。\n\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 115,
+    "text": "想把两个颜色换一下",
+    "true": "order_modification",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“想把两个颜色换一下”中的关键词是“换一下”，结合上下文，这是在已下单后希望将商品的颜色进行互换，属于对已购商品的更换需求，不涉及退款，也不属于物流、价格、账户等问题。该行为符合“return_exchange”（退货或换货）的定义，即用户要求换货（颜色变更）。\n结论：return_exchange",
+    "correct": false
+  },
+  {
+    "id": 116,
+    "text": "不太确定",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“不太确定”表达了一种模糊、犹豫或缺乏明确诉求的状态，没有出现与物流、退款、退货、商品参数、价格、订单修改、支付、账户、投诉、维修、发票、会员、配送、活动规则等相关的关键词或语义指向。该消息属于无明确意图的表达，既不是打招呼也不是感谢，而是典型的模糊反馈，无法归入前述15类具体业务意图中。\n结论：chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 117,
+    "text": "邮编填错了影响发货吗",
+    "true": "order_modification",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“邮编填错了影响发货吗”聚焦于订单地址信息（邮编）填写错误是否会对发货环节造成影响。用户并未查询已有订单的物流状态（非logistics_query），也未要求修改订单（如地址变更操作），而是关心该错误信息可能带来的后果，核心诉求是确认“发货”是否会因此受阻。这属于对订单履约环节中配送前提条件的咨询，与配送服务的准确性、可行性相关，但注意：此处不是询问物流跟踪（logistics_query），也不是要求修改地址（order_modification），而是质疑地址信息错误对“发货”这一动作的影响——而发货依赖于有效、可送达的地址信息，邮编是配送服务可达性的重要依据。因此，该问题本质是咨询地址信息（尤其是邮编）对配送服务执行的影响，应归入delivery_service（配送服务），因其涉及配送能否顺利开展的前提条件（地址有效性），而非单纯修改",
+    "correct": false
+  },
+  {
+    "id": 118,
+    "text": "跟描述不符我要退",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“跟描述不符我要退”中，“跟描述不符”表明商品存在与页面描述不一致的问题，属于商品质量问题或信息不符；“我要退”明确表达了退货的诉求。该诉求聚焦于将商品退回，未提及换货，也未单独强调仅退款（如“退钱”“退款”），而是以“退”字表达退货行为，符合“return_exchange”意图中“退货”的定义。注意区分：若用户说“把钱退给我”则属refund_request，但此处是“我要退”（即退商品），且原因指向商品与描述不符，常见于退换货场景。\n结论：return_exchange",
+    "correct": true
+  },
+  {
+    "id": 119,
+    "text": "活动什么时候结束",
+    "true": "campaign_rules",
+    "pred": "campaign_rules",
+    "raw_output": "分析：用户消息“活动什么时候结束”中的关键词是“活动”和“结束”，表明用户关注的是某个促销活动的截止时间，属于对活动时间范围的咨询。根据意图定义，“campaign_rules”指用户咨询促销活动的规则、参与方式、活动时间等，而“活动什么时候结束”正是对活动时间（即活动截止时间）的直接询问，符合该意图的定义。它不属于物流、退款、商品咨询等其他类别，也不属于一般性价格优惠（price_promotion）或售后类问题。\n结论：campaign_rules",
+    "correct": true
+  },
+  {
+    "id": 120,
+    "text": "赶紧给我退钱",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“赶紧给我退钱”中，“退钱”直接对应退还已支付款项的行为，关键词为“退钱”，强调的是资金返还，不涉及退货实物或更换商品，因此属于纯退款请求。语气词“赶紧”体现急迫性，但不改变意图本质。该消息不属于退货（return_exchange）或换货，也不属于物流、售后维修等其他类别。\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 121,
+    "text": "怎么办理退货",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“怎么办理退货”中的关键词是“退货”，表明用户希望了解退货的具体流程和操作方式。这属于用户在已购买商品后，要求将商品退回并可能涉及换货或退款的售后行为。根据意图定义，“return_exchange”明确指“用户要求退货或换货（不含纯退款）”，而“怎么办理”体现的是对退货流程的咨询，仍属于退货诉求的延伸，尚未进入纯资金退还（refund_request）或维修（after_sales_repair）等其他范畴。注意：该句未提及“退款”“钱”“退钱”等字眼，也未表达不满（非complaint），不涉及物流跟踪（非logistics_query），亦非询问商品属性或价格。因此，最精准匹配为 return_exchange。\n\n结论：return_exchange",
+    "correct": true
+  },
+  {
+    "id": 122,
+    "text": "怎么关闭推送通知",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "分析：用户消息“怎么关闭推送通知”涉及账户的通知设置，属于用户对个人账户功能的管理需求，与登录、注册、密码、账户安全等核心账户问题不同，但属于账户相关的设置类问题。在给定的意图定义中，没有直接对应“通知设置”的类别，但最接近的是 account_issue（账户问题），因为推送通知设置通常归属于账户偏好或安全设置的一部分，是账户管理的延伸。其他类别如 chitchat_other 不适用（有明确操作意图），logistics_query、refund_request 等明显无关。因此应归入 account_issue。\n\n结论：account_issue",
+    "correct": true
+  },
+  {
+    "id": 123,
+    "text": "积分清零前会提醒吗",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "分析：用户消息中的关键词是“积分清零”和“提醒”，关注的是积分有效期管理及平台是否提供到期前提醒服务。这与会员权益、积分规则相关，属于对会员体系中积分机制的咨询，符合“membership”意图定义（咨询会员等级、积分、会员专属权益）。\n结论：membership",
+    "correct": true
+  },
+  {
+    "id": 124,
+    "text": "广告和实物差距太大了",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "分析：用户消息“广告和实物差距太大了”表达了对商品实际收到物品与广告宣传之间存在显著差异的不满，核心在于质疑商品质量或描述真实性，属于对商品本身的负面评价和抱怨，符合“投诉”类意图中对商品质量不满的情形。该消息未涉及退款、退货、换货等具体售后操作请求，也未询问物流、价格、维修等，而是直接表达不满情绪，因此归类为complaint。\n结论：complaint",
+    "correct": true
+  },
+  {
+    "id": 125,
+    "text": "有什么限制吗",
+    "true": "product_inquiry",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“有什么限制吗”非常简短，缺乏上下文，未明确指向具体业务场景（如退货限制、优惠券使用限制、配送范围限制、会员权益限制、活动参与限制等）。该提问属于开放式、模糊性询问，无法根据现有信息唯一确定其归属意图类别。在所有定义的意图中，它可能与campaign_rules（活动规则限制）、return_exchange（退换货条件限制）、logistics_query（物流配送限制）、delivery_service（配送范围限制）等存在潜在关联，但均无明确指向。根据边界说明中“chitchat_other”的定义——“打招呼、感谢、无明确意图、无法归入以上类别”，该消息属于典型意图不明、需进一步澄清的模糊提问，不满足任一具体意图的判定标准。\n\n结论：chitchat_other",
+    "correct": false
+  },
+  {
+    "id": 126,
+    "text": "会员生日有双倍积分吗",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "分析：用户消息中关键词为“会员生日”“双倍积分”，聚焦于会员权益在特定场景（生日）下的具体规则，属于对会员等级、积分获取规则的咨询，符合“membership”意图定义中的“会员专属权益”范畴。\n结论：membership",
+    "correct": true
+  },
+  {
+    "id": 127,
+    "text": "有没有安装服务",
+    "true": "product_inquiry",
+    "pred": "delivery_service",
+    "raw_output": "分析：用户消息“有没有安装服务”是在询问商品是否提供安装相关的服务，属于对配送或售后服务中附加服务内容的咨询。关键词是“安装服务”，这既不涉及物流跟踪（logistics_query），也不涉及退货、退款、维修等具体售后行为，而是关于商家是否提供安装这一项交付配套服务。根据边界说明，“delivery_service”定义为“用户咨询配送方式、配送范围、预约送达等（非物流跟踪）”，而安装服务通常属于配送/交付环节的延伸服务（如大家电、家具等常配套安装），因此归入 delivery_service 更准确。不属于 product_inquiry（未问商品本身属性）、after_sales_repair（未涉及故障或保修）、complaint（无不满情绪）等其他类别。\n\n结论：delivery_service",
+    "correct": false
+  },
+  {
+    "id": 128,
+    "text": "换零件原装的吗",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "分析：用户消息“换零件原装的吗”聚焦于“换零件”这一行为，且询问零件是否为“原装”，这表明用户关注的是售后维修过程中所使用的零部件的来源和质量。该问题不涉及物流跟踪、退款、退货/换货（整机层面）、价格优惠等，而是与产品出现故障后需要维修、更换部件相关，属于对维修服务中配件性质的咨询，符合“after_sales_repair”（售后维修）意图定义中的“咨询保修、维修、质量问题处理”范畴。\n\n结论：after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 129,
+    "text": "我退款好几天了还没处理",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息中关键词为“退款”和“好几天了还没处理”，表明用户已提交退款申请，但对退款进度不满，核心诉求是催促退款处理。这属于用户要求退还已支付款项且关注处理状态，符合“refund_request”定义（用户要求退还已支付的款项），而非退货/换货（无提及商品寄回或更换）、非投诉（虽有情绪但未明确表达对服务/商家的不满，焦点在退款未完成这一事实本身）。\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 130,
+    "text": "无聊来逛逛",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“无聊来逛逛”表达的是随意浏览、无特定目的的行为，没有涉及订单、商品、支付、账户、售后等任何具体业务场景，也不包含疑问、请求或投诉等明确意图，属于闲聊或无明确需求的打招呼类表达。\n结论：chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 131,
+    "text": "几天了都没有物流更新",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“几天了都没有物流更新”明确指向已下单订单的物流状态异常，关键词“物流更新”直接对应物流跟踪和配送进度查询，属于对当前订单物流信息的询问，符合logistics_query的定义。该消息不涉及退款、退货、商品参数、价格优惠等其他意图。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 132,
+    "text": "忘记账号了怎么找回",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "分析：用户消息“忘记账号了怎么找回”明确指向账户相关的操作问题，关键词为“忘记账号”“找回”，属于账户访问异常场景，涉及账号识别与恢复，符合“account_issue”定义中的登录、注册、密码、账户安全等问题范畴（账号找回是账户安全与访问的基础环节）。\n结论：account_issue",
+    "correct": true
+  },
+  {
+    "id": 133,
+    "text": "这个牌子靠谱吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“这个牌子靠谱吗”是在询问某个品牌是否值得信赖，可能涉及品牌口碑、质量保障、售后服务等方面，但并未明确指向具体商品参数（如规格、功能等），也不属于对物流、价格、订单、支付、账户等具体业务环节的咨询。该问题更偏向于对品牌整体信誉的主观评价询问，不属于产品具体属性的 inquiry（如材质、功能等），也不属于投诉或售后问题，而是一种泛泛的品牌信任度咨询。在给定的意图类别中，没有专门针对“品牌信誉”的类别，最接近的是 product_inquiry（商品相关询问），但此处用户未提及具体商品，仅问“牌子”，属于对品牌层面的笼统质疑。然而，根据边界说明，“product_inquiry”定义为“对商品的规格、功能、材质等进行询问”，而品牌可靠性不属于该范畴；同时，它也不符合 complaint（尚未表达不满）、after_sales",
+    "correct": true
+  },
+  {
+    "id": 134,
+    "text": "你们几点下班",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“你们几点下班”询问的是客服或店铺的营业时间，属于对服务时间的常规咨询。该问题不涉及订单、物流、商品、支付、账户、售后等具体业务场景，也不表达不满或投诉，不属于任何业务类意图。它更接近日常对话中的信息询问，但未表达明确的业务需求，符合“无明确意图”或“闲聊”类别的特征。在给定的意图定义中，“chitchat_other”涵盖打招呼、感谢、无明确意图、无法归入以上类别的情况，而营业时间询问虽有一定实用性，但未关联到具体业务操作（如“下班前能发货吗？”则可能属delivery_service或order_modification），单独出现时缺乏明确业务指向，应归为泛化闲聊类。\n\n结论：chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 135,
+    "text": "集卡活动怎么玩",
+    "true": "campaign_rules",
+    "pred": "campaign_rules",
+    "raw_output": "分析：用户消息“集卡活动怎么玩”中的关键词是“集卡活动”和“怎么玩”，表明用户关注的是某个具体促销活动的参与方式、规则或流程，属于对活动玩法的咨询。根据意图定义，“campaign_rules”指用户咨询促销活动的规则、参与方式、活动时间等，而“集卡活动”是一种典型的平台促销活动（如春节集卡、品牌集卡等），其核心诉求是了解如何参与、规则细节等，而非单纯的价格优惠或物流等问题。\n结论：campaign_rules",
+    "correct": true
+  },
+  {
+    "id": 136,
+    "text": "分期怎么操作",
+    "true": "payment_issue",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“分期怎么操作”聚焦于支付方式中的分期付款功能，询问的是如何办理分期，属于对支付相关流程的咨询。该问题不涉及支付失败或异常（排除payment_issue），也不涉及价格优惠或活动规则，而是关于一种支付手段的具体操作步骤，因此最贴近payment_issue的范畴——但需注意，payment_issue定义为“支付失败、扣款异常、支付方式等问题”，其中明确包含“支付方式”问题。虽然分期本身是支付方式的一种，但用户并非报告故障，而是咨询操作流程；然而在给定意图体系中，没有独立的“payment_method_inquiry”类别，而payment_issue是唯一涵盖“支付方式”这一关键词的类别（边界说明中未将其限定为仅故障类，而是列为“支付方式等问题”）。其他类别如price_promotion（优惠）、order_modification（改单）、logistics_query（物流）等均不相关。\n\n结论：",
+    "correct": false
+  },
+  {
+    "id": 137,
+    "text": "降价了可以补差价吗",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "分析：用户消息“降价了可以补差价吗”关注的是商品价格下调后是否能退还差额，核心诉求是因价格变动而获得额外退款，属于对已购商品因降价产生的价差补偿请求。这既不是单纯的退款申请（因非质量问题或服务问题主动要求退全款），也不是一般性价格优惠咨询（如问是否有折扣），而是针对已下单/已支付订单在降价后的差价返还问题，本质上属于售后价格保障类诉求，但根据意图定义，该场景最贴近“price_promotion”——因为补差价是电商平台常见的价格保护政策，通常与促销、调价、价格承诺等价格相关机制绑定；且不属于refund_request（该类指无条件退全款），也不属于campaign_rules（未提及具体活动名称或规则细节），更非logistics、product等其他类别。\n\n结论：price_promotion",
+    "correct": true
+  },
+  {
+    "id": 138,
+    "text": "开的什么类型的发票",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "分析：用户消息“开的什么类型的发票”聚焦于发票的类型（如增值税专用发票、普通发票、电子发票等），属于对发票相关事项的咨询，不涉及物流、退款、商品功能等其他方面，符合“invoice”意图定义中“咨询开发票、发票类型、发票信息修改”的描述。\n结论：invoice",
+    "correct": true
+  },
+  {
+    "id": 139,
+    "text": "改下尺码谢谢",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "分析：用户消息“改下尺码谢谢”中的关键词是“改下尺码”，表明用户希望修改已下单商品的规格（尺码属于商品属性，如衣服、鞋子等），且语气礼貌（“谢谢”），无退款、退货或换货的明确表述，而是直接要求变更订单中的商品规格信息。这符合“order_modification”（订单修改）的定义——修改已下单的信息（如地址、数量、规格等）。\n结论：order_modification",
+    "correct": true
+  },
+  {
+    "id": 140,
+    "text": "你们这是什么服务水平",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "分析：用户消息“你们这是什么服务水平”带有明显的情绪化表达，使用反问句式，意在表达对当前服务（可能涉及响应速度、处理效率、服务态度等）的不满，属于对服务质量的负面评价，符合“complaint”（投诉）的定义。该消息不涉及物流、退款、商品咨询等具体业务操作，也无明确请求或问题描述，而是直接质疑服务水平，属于典型的投诉类意图。\n\n结论：complaint",
+    "correct": true
+  },
+  {
+    "id": 141,
+    "text": "验证码老是发不到我手机",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "分析：用户提到“验证码老是发不到我手机”，核心问题是无法接收验证码，这通常与账户登录、注册、密码找回等账户安全相关操作有关，属于账户验证环节的异常。该问题不涉及物流、售后、商品、价格等其他领域，而是直接关联到账户的身份验证功能，因此应归类为账户相关的问题。\n\n结论：account_issue",
+    "correct": true
+  },
+  {
+    "id": 142,
+    "text": "物流卡在一个地方好几天了",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息中提到“物流卡在一个地方好几天了”，关键词为“物流”和“卡在”，表明用户关注的是当前订单的运输状态异常，即物流信息长时间未更新，属于对已有订单配送进度的疑问和追踪需求，符合logistics_query的定义（询问物流状态、配送进度等）。该消息不涉及退换货、退款、支付问题或配送服务咨询（如配送范围、方式），也非投诉（虽有隐含不满，但核心诉求是确认物流情况，而非表达不满或要求处理服务问题），因此不属于complaint或其它类别。\n\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 143,
+    "text": "hi",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息仅为“hi”，属于常见的打招呼用语，无任何具体业务关键词，不涉及物流、退款、商品、价格、订单修改等明确意图，也无法归入投诉、维修、发票等具体业务类别，符合闲聊类意图的定义。\n结论：chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 144,
+    "text": "这个能带上飞机吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“这个能带上飞机吗”中的“这个”指代某个商品（上下文未明示，但属于对商品属性的询问），“能带上飞机吗”是在询问该商品是否符合民航运输规定，涉及商品的物理属性（如容量、成分、是否易燃等）或包装规格是否满足航空安检要求。这本质上是对商品使用场景限制的咨询，属于对商品本身特性、适用性或合规性的疑问，与商品的功能、规格、材质等属性相关，最接近“product_inquiry”（商品咨询）范畴。不属于物流、售后、价格等其他类别；也不是在投诉或闲聊。\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 145,
+    "text": "我快递签收了但是没有收到东西",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户提到“快递签收了但是没有收到东西”，核心矛盾在于物流状态显示已签收，但实际未收到商品。这属于对物流结果与实际收货不符的质疑，重点在于确认货物是否真实交付、是否存在丢件或误签收等问题，本质是质疑物流履约结果，而非单纯查询物流进度（logistics_query）；也不属于对服务或商家的主观不满表达（complaint需明确情绪化措辞如“太差了”“投诉”等），而是客观陈述异常事实，寻求核实与解决。该场景最贴近物流环节的异常反馈，但意图分类中无“物流异常”独立类别。根据边界说明，“logistics_query”定义为“询问订单的物流状态、配送进度、快递公司等”，而用户已知签收状态，质疑的是签收真实性/货物去向，属于对物流结果的深度追问，仍属物流信息核实范畴，是log",
+    "correct": true
+  },
+  {
+    "id": 146,
+    "text": "积分能兑换什么",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "分析：用户消息“积分能兑换什么”聚焦于积分的用途，关键词是“积分”和“兑换”，属于对会员权益中积分使用范围的询问，与会员等级、积分累积及兑换规则相关，符合“membership”意图定义中的“积分”咨询。\n结论：membership",
+    "correct": true
+  },
+  {
+    "id": 147,
+    "text": "优惠券过期了能延期吗",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "分析：用户消息中的关键词是“优惠券过期”和“能延期吗”，核心诉求是询问已失效优惠券是否可延长使用期限。这属于对优惠工具（优惠券）的有效性及使用条件的咨询，不涉及具体促销活动的参与规则（如如何领取、活动时间、门槛等），而是聚焦于优惠券本身的时效性与灵活性，符合“price_promotion”意图——即对价格优惠相关要素（含优惠券状态、使用限制等）的一般性咨询。\n\n结论：price_promotion",
+    "correct": true
+  },
+  {
+    "id": 148,
+    "text": "发票开了还能退吗",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "分析：用户消息“发票开了还能退吗”中的关键词是“发票”和“退”，核心关注点是已开具发票后是否还能进行退款操作。这涉及发票与退款流程之间的关系，属于财务/交易流程问题。虽然提到了“退”，但结合上下文“发票开了”，重点并非单纯申请退款（refund_request），而是询问在已开票前提下退款的可行性，这通常与发票作废、红冲、税务合规等开票相关规则有关，因此更贴近对发票处理流程的咨询，属于invoice意图范畴。注意：若用户直接说“我要退款”，则为refund_request；但此处限定条件是“发票开了”，焦点在发票状态对退款的影响，故归类为invoice。\n结论：invoice",
+    "correct": true
+  },
+  {
+    "id": 149,
+    "text": "军营能送到吗",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "分析：用户消息“军营能送到吗”询问的是配送能否覆盖军营这一特定地点，关注的是配送范围和可达性，而非已有订单的物流进度（非logistics_query），也非咨询快递公司或物流状态。这属于对配送服务覆盖区域的咨询，符合delivery_service的定义——“用户咨询配送方式、配送范围、预约送达等（非物流跟踪）”。\n\n结论：delivery_service",
+    "correct": true
+  },
+  {
+    "id": 150,
+    "text": "是正品吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“是正品吗”是在询问商品的真伪性，属于对商品本身属性、质量保障的质疑或确认，核心关注点是商品是否为官方授权、正规渠道销售的正品。这与商品的基本属性、信誉保障相关，但未涉及物流、价格、售后维修、退换货等具体服务环节。在给定的意图定义中，最接近的是对商品本身的疑问，即“product_inquiry”（用户对商品的规格、功能、材质等进行询问），而“正品”可视为商品来源、资质、真伪等属性的一部分，属于商品基础信息范畴。其他意图如complaint（投诉）需有明确不满情绪，refund_request/return_exchange需有行动诉求，after_sales_repair需涉及保修维修，均不匹配。因此，该消息属于对商品本质属性的咨询，归类为product_inquiry。\n\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 151,
+    "text": "积分能抵扣多少钱",
+    "true": "price_promotion",
+    "pred": "membership",
+    "raw_output": "分析：用户消息“积分能抵扣多少钱”聚焦于积分的使用价值，具体询问积分在支付时可抵扣的金额。这涉及会员体系中的积分权益和使用规则，属于对会员积分功能的咨询，与membership意图定义中“用户咨询会员等级、积分、会员专属权益”完全匹配。不涉及订单、物流、退款、商品属性、价格优惠活动等其他维度。\n结论：membership",
+    "correct": false
+  },
+  {
+    "id": 152,
+    "text": "为什么显示已送达我没收到",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“为什么显示已送达我没收到”明确指向已有订单的物流状态与实际收货情况不符，核心是质疑物流信息的准确性，属于对当前订单配送进度的疑问，关键词为“已送达”“没收到”，反映用户在追踪物流时发现异常，意图是查询该订单的实际物流情况，符合logistics_query的定义（询问订单的物流状态、配送进度等）。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 153,
+    "text": "支付不了什么原因",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "分析：用户消息“支付不了什么原因”聚焦于支付过程失败，关键词是“支付不了”，表明用户在完成付款时遇到障碍，关心的是支付失败的具体原因，属于支付环节的技术或流程问题，符合“payment_issue”的定义（支付失败、扣款异常、支付方式等问题）。\n结论：payment_issue",
+    "correct": true
+  },
+  {
+    "id": 154,
+    "text": "活动价格保护几天",
+    "true": "campaign_rules",
+    "pred": "price_promotion",
+    "raw_output": "分析：用户消息“活动价格保护几天”中的关键词是“活动价格保护”，这指的是电商平台常见的“价格保护”服务，即在用户购买商品后，若该商品在一定期限内降价，用户可申请退还差价。用户询问的是该服务的保障期限（“几天”），属于对价格相关权益的咨询。虽然涉及“活动”，但此处并非询问某个具体促销活动的参与规则（如如何参加、活动时间等），而是聚焦于价格保护这一价格保障机制的有效期，本质上属于对价格权益或优惠保障政策的咨询，应归入价格优惠类而非活动规则类。\n结论：price_promotion",
+    "correct": false
+  },
+  {
+    "id": 155,
+    "text": "假一赔十你们赔不赔",
+    "true": "complaint",
+    "pred": "after_sales_repair",
+    "raw_output": "分析：用户消息“假一赔十你们赔不赔”聚焦于商家承诺的“假一赔十”保障条款是否兑现，核心是质疑商品真伪及对应赔偿责任。这并非单纯投诉服务态度或物流问题，而是针对商品质量真实性引发的售后责任主张，属于对质量问题的处理诉求，符合“after_sales_repair”意图中“质量问题处理”的范畴（根据边界说明，“售后维修”指保修、维修、质量问题处理；而“假一赔十”是质量问题触发的补偿机制，属质量问题衍生的售后履约问题）。注意：该消息未明确要求退货/换货（return_exchange）、也未要求仅退款（refund_request），亦非对服务过程不满的泛泛投诉（complaint），而是紧扣商品真伪这一质量属性追问赔偿履行，因此最贴近 after_sales_repair 的定义。\n结论：after_sales_repair",
+    "correct": false
+  },
+  {
+    "id": 156,
+    "text": "怎么只退了一部分钱",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“怎么只退了一部分钱”聚焦于退款金额与预期不符，核心诉求是质疑退款数额（非全额），隐含对已发起退款结果的疑问，属于对已支付款项退还操作的进一步追问。关键词“只退了一部分钱”明确指向退款执行结果，而非退货/换货动作本身，也未涉及物流、商品属性、价格优惠等其他维度。根据边界说明，“refund_request”指用户要求退还已支付的款项；此处虽为对退款结果的疑问，但本质仍属于退款流程中的问题反馈，是退款申请的延续或确认，应归入退款意图范畴（而非complaint，因未表达对服务/态度等的不满，仅就金额提出疑问）。\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 157,
+    "text": "提示密码错误次数过多怎么解锁",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "分析：用户消息中关键词为“密码错误次数过多”“怎么解锁”，核心诉求是解决因多次输错密码导致的账户访问受限问题，属于账户安全或登录异常场景，对应“account_issue”类别（涵盖登录、密码、账户安全等问题）。\n结论：account_issue",
+    "correct": true
+  },
+  {
+    "id": 158,
+    "text": "有没有加急配送",
+    "true": "delivery_service",
+    "pred": "delivery_service",
+    "raw_output": "分析：用户消息“有没有加急配送”聚焦于配送的时效性选项，关键词是“加急配送”，属于对可选配送服务类型（如次日达、小时达、加急发货等）的咨询，不涉及已下单订单的物流跟踪（故非logistics_query），也不涉及价格优惠或活动规则，而是询问平台/商家是否提供更快的配送方式及如何获取，符合“delivery_service”的定义——即咨询配送方式、配送范围、预约送达等（非物流跟踪）。\n结论：delivery_service",
+    "correct": true
+  },
+  {
+    "id": 159,
+    "text": "请问订单还能修改吗",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "分析：用户消息“请问订单还能修改吗”中的关键词是“订单”和“修改”，表明用户希望对已提交的订单内容（如收货地址、商品数量、规格等）进行变更。这符合“order_modification”的定义，即要求修改已下单的信息。该请求不涉及退款、退货、物流跟踪或支付问题，也未提及具体修改项（如地址/数量），但核心意图明确指向订单信息变更。\n结论：order_modification",
+    "correct": true
+  },
+  {
+    "id": 160,
+    "text": "快递小哥什么时候来送",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“快递小哥什么时候来送”聚焦于当前订单的**预计送达时间**，属于对已发货订单的**实时配送进度/时效性询问**，核心诉求是了解物流环节中“最后一公里”的派送时间，而非咨询配送方式、范围或预约服务（排除delivery_service），也非一般性物流状态（如是否发货、在途位置等）的宽泛查询，而是典型的物流时效跟踪需求，符合logistics_query定义中“配送进度”的子类。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 161,
+    "text": "满199减20怎么凑",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "分析：用户消息“满199减20怎么凑”中的关键词是“满199减20”，属于平台常见的满减类促销优惠；“怎么凑”表明用户在咨询如何组合商品或使用其他优惠以满足该门槛条件，核心诉求是了解该价格优惠的实现方式，而非询问某场特定活动的规则（如双11玩法、限时秒杀规则等），因此更贴近对通用价格优惠机制的咨询，属于价格与优惠相关的问题，对应意图定义中的 price_promotion。\n\n结论：price_promotion",
+    "correct": true
+  },
+  {
+    "id": 162,
+    "text": "你们有没有监管的",
+    "true": "complaint",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“你们有没有监管的”语义模糊，缺乏明确上下文。“监管”一词在电商场景中可能指向平台合规性、商品质量监管、售后服务监管、物流监管或客服响应监管等，但用户未提及订单、商品、售后、支付、账户等具体对象，也未表达不满（如“服务没人管”“投诉无门”）、未提出具体诉求（如查物流、要退款、开发票等），更像是一种泛泛的质疑或试探性提问，不构成明确的服务请求或问题反馈。该句不符合logistics_query、refund_request、complaint等任一明确定义的意图类别，属于无明确业务意图的闲聊或模糊质疑，归入chitchat_other最合理。\n\n结论：chitchat_other",
+    "correct": false
+  },
+  {
+    "id": 163,
+    "text": "退货需要保持包装完好吗",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“退货需要保持包装完好吗”聚焦于退货操作的具体要求，关键词是“退货”和“包装完好”，表明用户在确认退货流程中的条件或标准，属于对退货政策或操作规范的询问，与退货行为直接相关，不涉及退款（未提钱）、不涉及物流跟踪（未提快递、单号、进度）、也不属于一般商品咨询（非问功能/规格）。根据边界说明，“退换货”指退货或换货行为，此处明确为“退货”，且问题指向退货前提条件，属于return_exchange意图范畴。\n结论：return_exchange",
+    "correct": true
+  },
+  {
+    "id": 164,
+    "text": "买了三个月屏幕就坏了怎么保修",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "分析：用户提到“买了三个月屏幕就坏了”，表明商品（可能是电子产品）出现质量问题；“怎么保修”明确表达了对保修流程、条件或服务的咨询，属于售后质量保障范畴，符合“after_sales_repair”定义中“咨询保修、维修、质量问题处理”的核心特征。该消息不涉及投诉（未表达情绪化不满或指责）、不涉及退换货操作、也不涉及退款，因此排除complaint、return_exchange、refund_request等意图。\n结论：after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 165,
+    "text": "订单改了地址物流会变吗",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "分析：用户消息中关键词为“订单改了地址”和“物流会变吗”，核心关注点是修改订单地址后对物流状态或配送过程的影响。这涉及已下单信息的变更（地址修改）及其对后续履约环节（物流）的潜在影响，属于对已下单信息进行调整的需求，符合“order_modification”（订单修改）的定义；虽然提到了“物流”，但并非在查询当前物流状态（如“我的快递到哪儿了”），而是询问修改地址这一操作带来的连锁效应，因此不属于logistics_query。该问题不涉及退款、退货、商品属性、价格、支付、账户等其他意图。\n结论：order_modification",
+    "correct": true
+  },
+  {
+    "id": 166,
+    "text": "怎么这么久还没发货",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“怎么这么久还没发货”聚焦于订单尚未进入发货环节，表达对订单处理进度的疑问。关键词是“还没发货”，属于订单履约阶段的问题，涉及订单状态（是否已发货），但尚未到物流运输环节，因此不属于logistics_query（物流查询，通常指已发货后的运输跟踪）。该问题更接近对订单处理进度的询问，但意图定义中没有直接对应的“发货延迟查询”类别。需判断最邻近类别：  \n- 不是refund_request（未提退款）、return_exchange（未提退换）、product_inquiry（非商品属性）、price_promotion（无关价格）、order_modification（未要求修改订单）、payment_issue（未提支付问题）、account_issue（无关账户）、complaint（虽有情绪但未明确表达不满或投诉，而是疑问语气）、after_sales_repair（无关维修）、invoice/membership/campaign_rules（无关）；  \n- delivery_service",
+    "correct": true
+  },
+  {
+    "id": 167,
+    "text": "能不能把尺码改成L",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "分析：用户消息“能不能把尺码改成L”明确表达了对已下单订单中商品规格（尺码）的变更需求，属于在订单已提交但尚未发货（或处于可修改阶段）时，请求调整订单内容中的商品属性。这符合“order_modification”定义中“修改已下单的信息（地址、数量、规格等）”的情形，且尺码属于商品关键规格项。\n\n结论：order_modification",
+    "correct": true
+  },
+  {
+    "id": 168,
+    "text": "怎么获取更多积分",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "分析：用户消息“怎么获取更多积分”中的关键词是“积分”，核心诉求是了解增加积分的方法或途径。积分通常与会员体系相关，属于会员权益的一部分，涉及积分获取规则、任务、活动等，对应的是会员等级、积分累积、会员专属权益等内容，符合“membership”意图定义。\n结论：membership",
+    "correct": true
+  },
+  {
+    "id": 169,
+    "text": "能用多久啊",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“能用多久啊”是一个模糊的询问，核心关键词是“能用多久”，通常指向商品的使用寿命、续航时间、保修期限或有效期等。结合意图定义，这属于对商品本身属性（如寿命、耐用性、保修期）的询问，而非物流、退款、价格等其他范畴。最接近的意图是“product_inquiry”（商品咨询），因为用户在询问商品的功能性或物理属性（如电池续航、产品寿命、保修时长等），但需注意：若明确指向保修期，则可能属于“after_sales_repair”；然而，“能用多久啊”语气口语化、宽泛，未出现“保修”“维修”“坏了”“修”等关键词，更偏向对产品基本性能/寿命的通用询问，属于典型的产品规格或使用特性咨询，因此归入 product_inquiry。\n\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 170,
+    "text": "商家不给退款怎么办",
+    "true": "refund_request",
+    "pred": "complaint",
+    "raw_output": "分析：用户消息“商家不给退款怎么办”明确表达了用户已提出退款诉求但被商家拒绝，核心诉求是解决退款受阻的问题，属于对退款流程受阻的求助。关键词“不给退款”直接指向退款未成功，“怎么办”表明用户希望获得解决方案。该情况不属于单纯的退款申请（refund_request），而是因商家拒绝退款而产生的进一步诉求，本质是用户对商家处理方式不满，且隐含对平台介入或投诉渠道的需求，符合“complaint”（投诉）的定义——即对服务、商家态度或处理结果表达不满。\n结论：complaint",
+    "correct": false
+  },
+  {
+    "id": 171,
+    "text": "材质环保吗",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“材质环保吗”聚焦于商品的材质属性， specifically 询问其是否环保，属于对商品本身特性（如成分、安全性、环保标准等）的咨询，不涉及价格、物流、售后、账户等其他方面，符合 product_inquiry 的定义——即对商品的规格、功能、材质等进行询问。\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 172,
+    "text": "噪音大不大",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“噪音大不大”是在询问商品（很可能是电器类，如风扇、空调、洗衣机等）在使用过程中产生的声音大小，属于对商品具体性能或使用体验的疑问，聚焦于商品的物理特性（噪音水平），与商品的规格、功能、使用效果相关，符合“product_inquiry”定义中“对商品的规格、功能、材质等进行询问”的范畴。\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 173,
+    "text": "还没发货赶紧帮我改地址",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "分析：用户消息“还没发货赶紧帮我改地址”中，“还没发货”表明订单尚未进入物流环节，仍处于待发货状态；“帮我改地址”明确表达了修改收货地址的需求，属于对已下单但未发货订单的信息变更。根据意图定义，这符合“order_modification”（修改已下单的信息，如地址、数量、规格等）的范畴。注意：若已发货，则改地址通常需联系物流，属logistics_query；但此处强调“还没发货”，说明修改尚在商家可操作范围内，属于订单信息修改。\n结论：order_modification",
+    "correct": true
+  },
+  {
+    "id": 174,
+    "text": "这个是国行还是海外版",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户消息“这个是国行还是海外版”聚焦于商品的版本属性（国行/海外版），属于对商品来源、规格或版本信息的询问，不涉及价格、物流、售后等其他方面，符合product_inquiry定义中“对商品的规格、功能、材质等进行询问”的范畴。\n结论：product_inquiry",
+    "correct": true
+  },
+  {
+    "id": 175,
+    "text": "纸质发票还是电子发票",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "分析：用户消息“纸质发票还是电子发票”聚焦于发票的形式类型，属于对发票相关服务的咨询，关键词为“纸质发票”“电子发票”，意图是了解可提供的发票类型，对应意图定义中的“invoice”（用户咨询开发票、发票类型、发票信息修改）。\n结论：invoice",
+    "correct": true
+  },
+  {
+    "id": 176,
+    "text": "有没有组装视频",
+    "true": "product_inquiry",
+    "pred": "product_inquiry",
+    "raw_output": "分析：用户询问“有没有组装视频”，关键词是“组装视频”，指向的是对商品使用或安装相关的内容支持，属于对商品功能实现方式（如何组装）的咨询。这并非询问物流、退款、价格等，而是想了解商品本身的使用辅助信息，与商品的使用说明、功能演示相关，最接近对商品规格/使用方法的延伸询问，但更精准地属于对商品配套服务（如安装指导）的咨询。然而，在给定的意图定义中，并没有直接对应“使用说明”或“安装指导”的类别；需匹配最接近的意图。  \n- product_inquiry 涵盖“商品的规格、功能、材质等”，而“组装视频”是辅助理解产品功能和正确使用的材料，属于功能实现层面的信息，可视为对产品使用功能的延伸 inquiry；  \n- after_sales_repair 是关于保修、维修、质量问题处理，不涉及初始组装；  \n- delivery",
+    "correct": true
+  },
+  {
+    "id": 177,
+    "text": "能开发票吗",
+    "true": "invoice",
+    "pred": "invoice",
+    "raw_output": "分析：用户消息“能开发票吗”直接询问是否可以开具发票，关键词是“开发票”，属于对发票相关服务的咨询，涉及发票的开具可能性，符合“invoice”意图定义中的“用户咨询开发票、发票类型、发票信息修改”。\n结论：invoice",
+    "correct": true
+  },
+  {
+    "id": 178,
+    "text": "商品跟描述完全不一样骗人",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "分析：用户消息“商品跟描述完全不一样骗人”表达了对商品与页面描述严重不符的强烈不满，核心是质疑商品质量或真实性，并带有情绪化指责（“骗人”），属于对商品本身的投诉，而非单纯咨询、申请退款或退货。该表述未提及退款、退货、换货、物流、维修等具体操作诉求，而是聚焦于商家诚信和商品描述失实，符合“complaint”（投诉）的定义，即对商品质量或商家行为表达不满。\n结论：complaint",
+    "correct": true
+  },
+  {
+    "id": 179,
+    "text": "实名认证怎么操作",
+    "true": "account_issue",
+    "pred": "account_issue",
+    "raw_output": "分析：用户消息“实名认证怎么操作”聚焦于账户相关的身份验证流程，关键词是“实名认证”，属于账户安全与身份管理范畴，涉及用户如何完成平台要求的身份信息提交与核验。该问题不涉及订单、物流、商品、价格、售后等其他业务模块，而是直接关联用户账户的注册/安全设置环节，符合“account_issue”定义中“登录、注册、密码、账户安全等问题”的子类——实名认证是账户安全的基础环节，常见于注册后完善信息或支付前强制验证场景。\n\n结论：account_issue",
+    "correct": true
+  },
+  {
+    "id": 180,
+    "text": "钱退到哪里去了我没收到",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“钱退到哪里去了我没收到”明确表达了对已申请退款但未收到款项的疑问，核心关注点是退款资金的去向和到账状态，属于对已发起退款流程但未完成资金返还的追问，符合“refund_request”意图（要求退还已支付的款项，且当前焦点是退款结果未达预期，而非退货或换货动作本身）。\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 181,
+    "text": "洗过了还能退吗",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“洗过了还能退吗”中的关键词是“洗过了”和“退”，表明商品已被使用（洗涤），用户在询问在此情况下是否仍可办理退货。这涉及退货政策的适用性问题，核心诉求是确认能否执行退货操作，属于售后处理中的退换货范畴。虽然提到“退”，但结合“洗过了”这一使用状态，重点在于退货资格而非单纯要回款项（即不是纯退款），因此不属于refund_request，而应归类为return_exchange。\n结论：return_exchange",
+    "correct": true
+  },
+  {
+    "id": 182,
+    "text": "摔了一下不开机了",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "分析：用户消息“摔了一下不开机了”描述了商品（极可能是手机、平板或其他电子设备）因跌落导致无法开机的故障现象，核心诉求是解决设备无法使用的问题。该情况属于商品使用中出现的质量或性能问题，用户虽未明确说“维修”，但“摔了不开机”是典型的需要售后技术支持或保修服务的场景，符合“after_sales_repair”定义中“咨询保修、维修、质量问题处理”的范畴。注意：这不是单纯投诉（无情绪化指责语言），也不是退货换货（未提退/换），更非物流、价格等其他意图。\n\n结论：after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 183,
+    "text": "优惠券在哪领",
+    "true": "price_promotion",
+    "pred": "price_promotion",
+    "raw_output": "分析：用户消息“优惠券在哪领”中的关键词是“优惠券”和“领”，表明用户关注的是如何获取优惠券，属于对优惠相关资源的获取途径咨询。这不涉及具体订单的物流、退款、退货等操作，也不属于促销活动的具体规则（如活动时间、参与条件等），而是更泛化的优惠工具（优惠券）的领取方式，因此归类为价格优惠类咨询。\n结论：price_promotion",
+    "correct": true
+  },
+  {
+    "id": 184,
+    "text": "寄回去了帮我看一下",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“寄回去了帮我看一下”表明用户已经将商品寄回，现在请求客服查看相关情况。结合电商售后场景，这通常发生在退货或换货流程中，用户寄回商品后希望确认商家是否收到、是否进入处理流程等，属于退换货流程中的跟进动作。该消息不涉及纯退款（无“退钱”“退款”等表述），也不属于物流查询（未询问快递单号、物流轨迹等），而是围绕退货/换货行为的后续确认，因此应归类为 return_exchange。\n结论：return_exchange",
+    "correct": true
+  },
+  {
+    "id": 185,
+    "text": "支付成功了但是订单没生成",
+    "true": "payment_issue",
+    "pred": "payment_issue",
+    "raw_output": "分析：用户提到“支付成功了但是订单没生成”，核心问题是支付已完成，但系统未创建对应订单，这属于交易流程异常。该情况既不是单纯的支付失败（payment_issue 通常指支付未成功），也不是订单修改或物流问题；而是支付环节与订单生成环节出现脱节，导致用户无法看到订单，后续所有操作（如查物流、退货等）均无法进行。根据定义，payment_issue 包含“支付失败、扣款异常、支付方式等问题”，其中“扣款异常”可涵盖已扣款但未生成订单这类资金与订单状态不一致的异常情形，属于支付链路的后置结果异常，应归入 payment_issue。\n\n结论：payment_issue",
+    "correct": true
+  },
+  {
+    "id": 186,
+    "text": "运费多少",
+    "true": "price_promotion",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“运费多少”询问的是配送商品所需支付的运输费用，属于对配送相关费用的咨询。该问题不涉及已有订单的物流状态追踪（非logistics_query），也不涉及具体的配送方式选择或配送范围（非delivery_service），而是聚焦于运费这一费用项。在电商场景中，运费通常与订单生成前的预估费用、促销活动中的包邮规则、或不同配送方式对应的费用标准相关，但此处提问非常简短，未提及活动、订单号或配送方式，属于对基础配送成本的一般性询问。根据边界说明，“delivery_service”定义为咨询配送方式、范围、预约送达等（非物流跟踪），而运费是配送服务的组成部分，且常见于下单前对配送成本的询问，归类为delivery_service更准确；price_promotion侧重价格、优惠券、满减等营销性价格策略，而运费本身不是商品价格或促销优惠，",
+    "correct": false
+  },
+  {
+    "id": 187,
+    "text": "回复速度太慢了",
+    "true": "complaint",
+    "pred": "complaint",
+    "raw_output": "分析：用户消息“回复速度太慢了”表达了对客服响应时效的不满，关键词是“回复速度”“太慢”，指向服务响应效率问题，属于对服务质量的负面评价，符合“complaint”（投诉）的定义——即对服务、商家态度等表达不满或投诉。该消息不涉及物流、退款、商品咨询等其他具体业务环节，也非闲聊（因有明确负面情绪和诉求指向），不属于chitchat_other。\n结论：complaint",
+    "correct": true
+  },
+  {
+    "id": 188,
+    "text": "预售什么时候开始",
+    "true": "campaign_rules",
+    "pred": "campaign_rules",
+    "raw_output": "分析：用户消息“预售什么时候开始”聚焦于“预售”这一销售形式的起始时间，属于对特定销售活动（预售活动）的时间安排进行询问。预售通常与促销活动相关，其开始时间属于活动规则的一部分，如活动周期、参与条件等。该问题不涉及物流、退款、商品参数、价格优惠细节、配送服务等其他意图，而是明确指向活动的时间规则，符合“campaign_rules”的定义。\n结论：campaign_rules",
+    "correct": true
+  },
+  {
+    "id": 189,
+    "text": "过了7天还能退货吗",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“过了7天还能退货吗”聚焦于退货的时间限制问题，关键词是“退货”和“7天”，表明用户在确认是否仍符合退货条件。这属于对退货政策的咨询，核心诉求是了解能否执行退货操作，而非单纯退款（未提“退钱”“退款”），也非查询物流或维修等其他意图。根据边界说明，“退换货”指退货或换货行为，此处明确指向“退货”，且隐含对售后退货流程可行性的确认，因此归类为 return_exchange。\n结论：return_exchange",
+    "correct": true
+  },
+  {
+    "id": 190,
+    "text": "马达不转了怎么修",
+    "true": "after_sales_repair",
+    "pred": "after_sales_repair",
+    "raw_output": "分析：用户消息“马达不转了怎么修”聚焦于商品（含马达的设备，如小家电、电动工具等）出现故障（马达不转），并明确询问“怎么修”，即寻求维修解决方案。该诉求不涉及退款、退货、换货、物流跟踪、价格优惠等，而是直接关联产品使用中的功能失效及后续保修或维修支持，符合“after_sales_repair”定义中“咨询保修、维修、质量问题处理”的核心特征。\n\n结论：after_sales_repair",
+    "correct": true
+  },
+  {
+    "id": 191,
+    "text": "退了货物流显示已签收了怎么还没退款",
+    "true": "return_exchange",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息中提到“退了货”“物流显示已签收”“怎么还没退款”，核心关注点是退货已完成（物流签收为凭证），但对应款项尚未退还。用户并非单纯询问物流状态（物流已明确显示签收），而是质疑退款延迟，诉求指向资金返还结果未达成，属于对已发起退货流程后应有退款动作未履行的催促。根据边界说明，“退换货”指退货或换货行为本身，而此处用户已执行退货动作，当前焦点是“退款未到账”，符合“refund_request”定义（要求退还已支付的款项），而非return_exchange（因未提出换货或再次处理商品需求）。\n结论：refund_request",
+    "correct": false
+  },
+  {
+    "id": 192,
+    "text": "会员能享受几折优惠",
+    "true": "membership",
+    "pred": "membership",
+    "raw_output": "分析：用户消息“会员能享受几折优惠”聚焦于会员身份所对应的折扣权益，关键词是“会员”和“几折优惠”，核心诉求是了解会员专属的价格优惠幅度，属于对会员等级或权益的具体咨询，而非泛指商品价格或临时促销活动规则。该问题不涉及订单、物流、售后等具体事务，而是围绕会员体系下的价格权益，符合“membership”意图定义中“用户咨询会员等级、积分、会员专属权益”的范畴。\n结论：membership",
+    "correct": true
+  },
+  {
+    "id": 193,
+    "text": "这钱怎么退回来",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“这钱怎么退回来”中的关键词是“钱”和“退回来”，明确指向已支付款项的返还操作，不涉及商品退回或更换，仅关注资金退还的方式或流程。该表述属于典型的退款请求，而非退货、换货或物流查询等其他意图。\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 194,
+    "text": "能换个支付方式吗",
+    "true": "payment_issue",
+    "pred": "order_modification",
+    "raw_output": "分析：用户消息“能换个支付方式吗”中的关键词是“换个支付方式”，表明用户希望在当前订单或支付过程中更改已选择的支付方式。这属于对已下单但尚未完成支付的订单信息进行修改，核心诉求是调整支付相关的订单属性，而非支付失败（payment_issue）或单纯咨询支付方式（delivery_service等不相关）。根据意图定义，order_modification 指“用户要求修改已下单的信息（地址、数量、规格等）”，而支付方式属于下单后可修改的关键订单属性之一（常见于未支付或支付待确认状态），因此符合 order_modification 的范畴。注意：若用户已支付失败，可能归为 payment_issue，但本句未提及失败，仅表达主动更换意愿，更倾向修改订单行为。\n\n结论：order_modification",
+    "correct": false
+  },
+  {
+    "id": 195,
+    "text": "我搬家了地址要改",
+    "true": "order_modification",
+    "pred": "order_modification",
+    "raw_output": "分析：用户消息“我搬家了地址要改”明确表达了因搬家需要修改收货地址，属于对已下单订单信息（配送地址）的变更需求，符合“order_modification”的定义——即要求修改已下单的信息（如地址、数量、规格等）。该请求不涉及物流状态查询（非logistics_query），也不涉及退换货或退款，更非新咨询配送服务范围（delivery_service）或账户问题。\n结论：order_modification",
+    "correct": true
+  },
+  {
+    "id": 196,
+    "text": "可以直接退款吗不退货",
+    "true": "refund_request",
+    "pred": "refund_request",
+    "raw_output": "分析：用户消息“可以直接退款吗不退货”明确表达了不退货、仅退还已支付款项的诉求。“直接退款”强调退款的便捷性和无需附加条件（如退回商品），“不退货”进一步排除了退货或换货的可能性，属于纯粹的资金返还请求，符合“refund_request”定义中“用户要求退还已支付的款项”的核心特征。该诉求不涉及物流跟踪、商品属性、价格优惠、修改订单等其他意图。\n结论：refund_request",
+    "correct": true
+  },
+  {
+    "id": 197,
+    "text": "满赠活动的赠品是什么",
+    "true": "campaign_rules",
+    "pred": "campaign_rules",
+    "raw_output": "分析：用户消息中关键词为“满赠活动”和“赠品是什么”，表明用户关注的是某个促销活动（满额即赠）中所赠送的物品具体内容。这属于对促销活动规则细节的咨询，而非一般性价格或优惠咨询（price_promotion），也非物流、售后等其他范畴。根据意图定义，“campaign_rules”指用户咨询促销活动的规则、参与方式、活动时间等，而赠品作为满赠活动的核心规则要素之一，其归属明确属于活动规则范畴。\n结论：campaign_rules",
+    "correct": true
+  },
+  {
+    "id": 198,
+    "text": "帮我查一下物流",
+    "true": "logistics_query",
+    "pred": "logistics_query",
+    "raw_output": "分析：用户消息“帮我查一下物流”中关键词为“查”和“物流”，明确表达了对订单当前配送状态、运输进度的查询需求，属于对已有订单的物流跟踪行为，符合logistics_query的定义。\n结论：logistics_query",
+    "correct": true
+  },
+  {
+    "id": 199,
+    "text": "在吗",
+    "true": "chitchat_other",
+    "pred": "chitchat_other",
+    "raw_output": "分析：用户消息“在吗”是一个常见的开场白，用于确认客服是否在线，没有包含任何与订单、商品、物流、支付、账户等具体业务相关的关键词，也不表达明确的请求或问题，属于无明确意图的寒暄或试探性沟通。\n结论：chitchat_other",
+    "correct": true
+  },
+  {
+    "id": 200,
+    "text": "换小一码帮我下单",
+    "true": "return_exchange",
+    "pred": "return_exchange",
+    "raw_output": "分析：用户消息“换小一码帮我下单”中，“换小一码”明确表达了更换商品尺码的需求，属于商品规格变更；“帮我下单”虽含下单动作，但结合上下文（无新购意图，而是针对已购/待处理订单的尺码调整），实际诉求是将原订单商品更换为更小尺码，即典型的换货操作。该行为不涉及退款（未提退钱）、不涉及物流跟踪（未问快递进度）、不涉及重新购买（非全新下单），而是对已有交易发起的规格替换，符合“return_exchange”定义——要求退货或换货（不含纯退款）。\n结论：return_exchange",
+    "correct": true
+  }
+]

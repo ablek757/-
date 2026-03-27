@@ -1,0 +1,3242 @@
+{
+  "metrics": {
+    "Prompt-v1-零样本": {
+      "accuracy": 0.895,
+      "macro": {
+        "precision": 0.9034827550617025,
+        "recall": 0.8876651126651127,
+        "f1": 0.88962075480956
+      },
+      "weighted": {
+        "precision": 0.899101657845079,
+        "recall": 0.895,
+        "f1": 0.8914276626867267
+      },
+      "per_class": {
+        "logistics_query": {
+          "precision": 0.7692307692307693,
+          "recall": 1.0,
+          "f1": 0.8695652173913043,
+          "support": 20
+        },
+        "refund_request": {
+          "precision": 0.8888888888888888,
+          "recall": 1.0,
+          "f1": 0.9411764705882353,
+          "support": 16
+        },
+        "return_exchange": {
+          "precision": 0.875,
+          "recall": 0.9333333333333333,
+          "f1": 0.9032258064516129,
+          "support": 15
+        },
+        "product_inquiry": {
+          "precision": 0.9473684210526315,
+          "recall": 0.9,
+          "f1": 0.9230769230769231,
+          "support": 20
+        },
+        "price_promotion": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1": 0.875,
+          "support": 16
+        },
+        "order_modification": {
+          "precision": 0.8181818181818182,
+          "recall": 0.6923076923076923,
+          "f1": 0.75,
+          "support": 13
+        },
+        "payment_issue": {
+          "precision": 1.0,
+          "recall": 0.8461538461538461,
+          "f1": 0.9166666666666666,
+          "support": 13
+        },
+        "account_issue": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 11
+        },
+        "complaint": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091,
+          "support": 12
+        },
+        "after_sales_repair": {
+          "precision": 0.9166666666666666,
+          "recall": 0.9166666666666666,
+          "f1": 0.9166666666666666,
+          "support": 12
+        },
+        "invoice": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "support": 9
+        },
+        "membership": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "support": 9
+        },
+        "delivery_service": {
+          "precision": 0.9,
+          "recall": 0.8181818181818182,
+          "f1": 0.8571428571428571,
+          "support": 11
+        },
+        "campaign_rules": {
+          "precision": 0.8333333333333334,
+          "recall": 0.5,
+          "f1": 0.625,
+          "support": 10
+        },
+        "chitchat_other": {
+          "precision": 0.9285714285714286,
+          "recall": 1.0,
+          "f1": 0.9629629629629629,
+          "support": 13
+        }
+      },
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13
+        ]
+      ],
+      "labels": [
+        "logistics_query",
+        "refund_request",
+        "return_exchange",
+        "product_inquiry",
+        "price_promotion",
+        "order_modification",
+        "payment_issue",
+        "account_issue",
+        "complaint",
+        "after_sales_repair",
+        "invoice",
+        "membership",
+        "delivery_service",
+        "campaign_rules",
+        "chitchat_other"
+      ]
+    },
+    "Prompt-v2-定义": {
+      "accuracy": 0.88,
+      "macro": {
+        "precision": 0.8808166248955722,
+        "recall": 0.8723303548303548,
+        "f1": 0.8723821963283876
+      },
+      "weighted": {
+        "precision": 0.8824342627401837,
+        "recall": 0.88,
+        "f1": 0.8774077421977302
+      },
+      "per_class": {
+        "logistics_query": {
+          "precision": 0.9047619047619048,
+          "recall": 0.95,
+          "f1": 0.926829268292683,
+          "support": 20
+        },
+        "refund_request": {
+          "precision": 0.8888888888888888,
+          "recall": 1.0,
+          "f1": 0.9411764705882353,
+          "support": 16
+        },
+        "return_exchange": {
+          "precision": 0.7777777777777778,
+          "recall": 0.9333333333333333,
+          "f1": 0.8484848484848485,
+          "support": 15
+        },
+        "product_inquiry": {
+          "precision": 0.9473684210526315,
+          "recall": 0.9,
+          "f1": 0.9230769230769231,
+          "support": 20
+        },
+        "price_promotion": {
+          "precision": 0.8666666666666667,
+          "recall": 0.8125,
+          "f1": 0.8387096774193549,
+          "support": 16
+        },
+        "order_modification": {
+          "precision": 0.8333333333333334,
+          "recall": 0.7692307692307693,
+          "f1": 0.8,
+          "support": 13
+        },
+        "payment_issue": {
+          "precision": 1.0,
+          "recall": 0.8461538461538461,
+          "f1": 0.9166666666666666,
+          "support": 13
+        },
+        "account_issue": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 11
+        },
+        "complaint": {
+          "precision": 0.9,
+          "recall": 0.75,
+          "f1": 0.8181818181818182,
+          "support": 12
+        },
+        "after_sales_repair": {
+          "precision": 0.9166666666666666,
+          "recall": 0.9166666666666666,
+          "f1": 0.9166666666666666,
+          "support": 12
+        },
+        "invoice": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "support": 9
+        },
+        "membership": {
+          "precision": 1.0,
+          "recall": 0.8888888888888888,
+          "f1": 0.9411764705882353,
+          "support": 9
+        },
+        "delivery_service": {
+          "precision": 0.75,
+          "recall": 0.8181818181818182,
+          "f1": 0.782608695652174,
+          "support": 11
+        },
+        "campaign_rules": {
+          "precision": 0.7142857142857143,
+          "recall": 0.5,
+          "f1": 0.5882352941176471,
+          "support": 10
+        },
+        "chitchat_other": {
+          "precision": 0.8125,
+          "recall": 1.0,
+          "f1": 0.896551724137931,
+          "support": 13
+        }
+      },
+      "confusion_matrix": [
+        [
+          19,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          1,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13
+        ]
+      ],
+      "labels": [
+        "logistics_query",
+        "refund_request",
+        "return_exchange",
+        "product_inquiry",
+        "price_promotion",
+        "order_modification",
+        "payment_issue",
+        "account_issue",
+        "complaint",
+        "after_sales_repair",
+        "invoice",
+        "membership",
+        "delivery_service",
+        "campaign_rules",
+        "chitchat_other"
+      ]
+    },
+    "Prompt-v3-Few-shot": {
+      "accuracy": 0.9,
+      "macro": {
+        "precision": 0.9095398217766638,
+        "recall": 0.8952136752136752,
+        "f1": 0.8914678661980129
+      },
+      "weighted": {
+        "precision": 0.9083634607351712,
+        "recall": 0.9,
+        "f1": 0.8949175954719487
+      },
+      "per_class": {
+        "logistics_query": {
+          "precision": 0.9523809523809523,
+          "recall": 1.0,
+          "f1": 0.975609756097561,
+          "support": 20
+        },
+        "refund_request": {
+          "precision": 0.8421052631578947,
+          "recall": 1.0,
+          "f1": 0.9142857142857143,
+          "support": 16
+        },
+        "return_exchange": {
+          "precision": 0.8666666666666667,
+          "recall": 0.8666666666666667,
+          "f1": 0.8666666666666667,
+          "support": 15
+        },
+        "product_inquiry": {
+          "precision": 0.9444444444444444,
+          "recall": 0.85,
+          "f1": 0.8947368421052632,
+          "support": 20
+        },
+        "price_promotion": {
+          "precision": 0.8888888888888888,
+          "recall": 1.0,
+          "f1": 0.9411764705882353,
+          "support": 16
+        },
+        "order_modification": {
+          "precision": 0.7777777777777778,
+          "recall": 0.5384615384615384,
+          "f1": 0.6363636363636364,
+          "support": 13
+        },
+        "payment_issue": {
+          "precision": 1.0,
+          "recall": 0.9230769230769231,
+          "f1": 0.96,
+          "support": 13
+        },
+        "account_issue": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 11
+        },
+        "complaint": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091,
+          "support": 12
+        },
+        "after_sales_repair": {
+          "precision": 0.9166666666666666,
+          "recall": 0.9166666666666666,
+          "f1": 0.9166666666666666,
+          "support": 12
+        },
+        "invoice": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "support": 9
+        },
+        "membership": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9
+        },
+        "delivery_service": {
+          "precision": 0.6875,
+          "recall": 1.0,
+          "f1": 0.8148148148148148,
+          "support": 11
+        },
+        "campaign_rules": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 10
+        },
+        "chitchat_other": {
+          "precision": 0.8666666666666667,
+          "recall": 1.0,
+          "f1": 0.9285714285714286,
+          "support": 13
+        }
+      },
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          13,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13
+        ]
+      ],
+      "labels": [
+        "logistics_query",
+        "refund_request",
+        "return_exchange",
+        "product_inquiry",
+        "price_promotion",
+        "order_modification",
+        "payment_issue",
+        "account_issue",
+        "complaint",
+        "after_sales_repair",
+        "invoice",
+        "membership",
+        "delivery_service",
+        "campaign_rules",
+        "chitchat_other"
+      ]
+    },
+    "Prompt-v4-CoT": {
+      "accuracy": 0.815,
+      "macro": {
+        "precision": 0.8236239900068588,
+        "recall": 0.8121522921522921,
+        "f1": 0.8095790873841141
+      },
+      "weighted": {
+        "precision": 0.8204228682251129,
+        "recall": 0.815,
+        "f1": 0.8092652570665814
+      },
+      "per_class": {
+        "logistics_query": {
+          "precision": 0.7037037037037037,
+          "recall": 0.95,
+          "f1": 0.8085106382978723,
+          "support": 20
+        },
+        "refund_request": {
+          "precision": 0.7777777777777778,
+          "recall": 0.875,
+          "f1": 0.8235294117647058,
+          "support": 16
+        },
+        "return_exchange": {
+          "precision": 0.8666666666666667,
+          "recall": 0.8666666666666667,
+          "f1": 0.8666666666666667,
+          "support": 15
+        },
+        "product_inquiry": {
+          "precision": 0.9473684210526315,
+          "recall": 0.9,
+          "f1": 0.9230769230769231,
+          "support": 20
+        },
+        "price_promotion": {
+          "precision": 0.7692307692307693,
+          "recall": 0.625,
+          "f1": 0.6896551724137931,
+          "support": 16
+        },
+        "order_modification": {
+          "precision": 0.8333333333333334,
+          "recall": 0.7692307692307693,
+          "f1": 0.8,
+          "support": 13
+        },
+        "payment_issue": {
+          "precision": 0.875,
+          "recall": 0.5384615384615384,
+          "f1": 0.6666666666666666,
+          "support": 13
+        },
+        "account_issue": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 11
+        },
+        "complaint": {
+          "precision": 0.7777777777777778,
+          "recall": 0.5833333333333334,
+          "f1": 0.6666666666666666,
+          "support": 12
+        },
+        "after_sales_repair": {
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334,
+          "f1": 0.8333333333333334,
+          "support": 12
+        },
+        "invoice": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "support": 9
+        },
+        "membership": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "support": 9
+        },
+        "delivery_service": {
+          "precision": 0.75,
+          "recall": 0.8181818181818182,
+          "f1": 0.782608695652174,
+          "support": 11
+        },
+        "campaign_rules": {
+          "precision": 0.7142857142857143,
+          "recall": 0.5,
+          "f1": 0.5882352941176471,
+          "support": 10
+        },
+        "chitchat_other": {
+          "precision": 0.7058823529411765,
+          "recall": 0.9230769230769231,
+          "f1": 0.8,
+          "support": 13
+        }
+      },
+      "confusion_matrix": [
+        [
+          19,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          13,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          1,
+          1,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          2,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12
+        ]
+      ],
+      "labels": [
+        "logistics_query",
+        "refund_request",
+        "return_exchange",
+        "product_inquiry",
+        "price_promotion",
+        "order_modification",
+        "payment_issue",
+        "account_issue",
+        "complaint",
+        "after_sales_repair",
+        "invoice",
+        "membership",
+        "delivery_service",
+        "campaign_rules",
+        "chitchat_other"
+      ]
+    },
+    "微调-Qwen3-4B": {
+      "accuracy": 0.895,
+      "macro": {
+        "precision": 0.8940522277286984,
+        "recall": 0.8946658896658897,
+        "f1": 0.8900479508392395
+      },
+      "weighted": {
+        "precision": 0.9003293246785893,
+        "recall": 0.895,
+        "f1": 0.8937966394162399
+      },
+      "per_class": {
+        "logistics_query": {
+          "precision": 1.0,
+          "recall": 0.95,
+          "f1": 0.9743589743589743,
+          "support": 20
+        },
+        "refund_request": {
+          "precision": 0.9411764705882353,
+          "recall": 1.0,
+          "f1": 0.9696969696969697,
+          "support": 16
+        },
+        "return_exchange": {
+          "precision": 1.0,
+          "recall": 0.9333333333333333,
+          "f1": 0.9655172413793104,
+          "support": 15
+        },
+        "product_inquiry": {
+          "precision": 0.8888888888888888,
+          "recall": 0.8,
+          "f1": 0.8421052631578947,
+          "support": 20
+        },
+        "price_promotion": {
+          "precision": 0.8235294117647058,
+          "recall": 0.875,
+          "f1": 0.8484848484848485,
+          "support": 16
+        },
+        "order_modification": {
+          "precision": 0.9166666666666666,
+          "recall": 0.8461538461538461,
+          "f1": 0.88,
+          "support": 13
+        },
+        "payment_issue": {
+          "precision": 0.9230769230769231,
+          "recall": 0.9230769230769231,
+          "f1": 0.9230769230769231,
+          "support": 13
+        },
+        "account_issue": {
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523,
+          "support": 11
+        },
+        "complaint": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "support": 12
+        },
+        "after_sales_repair": {
+          "precision": 0.7692307692307693,
+          "recall": 0.8333333333333334,
+          "f1": 0.8,
+          "support": 12
+        },
+        "invoice": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "support": 9
+        },
+        "membership": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "support": 9
+        },
+        "delivery_service": {
+          "precision": 0.7857142857142857,
+          "recall": 1.0,
+          "f1": 0.88,
+          "support": 11
+        },
+        "campaign_rules": {
+          "precision": 0.75,
+          "recall": 0.6,
+          "f1": 0.6666666666666666,
+          "support": 10
+        },
+        "chitchat_other": {
+          "precision": 0.8125,
+          "recall": 1.0,
+          "f1": 0.896551724137931,
+          "support": 13
+        }
+      },
+      "confusion_matrix": [
+        [
+          19,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          14,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          9,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13
+        ]
+      ],
+      "labels": [
+        "logistics_query",
+        "refund_request",
+        "return_exchange",
+        "product_inquiry",
+        "price_promotion",
+        "order_modification",
+        "payment_issue",
+        "account_issue",
+        "complaint",
+        "after_sales_repair",
+        "invoice",
+        "membership",
+        "delivery_service",
+        "campaign_rules",
+        "chitchat_other"
+      ]
+    }
+  },
+  "confusions": {
+    "Prompt-v1-零样本": {
+      "method": "Prompt-v1-零样本",
+      "confusion_pairs": [
+        {
+          "true": "order_modification",
+          "pred": "logistics_query",
+          "count": 2,
+          "true_cn": "订单修改",
+          "pred_cn": "物流查询"
+        },
+        {
+          "true": "payment_issue",
+          "pred": "order_modification",
+          "count": 2,
+          "true_cn": "支付问题",
+          "pred_cn": "订单修改"
+        },
+        {
+          "true": "delivery_service",
+          "pred": "logistics_query",
+          "count": 2,
+          "true_cn": "配送服务",
+          "pred_cn": "物流查询"
+        },
+        {
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "count": 2,
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "true": "return_exchange",
+          "pred": "refund_request",
+          "count": 1,
+          "true_cn": "退换货",
+          "pred_cn": "退款申请"
+        },
+        {
+          "true": "product_inquiry",
+          "pred": "delivery_service",
+          "count": 1,
+          "true_cn": "商品咨询",
+          "pred_cn": "配送服务"
+        },
+        {
+          "true": "product_inquiry",
+          "pred": "campaign_rules",
+          "count": 1,
+          "true_cn": "商品咨询",
+          "pred_cn": "活动规则"
+        },
+        {
+          "true": "price_promotion",
+          "pred": "logistics_query",
+          "count": 1,
+          "true_cn": "价格优惠",
+          "pred_cn": "物流查询"
+        },
+        {
+          "true": "price_promotion",
+          "pred": "membership",
+          "count": 1,
+          "true_cn": "价格优惠",
+          "pred_cn": "会员权益"
+        },
+        {
+          "true": "order_modification",
+          "pred": "return_exchange",
+          "count": 1,
+          "true_cn": "订单修改",
+          "pred_cn": "退换货"
+        }
+      ],
+      "error_cases": [
+        {
+          "input": "定金可以退吗",
+          "true": "campaign_rules",
+          "pred": "refund_request",
+          "true_cn": "活动规则",
+          "pred_cn": "退款申请"
+        },
+        {
+          "input": "发票信息能改吗",
+          "true": "order_modification",
+          "pred": "invoice",
+          "true_cn": "订单修改",
+          "pred_cn": "发票相关"
+        },
+        {
+          "input": "拼团成功后多久发货",
+          "true": "campaign_rules",
+          "pred": "logistics_query",
+          "true_cn": "活动规则",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "漏水你们管不管",
+          "true": "complaint",
+          "pred": "after_sales_repair",
+          "true_cn": "投诉建议",
+          "pred_cn": "售后维修"
+        },
+        {
+          "input": "你这回复是机器人吧",
+          "true": "complaint",
+          "pred": "chitchat_other",
+          "true_cn": "投诉建议",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "这个零件能单独买吗",
+          "true": "after_sales_repair",
+          "pred": "product_inquiry",
+          "true_cn": "售后维修",
+          "pred_cn": "商品咨询"
+        },
+        {
+          "input": "预售和现货哪个便宜",
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "input": "付款之后订单多久确认",
+          "true": "payment_issue",
+          "pred": "order_modification",
+          "true_cn": "支付问题",
+          "pred_cn": "订单修改"
+        },
+        {
+          "input": "配送途中可以改地址吗",
+          "true": "delivery_service",
+          "pred": "logistics_query",
+          "true_cn": "配送服务",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "凑单可以退一件吗",
+          "true": "campaign_rules",
+          "pred": "return_exchange",
+          "true_cn": "活动规则",
+          "pred_cn": "退换货"
+        },
+        {
+          "input": "上门取件方便吗",
+          "true": "delivery_service",
+          "pred": "logistics_query",
+          "true_cn": "配送服务",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "想把两个颜色换一下",
+          "true": "order_modification",
+          "pred": "return_exchange",
+          "true_cn": "订单修改",
+          "pred_cn": "退换货"
+        },
+        {
+          "input": "邮编填错了影响发货吗",
+          "true": "order_modification",
+          "pred": "logistics_query",
+          "true_cn": "订单修改",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "有什么限制吗",
+          "true": "product_inquiry",
+          "pred": "campaign_rules",
+          "true_cn": "商品咨询",
+          "pred_cn": "活动规则"
+        },
+        {
+          "input": "有没有安装服务",
+          "true": "product_inquiry",
+          "pred": "delivery_service",
+          "true_cn": "商品咨询",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "积分能抵扣多少钱",
+          "true": "price_promotion",
+          "pred": "membership",
+          "true_cn": "价格优惠",
+          "pred_cn": "会员权益"
+        },
+        {
+          "input": "活动价格保护几天",
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "input": "订单改了地址物流会变吗",
+          "true": "order_modification",
+          "pred": "logistics_query",
+          "true_cn": "订单修改",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "运费多少",
+          "true": "price_promotion",
+          "pred": "logistics_query",
+          "true_cn": "价格优惠",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "退了货物流显示已签收了怎么还没退款",
+          "true": "return_exchange",
+          "pred": "refund_request",
+          "true_cn": "退换货",
+          "pred_cn": "退款申请"
+        },
+        {
+          "input": "能换个支付方式吗",
+          "true": "payment_issue",
+          "pred": "order_modification",
+          "true_cn": "支付问题",
+          "pred_cn": "订单修改"
+        }
+      ]
+    },
+    "Prompt-v2-定义": {
+      "method": "Prompt-v2-定义",
+      "confusion_pairs": [
+        {
+          "true": "complaint",
+          "pred": "chitchat_other",
+          "count": 2,
+          "true_cn": "投诉建议",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "count": 2,
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "true": "logistics_query",
+          "pred": "complaint",
+          "count": 1,
+          "true_cn": "物流查询",
+          "pred_cn": "投诉建议"
+        },
+        {
+          "true": "return_exchange",
+          "pred": "refund_request",
+          "count": 1,
+          "true_cn": "退换货",
+          "pred_cn": "退款申请"
+        },
+        {
+          "true": "product_inquiry",
+          "pred": "delivery_service",
+          "count": 1,
+          "true_cn": "商品咨询",
+          "pred_cn": "配送服务"
+        },
+        {
+          "true": "product_inquiry",
+          "pred": "campaign_rules",
+          "count": 1,
+          "true_cn": "商品咨询",
+          "pred_cn": "活动规则"
+        },
+        {
+          "true": "price_promotion",
+          "pred": "delivery_service",
+          "count": 1,
+          "true_cn": "价格优惠",
+          "pred_cn": "配送服务"
+        },
+        {
+          "true": "price_promotion",
+          "pred": "campaign_rules",
+          "count": 1,
+          "true_cn": "价格优惠",
+          "pred_cn": "活动规则"
+        },
+        {
+          "true": "price_promotion",
+          "pred": "chitchat_other",
+          "count": 1,
+          "true_cn": "价格优惠",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "true": "order_modification",
+          "pred": "logistics_query",
+          "count": 1,
+          "true_cn": "订单修改",
+          "pred_cn": "物流查询"
+        }
+      ],
+      "error_cases": [
+        {
+          "input": "凑单满减怎么算",
+          "true": "price_promotion",
+          "pred": "campaign_rules",
+          "true_cn": "价格优惠",
+          "pred_cn": "活动规则"
+        },
+        {
+          "input": "定金可以退吗",
+          "true": "campaign_rules",
+          "pred": "refund_request",
+          "true_cn": "活动规则",
+          "pred_cn": "退款申请"
+        },
+        {
+          "input": "发票信息能改吗",
+          "true": "order_modification",
+          "pred": "invoice",
+          "true_cn": "订单修改",
+          "pred_cn": "发票相关"
+        },
+        {
+          "input": "拼团成功后多久发货",
+          "true": "campaign_rules",
+          "pred": "logistics_query",
+          "true_cn": "活动规则",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "漏水你们管不管",
+          "true": "complaint",
+          "pred": "after_sales_repair",
+          "true_cn": "投诉建议",
+          "pred_cn": "售后维修"
+        },
+        {
+          "input": "你这回复是机器人吧",
+          "true": "complaint",
+          "pred": "chitchat_other",
+          "true_cn": "投诉建议",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "可以货到付款吗",
+          "true": "payment_issue",
+          "pred": "delivery_service",
+          "true_cn": "支付问题",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "这个零件能单独买吗",
+          "true": "after_sales_repair",
+          "pred": "product_inquiry",
+          "true_cn": "售后维修",
+          "pred_cn": "商品咨询"
+        },
+        {
+          "input": "预售和现货哪个便宜",
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "input": "能送个赠品吗",
+          "true": "price_promotion",
+          "pred": "chitchat_other",
+          "true_cn": "价格优惠",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "付款之后订单多久确认",
+          "true": "payment_issue",
+          "pred": "order_modification",
+          "true_cn": "支付问题",
+          "pred_cn": "订单修改"
+        },
+        {
+          "input": "配送途中可以改地址吗",
+          "true": "delivery_service",
+          "pred": "order_modification",
+          "true_cn": "配送服务",
+          "pred_cn": "订单修改"
+        },
+        {
+          "input": "凑单可以退一件吗",
+          "true": "campaign_rules",
+          "pred": "return_exchange",
+          "true_cn": "活动规则",
+          "pred_cn": "退换货"
+        },
+        {
+          "input": "会员可以退吗",
+          "true": "membership",
+          "pred": "return_exchange",
+          "true_cn": "会员权益",
+          "pred_cn": "退换货"
+        },
+        {
+          "input": "上门取件方便吗",
+          "true": "delivery_service",
+          "pred": "return_exchange",
+          "true_cn": "配送服务",
+          "pred_cn": "退换货"
+        },
+        {
+          "input": "想把两个颜色换一下",
+          "true": "order_modification",
+          "pred": "return_exchange",
+          "true_cn": "订单修改",
+          "pred_cn": "退换货"
+        },
+        {
+          "input": "有什么限制吗",
+          "true": "product_inquiry",
+          "pred": "campaign_rules",
+          "true_cn": "商品咨询",
+          "pred_cn": "活动规则"
+        },
+        {
+          "input": "有没有安装服务",
+          "true": "product_inquiry",
+          "pred": "delivery_service",
+          "true_cn": "商品咨询",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "我快递签收了但是没有收到东西",
+          "true": "logistics_query",
+          "pred": "complaint",
+          "true_cn": "物流查询",
+          "pred_cn": "投诉建议"
+        },
+        {
+          "input": "活动价格保护几天",
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "input": "你们有没有监管的",
+          "true": "complaint",
+          "pred": "chitchat_other",
+          "true_cn": "投诉建议",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "订单改了地址物流会变吗",
+          "true": "order_modification",
+          "pred": "logistics_query",
+          "true_cn": "订单修改",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "运费多少",
+          "true": "price_promotion",
+          "pred": "delivery_service",
+          "true_cn": "价格优惠",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "退了货物流显示已签收了怎么还没退款",
+          "true": "return_exchange",
+          "pred": "refund_request",
+          "true_cn": "退换货",
+          "pred_cn": "退款申请"
+        }
+      ]
+    },
+    "Prompt-v3-Few-shot": {
+      "method": "Prompt-v3-Few-shot",
+      "confusion_pairs": [
+        {
+          "true": "return_exchange",
+          "pred": "refund_request",
+          "count": 2,
+          "true_cn": "退换货",
+          "pred_cn": "退款申请"
+        },
+        {
+          "true": "product_inquiry",
+          "pred": "delivery_service",
+          "count": 2,
+          "true_cn": "商品咨询",
+          "pred_cn": "配送服务"
+        },
+        {
+          "true": "order_modification",
+          "pred": "return_exchange",
+          "count": 2,
+          "true_cn": "订单修改",
+          "pred_cn": "退换货"
+        },
+        {
+          "true": "order_modification",
+          "pred": "delivery_service",
+          "count": 2,
+          "true_cn": "订单修改",
+          "pred_cn": "配送服务"
+        },
+        {
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "count": 2,
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "true": "product_inquiry",
+          "pred": "chitchat_other",
+          "count": 1,
+          "true_cn": "商品咨询",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "true": "order_modification",
+          "pred": "logistics_query",
+          "count": 1,
+          "true_cn": "订单修改",
+          "pred_cn": "物流查询"
+        },
+        {
+          "true": "order_modification",
+          "pred": "invoice",
+          "count": 1,
+          "true_cn": "订单修改",
+          "pred_cn": "发票相关"
+        },
+        {
+          "true": "payment_issue",
+          "pred": "order_modification",
+          "count": 1,
+          "true_cn": "支付问题",
+          "pred_cn": "订单修改"
+        },
+        {
+          "true": "complaint",
+          "pred": "after_sales_repair",
+          "count": 1,
+          "true_cn": "投诉建议",
+          "pred_cn": "售后维修"
+        }
+      ],
+      "error_cases": [
+        {
+          "input": "这个要怎么安装",
+          "true": "product_inquiry",
+          "pred": "delivery_service",
+          "true_cn": "商品咨询",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "定金可以退吗",
+          "true": "campaign_rules",
+          "pred": "refund_request",
+          "true_cn": "活动规则",
+          "pred_cn": "退款申请"
+        },
+        {
+          "input": "发票信息能改吗",
+          "true": "order_modification",
+          "pred": "invoice",
+          "true_cn": "订单修改",
+          "pred_cn": "发票相关"
+        },
+        {
+          "input": "拼团成功后多久发货",
+          "true": "campaign_rules",
+          "pred": "delivery_service",
+          "true_cn": "活动规则",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "漏水你们管不管",
+          "true": "complaint",
+          "pred": "after_sales_repair",
+          "true_cn": "投诉建议",
+          "pred_cn": "售后维修"
+        },
+        {
+          "input": "你这回复是机器人吧",
+          "true": "complaint",
+          "pred": "chitchat_other",
+          "true_cn": "投诉建议",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "这个零件能单独买吗",
+          "true": "after_sales_repair",
+          "pred": "product_inquiry",
+          "true_cn": "售后维修",
+          "pred_cn": "商品咨询"
+        },
+        {
+          "input": "预售和现货哪个便宜",
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "input": "付款之后订单多久确认",
+          "true": "payment_issue",
+          "pred": "order_modification",
+          "true_cn": "支付问题",
+          "pred_cn": "订单修改"
+        },
+        {
+          "input": "凑单可以退一件吗",
+          "true": "campaign_rules",
+          "pred": "order_modification",
+          "true_cn": "活动规则",
+          "pred_cn": "订单修改"
+        },
+        {
+          "input": "想把自提改成送货上门",
+          "true": "order_modification",
+          "pred": "delivery_service",
+          "true_cn": "订单修改",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "想把两个颜色换一下",
+          "true": "order_modification",
+          "pred": "return_exchange",
+          "true_cn": "订单修改",
+          "pred_cn": "退换货"
+        },
+        {
+          "input": "邮编填错了影响发货吗",
+          "true": "order_modification",
+          "pred": "delivery_service",
+          "true_cn": "订单修改",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "跟描述不符我要退",
+          "true": "return_exchange",
+          "pred": "refund_request",
+          "true_cn": "退换货",
+          "pred_cn": "退款申请"
+        },
+        {
+          "input": "有什么限制吗",
+          "true": "product_inquiry",
+          "pred": "chitchat_other",
+          "true_cn": "商品咨询",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "有没有安装服务",
+          "true": "product_inquiry",
+          "pred": "delivery_service",
+          "true_cn": "商品咨询",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "改下尺码谢谢",
+          "true": "order_modification",
+          "pred": "return_exchange",
+          "true_cn": "订单修改",
+          "pred_cn": "退换货"
+        },
+        {
+          "input": "活动价格保护几天",
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "input": "订单改了地址物流会变吗",
+          "true": "order_modification",
+          "pred": "logistics_query",
+          "true_cn": "订单修改",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "退了货物流显示已签收了怎么还没退款",
+          "true": "return_exchange",
+          "pred": "refund_request",
+          "true_cn": "退换货",
+          "pred_cn": "退款申请"
+        }
+      ]
+    },
+    "Prompt-v4-CoT": {
+      "method": "Prompt-v4-CoT",
+      "confusion_pairs": [
+        {
+          "true": "payment_issue",
+          "pred": "logistics_query",
+          "count": 3,
+          "true_cn": "支付问题",
+          "pred_cn": "物流查询"
+        },
+        {
+          "true": "complaint",
+          "pred": "chitchat_other",
+          "count": 3,
+          "true_cn": "投诉建议",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "true": "price_promotion",
+          "pred": "campaign_rules",
+          "count": 2,
+          "true_cn": "价格优惠",
+          "pred_cn": "活动规则"
+        },
+        {
+          "true": "complaint",
+          "pred": "after_sales_repair",
+          "count": 2,
+          "true_cn": "投诉建议",
+          "pred_cn": "售后维修"
+        },
+        {
+          "true": "campaign_rules",
+          "pred": "refund_request",
+          "count": 2,
+          "true_cn": "活动规则",
+          "pred_cn": "退款申请"
+        },
+        {
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "count": 2,
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "true": "logistics_query",
+          "pred": "delivery_service",
+          "count": 1,
+          "true_cn": "物流查询",
+          "pred_cn": "配送服务"
+        },
+        {
+          "true": "refund_request",
+          "pred": "payment_issue",
+          "count": 1,
+          "true_cn": "退款申请",
+          "pred_cn": "支付问题"
+        },
+        {
+          "true": "refund_request",
+          "pred": "complaint",
+          "count": 1,
+          "true_cn": "退款申请",
+          "pred_cn": "投诉建议"
+        },
+        {
+          "true": "return_exchange",
+          "pred": "logistics_query",
+          "count": 1,
+          "true_cn": "退换货",
+          "pred_cn": "物流查询"
+        }
+      ],
+      "error_cases": [
+        {
+          "input": "你们一般几天能到",
+          "true": "logistics_query",
+          "pred": "delivery_service",
+          "true_cn": "物流查询",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "凑单满减怎么算",
+          "true": "price_promotion",
+          "pred": "campaign_rules",
+          "true_cn": "价格优惠",
+          "pred_cn": "活动规则"
+        },
+        {
+          "input": "付款限额是多少",
+          "true": "payment_issue",
+          "pred": "price_promotion",
+          "true_cn": "支付问题",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "input": "退款退不了什么原因",
+          "true": "refund_request",
+          "pred": "payment_issue",
+          "true_cn": "退款申请",
+          "pred_cn": "支付问题"
+        },
+        {
+          "input": "定金可以退吗",
+          "true": "campaign_rules",
+          "pred": "refund_request",
+          "true_cn": "活动规则",
+          "pred_cn": "退款申请"
+        },
+        {
+          "input": "退换货的期限是多久",
+          "true": "return_exchange",
+          "pred": "logistics_query",
+          "true_cn": "退换货",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "你们太让人失望了",
+          "true": "complaint",
+          "pred": "chitchat_other",
+          "true_cn": "投诉建议",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "发票信息能改吗",
+          "true": "order_modification",
+          "pred": "invoice",
+          "true_cn": "订单修改",
+          "pred_cn": "发票相关"
+        },
+        {
+          "input": "别家同款才XX元",
+          "true": "price_promotion",
+          "pred": "refund_request",
+          "true_cn": "价格优惠",
+          "pred_cn": "退款申请"
+        },
+        {
+          "input": "拼团成功后多久发货",
+          "true": "campaign_rules",
+          "pred": "logistics_query",
+          "true_cn": "活动规则",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "漏水你们管不管",
+          "true": "complaint",
+          "pred": "after_sales_repair",
+          "true_cn": "投诉建议",
+          "pred_cn": "售后维修"
+        },
+        {
+          "input": "你这回复是机器人吧",
+          "true": "complaint",
+          "pred": "chitchat_other",
+          "true_cn": "投诉建议",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "可以货到付款吗",
+          "true": "payment_issue",
+          "pred": "delivery_service",
+          "true_cn": "支付问题",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "这个零件能单独买吗",
+          "true": "after_sales_repair",
+          "pred": "product_inquiry",
+          "true_cn": "售后维修",
+          "pred_cn": "商品咨询"
+        },
+        {
+          "input": "预售和现货哪个便宜",
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "input": "能送个赠品吗",
+          "true": "price_promotion",
+          "pred": "chitchat_other",
+          "true_cn": "价格优惠",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "付款之后订单多久确认",
+          "true": "payment_issue",
+          "pred": "logistics_query",
+          "true_cn": "支付问题",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "配送途中可以改地址吗",
+          "true": "delivery_service",
+          "pred": "order_modification",
+          "true_cn": "配送服务",
+          "pred_cn": "订单修改"
+        },
+        {
+          "input": "有人工客服吗",
+          "true": "chitchat_other",
+          "pred": "logistics_query",
+          "true_cn": "闲聊其他",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "凑单可以退一件吗",
+          "true": "campaign_rules",
+          "pred": "refund_request",
+          "true_cn": "活动规则",
+          "pred_cn": "退款申请"
+        },
+        {
+          "input": "怎么联系售后",
+          "true": "after_sales_repair",
+          "pred": "complaint",
+          "true_cn": "售后维修",
+          "pred_cn": "投诉建议"
+        },
+        {
+          "input": "上门取件方便吗",
+          "true": "delivery_service",
+          "pred": "return_exchange",
+          "true_cn": "配送服务",
+          "pred_cn": "退换货"
+        },
+        {
+          "input": "折扣叠加吗",
+          "true": "price_promotion",
+          "pred": "campaign_rules",
+          "true_cn": "价格优惠",
+          "pred_cn": "活动规则"
+        },
+        {
+          "input": "跨境支付手续费多少",
+          "true": "payment_issue",
+          "pred": "logistics_query",
+          "true_cn": "支付问题",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "想把两个颜色换一下",
+          "true": "order_modification",
+          "pred": "return_exchange",
+          "true_cn": "订单修改",
+          "pred_cn": "退换货"
+        },
+        {
+          "input": "邮编填错了影响发货吗",
+          "true": "order_modification",
+          "pred": "logistics_query",
+          "true_cn": "订单修改",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "有什么限制吗",
+          "true": "product_inquiry",
+          "pred": "chitchat_other",
+          "true_cn": "商品咨询",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "有没有安装服务",
+          "true": "product_inquiry",
+          "pred": "delivery_service",
+          "true_cn": "商品咨询",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "分期怎么操作",
+          "true": "payment_issue",
+          "pred": "logistics_query",
+          "true_cn": "支付问题",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "积分能抵扣多少钱",
+          "true": "price_promotion",
+          "pred": "membership",
+          "true_cn": "价格优惠",
+          "pred_cn": "会员权益"
+        },
+        {
+          "input": "活动价格保护几天",
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "input": "假一赔十你们赔不赔",
+          "true": "complaint",
+          "pred": "after_sales_repair",
+          "true_cn": "投诉建议",
+          "pred_cn": "售后维修"
+        },
+        {
+          "input": "你们有没有监管的",
+          "true": "complaint",
+          "pred": "chitchat_other",
+          "true_cn": "投诉建议",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "商家不给退款怎么办",
+          "true": "refund_request",
+          "pred": "complaint",
+          "true_cn": "退款申请",
+          "pred_cn": "投诉建议"
+        },
+        {
+          "input": "运费多少",
+          "true": "price_promotion",
+          "pred": "logistics_query",
+          "true_cn": "价格优惠",
+          "pred_cn": "物流查询"
+        },
+        {
+          "input": "退了货物流显示已签收了怎么还没退款",
+          "true": "return_exchange",
+          "pred": "refund_request",
+          "true_cn": "退换货",
+          "pred_cn": "退款申请"
+        },
+        {
+          "input": "能换个支付方式吗",
+          "true": "payment_issue",
+          "pred": "order_modification",
+          "true_cn": "支付问题",
+          "pred_cn": "订单修改"
+        }
+      ]
+    },
+    "微调-Qwen3-4B": {
+      "method": "微调-Qwen3-4B",
+      "confusion_pairs": [
+        {
+          "true": "product_inquiry",
+          "pred": "after_sales_repair",
+          "count": 2,
+          "true_cn": "商品咨询",
+          "pred_cn": "售后维修"
+        },
+        {
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "count": 2,
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "true": "logistics_query",
+          "pred": "delivery_service",
+          "count": 1,
+          "true_cn": "物流查询",
+          "pred_cn": "配送服务"
+        },
+        {
+          "true": "return_exchange",
+          "pred": "order_modification",
+          "count": 1,
+          "true_cn": "退换货",
+          "pred_cn": "订单修改"
+        },
+        {
+          "true": "product_inquiry",
+          "pred": "campaign_rules",
+          "count": 1,
+          "true_cn": "商品咨询",
+          "pred_cn": "活动规则"
+        },
+        {
+          "true": "product_inquiry",
+          "pred": "chitchat_other",
+          "count": 1,
+          "true_cn": "商品咨询",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "true": "price_promotion",
+          "pred": "membership",
+          "count": 1,
+          "true_cn": "价格优惠",
+          "pred_cn": "会员权益"
+        },
+        {
+          "true": "price_promotion",
+          "pred": "campaign_rules",
+          "count": 1,
+          "true_cn": "价格优惠",
+          "pred_cn": "活动规则"
+        },
+        {
+          "true": "order_modification",
+          "pred": "invoice",
+          "count": 1,
+          "true_cn": "订单修改",
+          "pred_cn": "发票相关"
+        },
+        {
+          "true": "order_modification",
+          "pred": "delivery_service",
+          "count": 1,
+          "true_cn": "订单修改",
+          "pred_cn": "配送服务"
+        }
+      ],
+      "error_cases": [
+        {
+          "input": "凑单满减怎么算",
+          "true": "price_promotion",
+          "pred": "campaign_rules",
+          "true_cn": "价格优惠",
+          "pred_cn": "活动规则"
+        },
+        {
+          "input": "你们一般几天能到",
+          "true": "logistics_query",
+          "pred": "delivery_service",
+          "true_cn": "物流查询",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "发票信息能改吗",
+          "true": "order_modification",
+          "pred": "invoice",
+          "true_cn": "订单修改",
+          "pred_cn": "发票相关"
+        },
+        {
+          "input": "定金可以退吗",
+          "true": "campaign_rules",
+          "pred": "refund_request",
+          "true_cn": "活动规则",
+          "pred_cn": "退款申请"
+        },
+        {
+          "input": "这个机器声音大不大",
+          "true": "product_inquiry",
+          "pred": "after_sales_repair",
+          "true_cn": "商品咨询",
+          "pred_cn": "售后维修"
+        },
+        {
+          "input": "拼团成功后多久发货",
+          "true": "campaign_rules",
+          "pred": "delivery_service",
+          "true_cn": "活动规则",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "漏水你们管不管",
+          "true": "complaint",
+          "pred": "after_sales_repair",
+          "true_cn": "投诉建议",
+          "pred_cn": "售后维修"
+        },
+        {
+          "input": "这个零件能单独买吗",
+          "true": "after_sales_repair",
+          "pred": "product_inquiry",
+          "true_cn": "售后维修",
+          "pred_cn": "商品咨询"
+        },
+        {
+          "input": "你这回复是机器人吧",
+          "true": "complaint",
+          "pred": "chitchat_other",
+          "true_cn": "投诉建议",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "预售和现货哪个便宜",
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "input": "凑单可以退一件吗",
+          "true": "campaign_rules",
+          "pred": "price_promotion",
+          "true_cn": "活动规则",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "input": "有没有备用机可以借",
+          "true": "after_sales_repair",
+          "pred": "chitchat_other",
+          "true_cn": "售后维修",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "邮编填错了影响发货吗",
+          "true": "order_modification",
+          "pred": "delivery_service",
+          "true_cn": "订单修改",
+          "pred_cn": "配送服务"
+        },
+        {
+          "input": "有什么限制吗",
+          "true": "product_inquiry",
+          "pred": "campaign_rules",
+          "true_cn": "商品咨询",
+          "pred_cn": "活动规则"
+        },
+        {
+          "input": "有没有安装服务",
+          "true": "product_inquiry",
+          "pred": "after_sales_repair",
+          "true_cn": "商品咨询",
+          "pred_cn": "售后维修"
+        },
+        {
+          "input": "分期怎么操作",
+          "true": "payment_issue",
+          "pred": "price_promotion",
+          "true_cn": "支付问题",
+          "pred_cn": "价格优惠"
+        },
+        {
+          "input": "验证码老是发不到我手机",
+          "true": "account_issue",
+          "pred": "payment_issue",
+          "true_cn": "账户问题",
+          "pred_cn": "支付问题"
+        },
+        {
+          "input": "积分能抵扣多少钱",
+          "true": "price_promotion",
+          "pred": "membership",
+          "true_cn": "价格优惠",
+          "pred_cn": "会员权益"
+        },
+        {
+          "input": "假一赔十你们赔不赔",
+          "true": "complaint",
+          "pred": "product_inquiry",
+          "true_cn": "投诉建议",
+          "pred_cn": "商品咨询"
+        },
+        {
+          "input": "有没有组装视频",
+          "true": "product_inquiry",
+          "pred": "chitchat_other",
+          "true_cn": "商品咨询",
+          "pred_cn": "闲聊其他"
+        },
+        {
+          "input": "换小一码帮我下单",
+          "true": "return_exchange",
+          "pred": "order_modification",
+          "true_cn": "退换货",
+          "pred_cn": "订单修改"
+        }
+      ]
+    }
+  },
+  "costs": {
+    "Prompt-v1-零样本": {
+      "method": "prompt",
+      "model": "Qwen-Plus",
+      "total_samples": 200,
+      "input_tokens": 161080,
+      "output_tokens": 2000,
+      "input_cost_cny": 0.6443,
+      "output_cost_cny": 0.024,
+      "total_cost_cny": 0.6683,
+      "cost_per_sample_cny": 0.003342
+    },
+    "Prompt-v2-定义": {
+      "method": "prompt",
+      "model": "Qwen-Plus",
+      "total_samples": 200,
+      "input_tokens": 161080,
+      "output_tokens": 2000,
+      "input_cost_cny": 0.6443,
+      "output_cost_cny": 0.024,
+      "total_cost_cny": 0.6683,
+      "cost_per_sample_cny": 0.003342
+    },
+    "Prompt-v3-Few-shot": {
+      "method": "prompt",
+      "model": "Qwen-Plus",
+      "total_samples": 200,
+      "input_tokens": 161080,
+      "output_tokens": 2000,
+      "input_cost_cny": 0.6443,
+      "output_cost_cny": 0.024,
+      "total_cost_cny": 0.6683,
+      "cost_per_sample_cny": 0.003342
+    },
+    "Prompt-v4-CoT": {
+      "method": "prompt",
+      "model": "Qwen-Plus",
+      "total_samples": 200,
+      "input_tokens": 161080,
+      "output_tokens": 2000,
+      "input_cost_cny": 0.6443,
+      "output_cost_cny": 0.024,
+      "total_cost_cny": 0.6683,
+      "cost_per_sample_cny": 0.003342
+    },
+    "微调-Qwen3-4B": {
+      "method": "finetuned",
+      "model": "Qwen3-4B-Instruct",
+      "total_samples": 200,
+      "train_cost_cny": 12.0,
+      "train_tokens": 240000,
+      "inference_tokens": 3080,
+      "inference_cost_cny": 0.0031,
+      "total_cost_cny": 12.0031,
+      "cost_per_sample_cny": 0.060015,
+      "note": "训练成本为一次性成本，样本越多摊销越低"
+    }
+  },
+  "latencies": {
+    "Prompt-v1-零样本": {
+      "method": "Prompt-v1-零样本",
+      "avg_latency_ms": 800,
+      "p50_ms": 750,
+      "p95_ms": 1200,
+      "p99_ms": 1500
+    },
+    "Prompt-v2-定义": {
+      "method": "Prompt-v2-定义",
+      "avg_latency_ms": 300,
+      "p50_ms": 280,
+      "p95_ms": 450,
+      "p99_ms": 600
+    },
+    "Prompt-v3-Few-shot": {
+      "method": "Prompt-v3-Few-shot",
+      "avg_latency_ms": 800,
+      "p50_ms": 750,
+      "p95_ms": 1200,
+      "p99_ms": 1500
+    },
+    "Prompt-v4-CoT": {
+      "method": "Prompt-v4-CoT",
+      "avg_latency_ms": 1500,
+      "p50_ms": 1400,
+      "p95_ms": 2200,
+      "p99_ms": 2800
+    },
+    "微调-Qwen3-4B": {
+      "method": "微调-Qwen3-4B",
+      "avg_latency_ms": 300,
+      "p50_ms": 280,
+      "p95_ms": 450,
+      "p99_ms": 600
+    }
+  }
+}

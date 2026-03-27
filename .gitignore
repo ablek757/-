@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# API Keys
+.env
+*.key
+config.local.json
+
+# Large files (optional - 如果想保留完整数据集，可以删除这些行)
+# data/dataset_full.json
+# data/bailian_*.jsonl
